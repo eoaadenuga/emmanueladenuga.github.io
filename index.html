@@ -1,505 +1,353 @@
-/*
- * Emmanuel Adenuga - Business Analyst Portfolio
- * Improved CSS - Structured for Better Visibility & Maintainability
- * Based on improved semantic HTML5 structure
- */
-
-/* ============================================
-   1. CSS VARIABLES & ROOT SETTINGS
-   ============================================ */
-:root {
-    /* Color Palette */
-    --primary-color: #0084d1;
-    --primary-dark: #006ba8;
-    --primary-light: #3ba5e0;
-    --text-primary: #2c2c2c;
-    --text-secondary: #555555;
-    --text-light: #888888;
-    --bg-primary: #ffffff;
-    --bg-secondary: #f5f5f5;
-    --bg-dark: #1a1a1a;
-    --bg-hero: #2d3e50;
-    --border-color: #ddd;
-    --accent: #ff6b6b;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content=" Emmanuel Adenuga - Business Analyst Portfolio showcasing data analysis, GRC, and business intelligence projects">
+    <meta name="author" content="Emmanuel Adenuga">
+    <title>Emmanuel Adenuga - Business Analyst Portfolio</title>
     
-    /* Typography */
-    --font-primary: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-    --font-secondary: "Open Sans", sans-serif;
-    --line-height: 1.6;
-    --line-height-tight: 1.3;
-    
-    /* Spacing */
-    --spacing-xs: 0.5rem;
-    --spacing-sm: 1rem;
-    --spacing-md: 1.5rem;
-    --spacing-lg: 2rem;
-    --spacing-xl: 3rem;
-    --spacing-xxl: 4rem;
-    
-    /* Shadows */
-    --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
-    --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.15);
-    --shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.2);
-    
-    /* Borders */
-    --radius-sm: 4px;
-    --radius-md: 8px;
-    --radius-lg: 12px;
-}
-
-/* ============================================
-   2. RESET & BASE STYLES
-   ============================================ */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
-    font-size: 16px;
-}
-
-body {
-    font-family: var(--font-primary);
-    font-size: 1rem;
-    line-height: var(--line-height);
-    color: var(--text-primary);
-    background: var(--bg-primary);
-    overflow-x: hidden;
-}
-
-body.is-preload * {
-    animation: none !important;
-    transition: none !important;
-}
-
-/* ============================================
-   3. TYPOGRAPHY
-   ============================================ */
-h1, h2, h3, h4, h5, h6 {
-    font-weight: 700;
-    line-height: var(--line-height-tight);
-    margin-bottom: var(--spacing-md);
-    color: var(--text-primary);
-}
-
-h1 {
-    font-size: 2.5rem;
-    letter-spacing: -1px;
-}
-
-h2 {
-    font-size: 2rem;
-    letter-spacing: -0.5px;
-}
-
-h3 {
-    font-size: 1.5rem;
-}
-
-h4 {
-    font-size: 1.25rem;
-}
-
-h5 {
-    font-size: 1.1rem;
-}
-
-h6 {
-    font-size: 1rem;
-}
-
-p {
-    margin-bottom: var(--spacing-md);
-}
-
-a {
-    color: var(--primary-color);
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-a:hover {
-    color: var(--primary-dark);
-    text-decoration: underline;
-}
-
-/* ============================================
-   4. SKIP LINK (Accessibility)
-   ============================================ */
-.skip-link {
-    position: absolute;
-    top: -40px;
-    left: 0;
-    background: var(--primary-color);
-    color: white;
-    padding: var(--spacing-sm) var(--spacing-md);
-    text-decoration: none;
-    z-index: 100;
-    border-radius: var(--radius-sm);
-}
-
-.skip-link:focus {
-    top: 0;
-    outline: 2px solid var(--accent);
-}
-
-/* ============================================
-   5. WRAPPER & LAYOUT
-   ============================================ */
-#wrapper {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-}
-
-/* ============================================
-   6. HERO SECTION
-   ============================================ */
-.hero {
-    background: linear-gradient(135deg, var(--bg-hero) 0%, #1f2937 100%);
-    color: white;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: var(--spacing-xxl) var(--spacing-md);
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-}
-
-.hero::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><defs><pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M 40 0 L 0 0 0 40" fill="none" stroke="white" stroke-width="0.5" opacity="0.1"/></pattern></defs><rect width="1200" height="800" fill="url(%23grid)"/></svg>');
-    opacity: 0.5;
-    z-index: 1;
-}
-
-.hero-content {
-    position: relative;
-    z-index: 2;
-    max-width: 800px;
-}
-
-.hero-title {
-    font-size: clamp(2rem, 8vw, 3.5rem);
-    font-weight: 900;
-    letter-spacing: -2px;
-    margin-bottom: var(--spacing-md);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-}
-
-.hero-subtitle {
-    font-size: clamp(1rem, 3vw, 1.5rem);
-    color: #e0e0e0;
-    margin-bottom: var(--spacing-xl);
-    font-weight: 300;
-}
-
-.hero-actions {
-    display: flex;
-    gap: var(--spacing-md);
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-/* ============================================
-   7. NAVIGATION BAR
-   ============================================ */
-.navbar {
-    background: white;
-    box-shadow: var(--shadow-md);
-    position: sticky;
-    top: 0;
-    z-index: 50;
-    padding: 1rem 0;
-}
-
-.navbar-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 var(--spacing-md);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.navbar-logo {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: var(--primary-color);
-    display: flex;
-    align-items: center;
-    gap: var(--spacing-sm);
-}
-
-.navbar-nav {
-    display: flex;
-    gap: var(--spacing-xl);
-    align-items: center;
-}
-
-.nav-links {
-    display: flex;
-    list-style: none;
-    gap: var(--spacing-lg);
-}
-
-.nav-item {
-    position: relative;
-}
-
-.nav-link {
-    color: var(--text-primary);
-    font-weight: 500;
-    padding: var(--spacing-xs) 0;
-    border-bottom: 2px solid transparent;
-    transition: all 0.3s ease;
-}
-
-.nav-link:hover,
-.nav-item.active .nav-link {
-    color: var(--primary-color);
-    border-bottom-color: var(--primary-color);
-}
-
-.nav-social {
-    display: flex;
-    list-style: none;
-    gap: var(--spacing-md);
-}
-
-.icon-link {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 36px;
-    height: 36px;
-    background: var(--bg-secondary);
-    border-radius: 50%;
-    transition: all 0.3s ease;
-}
-
-.icon-link:hover {
-    background: var(--primary-color);
-    color: white;
-    transform: translateY(-2px);
-}
-
-.icon-link .label {
-    display: none;
-}
-
-/* ============================================
-   8. MAIN CONTENT AREA
-   ============================================ */
-.main-content {
-    flex: 1;
-    padding: var(--spacing-xxl) 0;
-}
-
-/* ============================================
-   9. FEATURED PROJECT SECTION
-   ============================================ */
-.project-featured {
-    background: linear-gradient(135deg, #f5f7fa 0%, #e9ecef 100%);
-    padding: var(--spacing-xxl) var(--spacing-md);
-    margin: var(--spacing-lg) auto;
-    max-width: 1000px;
-    width: 100%;
-    border-radius: var(--radius-lg);
-    box-shadow: var(--shadow-md);
-}
-
-.project-header {
-    text-align: center;
-    margin-bottom: var(--spacing-xl);
-}
-
-.project-title {
-    font-size: 2rem;
-    color: var(--text-primary);
-    margin-bottom: var(--spacing-sm);
-}
-
-.project-subtitle {
-    font-size: 1.1rem;
-    color: var(--text-secondary);
-    font-weight: 500;
-}
-
-.project-image {
-    margin: var(--spacing-xl) 0;
-}
-
-.project-image img {
-    width: 100%;
-    height: auto;
-    border-radius: var(--radius-md);
-    box-shadow: var(--shadow-lg);
-    display: block;
-}
-
-.project-body {
-    margin: var(--spacing-xl) 0;
-}
-
-.project-section-title {
-    font-size: 1.25rem;
-    margin-bottom: var(--spacing-md);
-}
-
-.project-description {
-    color: var(--text-secondary);
-    margin-bottom: var(--spacing-md);
-}
-
-.project-skills {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: var(--spacing-md);
-    list-style: none;
-    margin: var(--spacing-lg) 0;
-}
-
-.project-skills li {
-    background: white;
-    padding: var(--spacing-md);
-    border-radius: var(--radius-md);
-    border-left: 4px solid var(--primary-color);
-    font-weight: 500;
-    box-shadow: var(--shadow-sm);
-}
-
-.project-footer {
-    text-align: center;
-    margin-top: var(--spacing-xl);
-}
-
-/* ============================================
-   10. PROJECTS GRID
-   ============================================ */
-.projects-grid {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 var(--spacing-md);
-}
-
-.section-heading {
-    font-size: 2rem;
-    text-align: center;
-    margin: var(--spacing-xxl) 0 var(--spacing-xl);
-    position: relative;
-    padding-bottom: var(--spacing-lg);
-}
-
-.section-heading::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100px;
-    height: 4px;
-    background: linear-gradient(90deg, var(--primary-color), var(--primary-light));
-    border-radius: 2px;
-}
-
-.projects-grid > section {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: var(--spacing-xl);
-    margin-top: var(--spacing-xl);
-}
-
-/* ============================================
-   11. PROJECT CARDS
-   ============================================ */
-.project-card {
-    background: white;
-    border-radius: var(--radius-lg);
-    overflow: hidden;
-    box-shadow: var(--shadow-md);
-    transition: all 0.3s ease;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-}
-
-.project-card:hover {
-    transform: translateY(-8px);
-    box-shadow: var(--shadow-lg);
-}
-
-.card-header {
-    padding: var(--spacing-lg);
-    border-bottom: 2px solid var(--bg-secondary);
-    display: flex;
-    justify-content: space-between;
-    align-items: start;
-}
-
-.card-title {
-    font-size: 1.25rem;
-    margin: 0;
-    flex: 1;
-}
-
-.card-tag {
-    background: var(--primary-color);
-    color: white;
-    padding: var(--spacing-xs) var(--spacing-md);
-    border-radius: 20px;
-    font-size: 0.85rem;
-    font-weight: 600;
-    white-space: nowrap;
-    margin-left: var(--spacing-md);
-}
-
-.card-image {
-    width: 100%;
-    height: 200px;
-    overflow: hidden;
-    background: var(--bg-secondary);
-}
-
-.card-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.3s ease;
-}
-
-.project-card:hover .card-image img {
-    transform: scale(1.05);
-}
-
-.card-body {
-    padding: var(--spacing-lg);
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-}
-
-.card-description {
-    color: var(--text-secondary);
-    margin-bottom: var(--spacing-md);
-    font-size: 0.95rem;
-}
-
-.card-highlights {
-    list-style: none;
-    margin-top: auto
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <noscript>
+        <link rel="stylesheet" href="assets/css/noscript.css">
+    </noscript>
+</head>
+
+<body class="is-preload">
+    <!-- Skip Navigation Link for Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Wrapper -->
+    <div id="wrapper" class="fade-in">
+        
+        <!-- Hero Section / Intro -->
+        <section id="intro" class="hero" role="banner">
+            <div class="hero-content">
+                <h1 class="hero-title">Emmanuel Adenuga</h1>
+                <p class="hero-subtitle">
+                    Welcome to my Business Analyst Portfolio — Where Data Meets Insight and Innovation
+                </p>
+                <nav class="hero-actions">
+                    <a href="#header" class="button button-primary icon solid solo fa-arrow-down scrolly">
+                        Continue
+                    </a>
+                </nav>
+            </div>
+        </section>
+
+        <!-- Header / Navigation Bar -->
+        <header id="header" class="navbar" role="banner">
+            <div class="navbar-container">
+                <a href="/" class="navbar-logo">
+                    <span class="logo-text">Portfolio</span>
+                </a>
+                <nav id="nav" class="navbar-nav" role="navigation" aria-label="Main navigation">
+                    <ul class="nav-links">
+                        <li class="nav-item active">
+                            <a href="#main-content" class="nav-link">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contact" class="nav-link">Contact</a>
+                        </li>
+                    </ul>
+                    <ul class="nav-social">
+                        <li class="nav-social-item">
+                            <a href="https://www.linkedin.com/in/emmanuel-adenuga/" 
+                               class="icon-link" 
+                               title="Connect on LinkedIn"
+                               rel="noopener noreferrer" 
+                               target="_blank">
+                                <span class="icon brands fa-linkedin" aria-hidden="true"></span>
+                                <span class="label">LinkedIn</span>
+                            </a>
+                        </li>
+                        <li class="nav-social-item">
+                            <a href="https://github.com/eoaadenuga" 
+                               class="icon-link" 
+                               title="Visit GitHub profile"
+                               rel="noopener noreferrer" 
+                               target="_blank">
+                                <span class="icon brands fa-github" aria-hidden="true"></span>
+                                <span class="label">GitHub</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main id="main-content" class="main-content">
+            
+            <!-- Featured Project -->
+            <article class="project project-featured" role="article">
+                <header class="project-header">
+                    <h2 class="project-title">Online Canteen Ordering System</h2>
+                    <p class="project-subtitle">Unilever Workspace Solution</p>
+                </header>
+                
+                <figure class="project-image">
+                    <img src="images/image1.jpg" 
+                         alt="Online Canteen Ordering System interface showing order placement workflow for Unilever employees" 
+                         loading="lazy">
+                </figure>
+                
+                <div class="project-body">
+                    <h3 class="project-section-title">Overview</h3>
+                    <p class="project-description">
+                        A cutting-edge solution meticulously crafted to revolutionise the dining experience within the Unilever workspace. This comprehensive business analysis project includes:
+                    </p>
+                    <ul class="project-skills">
+                        <li>Stakeholder Analysis</li>
+                        <li>RACI Matrix Development</li>
+                        <li>SWOT Analysis</li>
+                        <li>Process Flow Mapping</li>
+                        <li>Jira & Confluence Collaboration</li>
+                    </ul>
+                </div>
+                
+                <footer class="project-footer">
+                    <a href="https://docs.google.com/presentation/d/1QooQ8Td3eV5H8T1A_WLwALeWfFlzD5a3/edit?usp=drive_link&ouid=110287225477035393815&rtpof=true&sd=true" 
+                       class="button button-lg button-primary"
+                       rel="noopener noreferrer" 
+                       target="_blank">
+                        Explore Full Project
+                    </a>
+                </footer>
+            </article>
+
+            <!-- Projects Grid -->
+            <section class="projects-grid" aria-labelledby="projects-heading">
+                <h2 id="projects-heading" class="section-heading">Other Notable Projects</h2>
+                
+                <section>
+                    <!-- Project Card: Sunshine Resort -->
+                    <article class="project-card" role="article">
+                        <header class="card-header">
+                            <h3 class="card-title">Sunshine Resort</h3>
+                            <span class="card-tag">Data Analysis</span>
+                        </header>
+                        
+                        <figure class="card-image">
+                            <img src="images/image4.jpg" 
+                                 alt="Sunshine Resort dashboard showing booking and revenue metrics"
+                                 loading="lazy">
+                        </figure>
+                        
+                        <div class="card-body">
+                            <p class="card-description">
+                                High-end beachfront hotel management analysis providing data-driven recommendations to enhance guest experiences and optimize operations.
+                            </p>
+                            <ul class="card-highlights">
+                                <li>Booking Data Analysis</li>
+                                <li>Revenue Optimization</li>
+                                <li>Guest Experience Enhancement</li>
+                            </ul>
+                        </div>
+                        
+                        <footer class="card-footer">
+                            <a href="https://drive.google.com/file/d/1GaHglbZCQ8CWkybN6NNxP4NVtr9UbKVN/view?usp=drive_link" 
+                               class="button button-sm"
+                               rel="noopener noreferrer" 
+                               target="_blank">
+                                View Project
+                            </a>
+                        </footer>
+                    </article>
+
+                    <!-- Project Card: British Airways -->
+                    <article class="project-card" role="article">
+                        <header class="card-header">
+                            <h3 class="card-title">British Airways</h3>
+                            <span class="card-tag">Power BI Dashboard</span>
+                        </header>
+                        
+                        <figure class="card-image">
+                            <img src="images/image3.jpg" 
+                                 alt="British Airways Power BI dashboard with customer satisfaction metrics"
+                                 loading="lazy">
+                        </figure>
+                        
+                        <div class="card-body">
+                            <p class="card-description">
+                                Comprehensive Power BI analysis offering actionable strategies to enhance customer satisfaction and retention for a global airline.
+                            </p>
+                            <ul class="card-highlights">
+                                <li>Customer Satisfaction Analysis</li>
+                                <li>Service Enhancement Strategies</li>
+                                <li>Excel & Power BI Dashboards</li>
+                            </ul>
+                        </div>
+                        
+                        <footer class="card-footer">
+                            <a href="https://drive.google.com/file/d/10BTBwSQoEPg2dIpFB_DdvK8jdYBmUISD/view" 
+                               class="button button-sm"
+                               rel="noopener noreferrer" 
+                               target="_blank">
+                                View Project
+                            </a>
+                        </footer>
+                    </article>
+
+                    <!-- Project Card: ABC Retail -->
+                    <article class="project-card" role="article">
+                        <header class="card-header">
+                            <h3 class="card-title">ABC Retail</h3>
+                            <span class="card-tag">Excel Analysis</span>
+                        </header>
+                        
+                        <figure class="card-image">
+                            <img src="images/pic04.jpg" 
+                                 alt="ABC Retail customer behavior analysis spreadsheet"
+                                 loading="lazy">
+                        </figure>
+                        
+                        <div class="card-body">
+                            <p class="card-description">
+                                Customer behaviour analysis using Microsoft Excel to understand online store usage patterns and improve sales performance.
+                            </p>
+                            <ul class="card-highlights">
+                                <li>Customer Behavior Patterns</li>
+                                <li>Online Store UX Improvement</li>
+                                <li>Sales Optimization</li>
+                            </ul>
+                        </div>
+                        
+                        <footer class="card-footer">
+                            <a href="https://drive.google.com/file/d/1ahx2_1qc_NMo2cbpSGs7CiSh-OaEsIO8/view?usp=drive_link" 
+                               class="button button-sm"
+                               rel="noopener noreferrer" 
+                               target="_blank">
+                                View Project
+                            </a>
+                        </footer>
+                    </article>
+
+                    <!-- Project Card: MAX Corp -->
+                    <article class="project-card" role="article">
+                        <header class="card-header">
+                            <h3 class="card-title">MAX Corp Electronics</h3>
+                            <span class="card-tag">Power BI Dashboard</span>
+                        </header>
+                        
+                        <figure class="card-image">
+                            <img src="images/image6.jpg" 
+                                 alt="MAX Corp Power BI dashboard showing sales and shipping analytics"
+                                 loading="lazy">
+                        </figure>
+                        
+                        <div class="card-body">
+                            <p class="card-description">
+                                Dashboard analysis addressing sales and shipping challenges for a mid-sized electronics retailer with multi-regional operations.
+                            </p>
+                            <ul class="card-highlights">
+                                <li>Sales Performance Analysis</li>
+                                <li>Shipping Operations Optimization</li>
+                                <li>Performance Recommendations</li>
+                            </ul>
+                        </div>
+                        
+                        <footer class="card-footer">
+                            <a href="https://drive.google.com/file/d/1iHSYOjKA9L08z4Woi2nen3yNpXLHJ6_I/view?usp=drive_link" 
+                               class="button button-sm"
+                               rel="noopener noreferrer" 
+                               target="_blank">
+                                View Project
+                            </a>
+                        </footer>
+                    </article>
+
+                    <!-- Project Card: Tech Haven Electronics -->
+                    <article class="project-card" role="article">
+                        <header class="card-header">
+                            <h3 class="card-title">Tech Haven Electronics</h3>
+                            <span class="card-tag">SQL Database</span>
+                        </header>
+                        
+                        <figure class="card-image">
+                            <img src="images/image8.jpg" 
+                                 alt="Tech Haven Electronics SQL database schema and query results"
+                                 loading="lazy">
+                        </figure>
+                        
+                        <div class="card-body">
+                            <p class="card-description">
+                                SQL-based data analysis for a popular electronics store to identify customer patterns and optimize product recommendations.
+                            </p>
+                            <ul class="card-highlights">
+                                <li>SQL Database Design</li>
+                                <li>Customer Transaction Analysis</li>
+                                <li>Product Performance Metrics</li>
+                            </ul>
+                        </div>
+                        
+                        <footer class="card-footer">
+                            <a href="https://drive.google.com/file/d/1qSluDU6gf8HTgXfC5xoC_Kjc5DdlGYH2/view?usp=drive_link" 
+                               class="button button-sm"
+                               rel="noopener noreferrer" 
+                               target="_blank">
+                                Full Story
+                            </a>
+                        </footer>
+                    </article>
+
+                    <!-- Project Card: AS-IS Travel Expense -->
+                    <article class="project-card" role="article">
+                        <header class="card-header">
+                            <h3 class="card-title">AS-IS Travel Expense</h3>
+                            <span class="card-tag">Process Mapping</span>
+                        </header>
+                        
+                        <figure class="card-image">
+                            <img src="images/image9.jpg" 
+                                 alt="AS-IS process flow diagram for employee travel expense reimbursement"
+                                 loading="lazy">
+                        </figure>
+                        
+                        <div class="card-body">
+                            <p class="card-description">
+                                Comprehensive AS-IS process flow visualization for employee travel expense reimbursement using Lucidchart, demonstrating process mapping expertise.
+                            </p>
+                            <ul class="card-highlights">
+                                <li>Process Flow Mapping</li>
+                                <li>Lucidchart Visualization</li>
+                                <li>Organizational Efficiency</li>
+                            </ul>
+                        </div>
+                        
+                        <footer class="card-footer">
+                            <a href="https://drive.google.com/file/d/1qSluDU6gf8HTgXfC5xoC_Kjc5DdlGYH2/view?usp=drive_link" 
+                               class="button button-sm"
+                               rel="noopener noreferrer" 
+                               target="_blank">
+                                View Project
+                            </a>
+                        </footer>
+                    </article>
+                </section>
+            </section>
+        </main>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <h2 class="section-heading">Get In Touch</h2>
+            <div class="contact-grid">
+                <div class="contact-block">
+                    <h3>Location</h3>
+                    <p>Darlington, United Kingdom</p>
+                </div>
+                
+                <div class="contact-block">
+                    <h3>Email</h3>
+                    <p>
+                        <a href="mailto:eoaadenuga@gmail.com">eoaadenuga@gmail.com</a>
+                    </p>
+                </div>
+                
+                <div class="contact-block">
+                    <h3>Social</h3>
+                    <ul class="social-links">
+                        <li>
+                            <a href="https://www.
