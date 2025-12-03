@@ -1,5 +1,5 @@
 🙋‍♂Introducing myself
-🌟 Business Analyst | Quality Assurance Professional
+**🌟 Business Analyst | Quality Assurance Professional**
 
 Hi, Welcome to my portfolio where I showcase my projects, achievements, and passion for data science! 😊
 
