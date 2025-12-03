@@ -12,15 +12,15 @@ Beyond my technical skills, I bring a strong focus on clear communication, stake
 
 If you are seeking a results-driven Business Analyst and Testing professional with a proven track record of driving quality, efficiency and stakeholder satisfaction, I’d be happy to connect.
 
-⚡Core Competencies:
+**⚡Core Competencies:**
 
-Business Analysis: Requirements engineering, stakeholder analysis, process design, solution validation, change enablement
+**Business Analysis:** Requirements engineering, stakeholder analysis, process design, solution validation, change enablement
 
-Process Improvement: Operational efficiency analysis, workflow automation, bottleneck resolution, continuous improvement
+**Process Improvement:** Operational efficiency analysis, workflow automation, bottleneck resolution, continuous improvement
 
-Data-Driven Analysis: SQL for process analytics, requirements traceability, compliance reporting
+**Data-Driven Analysis:** SQL for process analytics, requirements traceability, compliance reporting
 
-Stakeholder Leadership: Executive communication, cross-functional alignment, change management
+**Stakeholder Leadership:** Executive communication, cross-functional alignment, change management
 
 🌍 Connect with Me
 GitHub LinkedIn Email
@@ -28,4 +28,4 @@ GitHub LinkedIn Email
 💼Portfolio 👇
 Disclaimer⚠️: The datasets, analyses, and reports presented in this portfolio are synthetic and created solely for demonstration purposes. They do not contain real proprietary, confidential, or sensitive information from any company, institution, or individual. These examples are designed to showcase my technical skills in data science and data analysis while adhering to ethical guidelines and respecting data privacy.
 
-Pinned
+
