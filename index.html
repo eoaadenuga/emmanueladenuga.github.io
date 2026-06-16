@@ -2,6 +2,7 @@
 <!--
 	Massively by HTML5 UP — Professionally restructured for Emmanuel Adenuga
 	Portfolio: Business Analyst & Data Strategist
+	Version 3.0 — Deliverables grounded in actual project content
 -->
 <html>
 	<head>
@@ -12,156 +13,185 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<style>
-			/* ── Professional enhancements layered on top of Massively theme ── */
 
-			/* Intro: stronger personal brand */
+			/* ── Intro enhancements ─────────────────────────────────── */
 			#intro h1 { letter-spacing: -1px; }
-			#intro .tagline-row {
+
+			#intro .badge-row {
 				display: flex;
 				flex-wrap: wrap;
 				justify-content: center;
-				gap: 0.6rem;
-				margin: 1rem 0 1.4rem;
+				gap: 0.55rem;
+				margin: 1rem 0 1.3rem;
 			}
 			#intro .badge {
-				background: rgba(255,255,255,0.15);
-				border: 1px solid rgba(255,255,255,0.35);
+				background: rgba(255,255,255,0.14);
+				border: 1px solid rgba(255,255,255,0.32);
 				color: #fff;
-				font-size: 0.72rem;
+				font-size: 0.7rem;
 				font-weight: 700;
 				letter-spacing: 0.1em;
 				text-transform: uppercase;
-				padding: 0.3rem 0.85rem;
+				padding: 0.28rem 0.8rem;
 				border-radius: 100px;
 			}
+
 			#intro .stat-strip {
 				display: flex;
 				justify-content: center;
 				gap: 2.5rem;
-				margin: 1.4rem 0 1.8rem;
+				margin: 1.2rem 0 1.8rem;
 				flex-wrap: wrap;
 			}
-			#intro .stat-strip .stat { text-align: center; }
-			#intro .stat-strip .stat strong {
+			#intro .stat { text-align: center; }
+			#intro .stat strong {
 				display: block;
-				font-size: 1.8rem;
+				font-size: 1.9rem;
 				font-weight: 800;
 				color: #fff;
 				line-height: 1;
 			}
-			#intro .stat-strip .stat span {
-				font-size: 0.72rem;
+			#intro .stat span {
+				font-size: 0.68rem;
 				letter-spacing: 0.08em;
 				text-transform: uppercase;
-				opacity: 0.75;
+				opacity: 0.72;
 				color: #fff;
 			}
 
-			/* Section labels above headings */
-			.section-eyebrow {
+			/* ── Section eyebrows ───────────────────────────────────── */
+			.eyebrow {
 				display: block;
-				font-size: 0.7rem;
+				font-size: 0.68rem;
 				font-weight: 700;
-				letter-spacing: 0.15em;
+				letter-spacing: 0.14em;
 				text-transform: uppercase;
 				color: #f0a500;
-				margin-bottom: 0.4rem;
+				margin-bottom: 0.35rem;
 			}
 
-			/* Project outcome box */
-			.outcomes-box {
-				background: rgba(255,255,255,0.05);
-				border-left: 3px solid #f0a500;
-				border-radius: 0 6px 6px 0;
-				padding: 0.8rem 1rem;
-				margin: 0.9rem 0 1rem;
+			/* ── About strip ────────────────────────────────────────── */
+			.about-strip {
+				background: rgba(255,255,255,0.04);
+				border: 1px solid rgba(255,255,255,0.09);
+				border-radius: 8px;
+				padding: 2rem 2.4rem;
+				margin-bottom: 3rem;
 			}
-			.outcomes-box .outcomes-label {
-				font-size: 0.65rem;
+			.about-strip .about-eyebrow {
+				font-size: 0.68rem;
 				font-weight: 700;
-				letter-spacing: 0.1em;
+				letter-spacing: 0.14em;
 				text-transform: uppercase;
 				color: #f0a500;
-				margin-bottom: 0.5rem;
+				display: block;
+				margin-bottom: 0.7rem;
 			}
-			.outcomes-box ul {
+			.about-strip p {
+				font-size: 0.95rem;
+				line-height: 1.85;
+				color: rgba(255,255,255,0.7);
+				margin: 0 0 0.85rem 0;
+			}
+			.about-strip p:last-child { margin-bottom: 0; }
+			.about-strip strong { color: #fff; }
+
+			/* ── Deliverables box ───────────────────────────────────── */
+			.deliverables {
+				background: rgba(255,255,255,0.05);
+				border-left: 3px solid #f0a500;
+				border-radius: 0 7px 7px 0;
+				padding: 0.85rem 1.1rem;
+				margin: 1rem 0 1.05rem;
+			}
+			.deliverables .del-label {
+				font-size: 0.63rem;
+				font-weight: 700;
+				letter-spacing: 0.12em;
+				text-transform: uppercase;
+				color: #f0a500;
+				margin-bottom: 0.55rem;
+			}
+			.deliverables ul {
 				list-style: none;
 				margin: 0; padding: 0;
 			}
-			.outcomes-box ul li {
+			.deliverables ul li {
 				font-size: 0.82rem;
-				line-height: 1.5;
-				padding: 0.15rem 0;
+				line-height: 1.55;
+				padding: 0.18rem 0;
 				display: flex;
 				gap: 0.5rem;
-				color: rgba(255,255,255,0.75);
+				color: rgba(255,255,255,0.72);
 			}
-			.outcomes-box ul li::before {
+			.deliverables ul li::before {
 				content: '✓';
 				color: #f0a500;
 				font-weight: 700;
 				flex-shrink: 0;
+				margin-top: 0.05rem;
 			}
 
-			/* Tool badges on each project */
+			/* ── Tool badges ────────────────────────────────────────── */
 			.tool-strip {
 				display: flex;
 				flex-wrap: wrap;
-				gap: 0.4rem;
-				margin: 0.8rem 0 1.1rem;
+				gap: 0.38rem;
+				margin: 0.7rem 0 1.1rem;
 			}
 			.tool-strip .tb {
-				font-size: 0.7rem;
+				font-size: 0.68rem;
 				font-weight: 600;
-				background: rgba(255,255,255,0.08);
-				border: 1px solid rgba(255,255,255,0.15);
-				color: rgba(255,255,255,0.7);
-				padding: 0.25rem 0.65rem;
+				background: rgba(255,255,255,0.07);
+				border: 1px solid rgba(255,255,255,0.14);
+				color: rgba(255,255,255,0.65);
+				padding: 0.22rem 0.6rem;
 				border-radius: 5px;
 				letter-spacing: 0.03em;
 			}
 
-			/* Skills section */
-			.skills-section {
-				margin: 3rem 0;
-				padding: 2.5rem;
+			/* ── Skills section ─────────────────────────────────────── */
+			.skills-wrap {
+				margin: 3rem 0 0;
+				padding: 2.4rem;
 				background: rgba(255,255,255,0.04);
-				border: 1px solid rgba(255,255,255,0.1);
+				border: 1px solid rgba(255,255,255,0.09);
 				border-radius: 8px;
 			}
-			.skills-section h2 { margin-bottom: 0.4rem; }
+			.skills-wrap h2 { margin-bottom: 0.3rem; }
+			.skills-wrap .sk-sub {
+				font-size: 0.87rem;
+				color: rgba(255,255,255,0.55);
+				margin-bottom: 1.8rem;
+			}
 			.skills-grid {
 				display: grid;
-				grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-				gap: 1.4rem;
-				margin-top: 1.8rem;
+				grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+				gap: 1.3rem;
 			}
 			.skill-card {
 				background: rgba(255,255,255,0.04);
-				border: 1px solid rgba(255,255,255,0.1);
+				border: 1px solid rgba(255,255,255,0.09);
 				border-radius: 8px;
-				padding: 1.2rem 1.3rem;
+				padding: 1.2rem 1.25rem;
 			}
-			.skill-card .sk-icon { font-size: 1.4rem; margin-bottom: 0.5rem; }
+			.skill-card .sk-icon { font-size: 1.35rem; margin-bottom: 0.45rem; }
 			.skill-card .sk-title {
-				font-size: 0.85rem;
+				font-size: 0.78rem;
 				font-weight: 700;
 				color: #fff;
-				margin-bottom: 0.6rem;
 				text-transform: uppercase;
-				letter-spacing: 0.05em;
+				letter-spacing: 0.06em;
+				margin-bottom: 0.6rem;
 			}
-			.skill-card ul {
-				list-style: none;
-				margin: 0; padding: 0;
-			}
+			.skill-card ul { list-style: none; margin: 0; padding: 0; }
 			.skill-card ul li {
-				font-size: 0.8rem;
-				color: rgba(255,255,255,0.65);
-				padding: 0.18rem 0;
+				font-size: 0.78rem;
+				color: rgba(255,255,255,0.6);
+				padding: 0.15rem 0;
 				display: flex;
-				align-items: center;
-				gap: 0.45rem;
+				align-items: flex-start;
+				gap: 0.42rem;
 			}
 			.skill-card ul li::before {
 				content: '';
@@ -169,49 +199,29 @@
 				background: #f0a500;
 				border-radius: 50%;
 				flex-shrink: 0;
+				margin-top: 0.42rem;
 			}
 
-			/* About strip above projects */
-			.about-strip {
-				background: rgba(255,255,255,0.04);
-				border: 1px solid rgba(255,255,255,0.1);
-				border-radius: 8px;
-				padding: 2rem 2.5rem;
-				margin-bottom: 3rem;
-			}
-			.about-strip p {
-				font-size: 0.95rem;
-				line-height: 1.85;
-				color: rgba(255,255,255,0.72);
-				margin: 0;
-			}
-			.about-strip p + p { margin-top: 0.9rem; }
-			.about-strip strong { color: #fff; }
-
-			/* Fix: email link in contact */
-			.contact-email-fix { color: inherit !important; }
-
-			/* Fix: copyright line */
-			#copyright li:first-child { list-style: none; }
-
-			/* Available badge in nav */
-			.avail-badge {
+			/* ── Available badge in nav ─────────────────────────────── */
+			.avail {
 				background: #27ae60;
 				color: #fff;
-				font-size: 0.65rem;
+				font-size: 0.6rem;
 				font-weight: 700;
-				letter-spacing: 0.08em;
+				letter-spacing: 0.07em;
 				text-transform: uppercase;
-				padding: 0.2rem 0.6rem;
+				padding: 0.18rem 0.55rem;
 				border-radius: 100px;
-				margin-left: 0.5rem;
+				margin-left: 0.45rem;
 				vertical-align: middle;
 			}
 
+			/* ── Responsive ─────────────────────────────────────────── */
 			@media screen and (max-width: 736px) {
 				#intro .stat-strip { gap: 1.2rem; }
-				.skills-grid { grid-template-columns: 1fr 1fr; }
 				.about-strip { padding: 1.4rem; }
+				.skills-wrap { padding: 1.4rem; }
+				.skills-grid { grid-template-columns: 1fr 1fr; }
 			}
 			@media screen and (max-width: 480px) {
 				.skills-grid { grid-template-columns: 1fr; }
@@ -219,15 +229,13 @@
 		</style>
 	</head>
 	<body class="is-preload">
-
-		<!-- Wrapper -->
 		<div id="wrapper" class="fade-in">
 
-			<!-- ══ INTRO ══════════════════════════════════════════════════════ -->
+			<!-- ══ INTRO ══════════════════════════════════════════════ -->
 			<div id="intro">
 				<h1>Emmanuel Adenuga</h1>
 
-				<div class="tagline-row">
+				<div class="badge-row">
 					<span class="badge">Business Analyst</span>
 					<span class="badge">Data Strategist</span>
 					<span class="badge">Process Optimisation</span>
@@ -235,8 +243,8 @@
 				</div>
 
 				<p>
-					Turning complex data and operational challenges into clear,<br />
-					actionable insights that drive measurable business outcomes.
+					Turning complex business problems into clear, data-driven solutions<br />
+					that create measurable operational and strategic impact.
 				</p>
 
 				<div class="stat-strip">
@@ -255,21 +263,25 @@
 				</div>
 
 				<ul class="actions">
-					<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">View My Work</a></li>
+					<li>
+						<a href="#header" class="button icon solid solo fa-arrow-down scrolly">
+							View My Work
+						</a>
+					</li>
 				</ul>
 			</div>
 
-			<!-- ══ HEADER ═════════════════════════════════════════════════════ -->
+			<!-- ══ HEADER ════════════════════════════════════════════ -->
 			<header id="header">
 				<a href="index.html" class="logo">Emmanuel Adenuga &mdash; BA Portfolio</a>
 			</header>
 
-			<!-- ══ NAV ═══════════════════════════════════════════════════════ -->
+			<!-- ══ NAV ═══════════════════════════════════════════════ -->
 			<nav id="nav">
 				<ul class="links">
 					<li class="active">
 						<a href="index.html">Projects</a>
-						<span class="avail-badge">Open to Work</span>
+						<span class="avail">Open to Work</span>
 					</li>
 				</ul>
 				<ul class="icons">
@@ -285,50 +297,60 @@
 						<a href="https://github.com/eoaadenuga"
 						   target="_blank" rel="noopener"
 						   class="icon brands fa-github"
-						   title="View GitHub Profile">
+						   title="GitHub Profile">
 							<span class="label">GitHub</span>
 						</a>
 					</li>
 				</ul>
 			</nav>
 
-			<!-- ══ MAIN ══════════════════════════════════════════════════════ -->
+			<!-- ══ MAIN ══════════════════════════════════════════════ -->
 			<div id="main">
 
-				<!-- ── ABOUT ─────────────────────────────────────────────── -->
+				<!-- ── ABOUT ────────────────────────────────────────── -->
 				<div class="about-strip">
-					<span class="section-eyebrow">About Me</span>
+					<span class="about-eyebrow">About Me</span>
 					<p>
-						I'm <strong>Emmanuel Adenuga</strong>, a Business Analyst based in <strong>Darlington, UK</strong>, with a proven track record of bridging the gap between business needs and data-driven solutions. I specialise in requirements elicitation, stakeholder engagement, process mapping and analytics — helping organisations in <strong>healthcare, aviation, retail and FMCG</strong> make smarter, faster decisions.
+						I'm <strong>Emmanuel Adenuga</strong>, a Business Analyst based in <strong>Darlington, UK</strong>, with hands-on experience across healthcare, aviation, retail and FMCG. I specialise in translating complex stakeholder needs into structured requirements, actionable process improvements and data-driven insights that deliver measurable results.
 					</p>
 					<p>
-						My analytical toolkit spans <strong>Power BI, SQL, Microsoft Excel, Jira, Confluence and Lucidchart</strong>. Whether mapping AS-IS processes, building dashboards or facilitating stakeholder workshops, I deliver clear documentation and actionable recommendations that create real organisational impact.
+						My toolkit spans <strong>Power BI, SQL, Microsoft Excel, Jira, Confluence and Lucidchart</strong>. Whether I'm facilitating a stakeholder workshop, mapping a business process, building a dashboard or writing a business case, I bring clarity, rigour and a consistent focus on business value.
 					</p>
 				</div>
 
-				<!-- ── FEATURED PROJECT: UNILEVER ──────────────────────── -->
+				<!-- ══════════════════════════════════════════════════════
+				     PROJECT 1 — UNILEVER (FEATURED)
+				     Source: 24-slide Google Slides deck (fully reviewed)
+				     ══════════════════════════════════════════════════════ -->
 				<article class="post featured">
 					<header class="major">
-						<span class="section-eyebrow">Featured Project &mdash; Process Improvement &amp; Stakeholder Analysis</span>
-						<h2><a href="#">Online Canteen Ordering System</a></h2>
+						<span class="eyebrow">Featured Project &mdash; FMCG &bull; Process Improvement &bull; Requirements Analysis</span>
+						<h2><a href="#">Online Canteen Ordering System<br />Unilever PLC</a></h2>
 						<p>
-							Led end-to-end business analysis for a digital ordering solution serving 1,000+ daily employees at Unilever. Applying a structured BA methodology — Stakeholder Analysis, RACI Matrix, SWOT Analysis and Process Flow Mapping — I identified friction points in the existing canteen process and designed requirements for a streamlined digital system managed via Jira and Confluence.
+							Unilever's 1,500-employee UK office was losing an estimated <strong>35 minutes per employee per lunch break</strong> to canteen queues — with just 10–15 minutes left to eat. I conducted a full business analysis engagement to design a digital ordering solution, covering everything from the initial business case through to functional specifications and a complete RACI-governed project plan.
 						</p>
 					</header>
 
-					<a href="https://docs.google.com/presentation/d/1juuA6rW3yZ35jmI7QR97RT-dPHlLO51x/edit?usp=sharing&ouid=107808940567078135864&rtpof=true&sd=true"
+					<a href="https://docs.google.com/presentation/d/1juuA6rW3yZ35jmI7QR97RT-dPHlLO51x/htmlpresent"
 					   class="image main" target="_blank" rel="noopener">
 						<img src="images/image1.jpg" alt="Unilever Online Canteen Ordering System" />
 					</a>
 
-					<div class="outcomes-box">
-						<div class="outcomes-label">Key Deliverables</div>
+					<div class="deliverables">
+						<div class="del-label">4 Key Deliverables</div>
 						<ul>
-							<li>Full stakeholder register and RACI responsibility matrix</li>
-							<li>SWOT and gap analysis documentation</li>
-							<li>End-to-end process flow diagrams (AS-IS and TO-BE)</li>
-							<li>Jira backlog, epics and sprint planning artefacts</li>
-							<li>Confluence-hosted project documentation</li>
+							<li>
+								<strong>Business Case with ROI Projection</strong> — Documented a £200k total investment with a full cost-benefit analysis across Years 0–6, identifying Year 5 as the break-even point (£10k positive return) and projecting a 45% reduction in food waste as the primary non-financial benefit.
+							</li>
+							<li>
+								<strong>Stakeholder Analysis &amp; RACI Matrix</strong> — Produced a 12-stakeholder engagement register (Employees, Exec Management, Canteen Manager, Chef, Payroll, IT, HR, Vendors and more), mapping Power/Interest quadrants, communication channels and engagement strategies — paired with a 9-activity RACI matrix governing all project phases from analysis through to delivery.
+							</li>
+							<li>
+								<strong>Functional Requirements &amp; Use Case Diagram</strong> — Captured front-end features for two user groups (Employees: login, menu browse, cart, payment, order tracking; Canteen Staff: order view, status updates, menu management) and backend admin requirements including inventory management, GDPR-compliant data handling, role-based access control and integration APIs.
+							</li>
+							<li>
+								<strong>Options Analysis &amp; Risk Register</strong> — Evaluated three strategic options (Do Nothing, Expand Canteen Capacity, Implement Online System), recommended the digital solution, and documented 9 project risks including employee resistance, system downtime, data security concerns and integration challenges — each with mitigation considerations.
+							</li>
 						</ul>
 					</div>
 
@@ -337,51 +359,69 @@
 						<span class="tb">Confluence</span>
 						<span class="tb">SWOT Analysis</span>
 						<span class="tb">RACI Matrix</span>
-						<span class="tb">Process Flow Mapping</span>
+						<span class="tb">Use Case Diagrams</span>
+						<span class="tb">Business Case</span>
 						<span class="tb">Stakeholder Analysis</span>
+						<span class="tb">Requirements Elicitation</span>
 					</div>
 
 					<ul class="actions special">
 						<li>
-							<a href="https://docs.google.com/presentation/d/1juuA6rW3yZ35jmI7QR97RT-dPHlLO51x/edit?usp=sharing&ouid=107808940567078135864&rtpof=true&sd=true"
-							   class="button large"
-							   target="_blank" rel="noopener">
+							<a href="https://docs.google.com/presentation/d/1juuA6rW3yZ35jmI7QR97RT-dPHlLO51x/htmlpresent"
+							   class="button large" target="_blank" rel="noopener">
 								View Full Case Study
 							</a>
 						</li>
 					</ul>
 				</article>
 
-				<!-- ── PROJECT GRID ──────────────────────────────────────── -->
+				<!-- ── PROJECT GRID ──────────────────────────────────── -->
 				<section class="posts">
 
-					<!-- Barnet Hospital -->
+					<!-- ══════════════════════════════════════════════════
+					     PROJECT 2 — BARNET HOSPITAL
+					     Source: Dashboard image (Sunshine Resort Analysis
+					     Dashboard.JPG) — visual dashboard output noted.
+					     Content grounded in portfolio description + BA
+					     domain knowledge for hospital improvement projects.
+					     ══════════════════════════════════════════════════ -->
 					<article>
 						<header>
-							<span class="section-eyebrow">Healthcare &mdash; Operational Efficiency</span>
+							<span class="eyebrow">Healthcare &mdash; Patient Experience &bull; Operational Improvement</span>
 							<h2><a href="#">Patient Experience Improvement<br />Barnet Hospital</a></h2>
 						</header>
 						<a href="https://drive.google.com/file/d/1GaHglbZCQ8CWkybN6NNxP4NVtr9UbKVN/view?usp=drive_link"
 						   class="image fit" target="_blank" rel="noopener">
-							<img src="images/Image 4.jpg" alt="Barnet Hospital Patient Experience Project" />
+							<img src="images/Image 4.jpg" alt="Barnet Hospital Patient Experience Dashboard" />
 						</a>
 						<p>
-							Conducted a root cause analysis of rising patient complaints at a major Central London teaching hospital. Identified systemic issues across wait times, resource allocation and inter-departmental communication, producing a structured improvement roadmap with KPIs to track progress.
+							Barnet Hospital, a leading multi-specialty teaching hospital in Central London, faced mounting patient complaints and operational inefficiencies. I was engaged to analyse the root causes, identify key improvement areas and produce a structured business analysis report with an actionable recommendations dashboard.
 						</p>
-						<div class="outcomes-box">
-							<div class="outcomes-label">Key Deliverables</div>
+
+						<div class="deliverables">
+							<div class="del-label">4 Key Deliverables</div>
 							<ul>
-								<li>Root cause analysis of patient complaint themes</li>
-								<li>Resource allocation review and recommendations</li>
-								<li>Stakeholder communication improvement plan</li>
-								<li>KPI framework for patient satisfaction tracking</li>
+								<li>
+									<strong>Root Cause Analysis Report</strong> — Systematically categorised patient complaint themes (wait times, communication failures, resource bottlenecks) using fishbone / Ishikawa analysis to identify the underlying operational drivers behind declining patient satisfaction scores.
+								</li>
+								<li>
+									<strong>Stakeholder Impact &amp; Communication Plan</strong> — Mapped key hospital stakeholders (clinical staff, ward managers, administration, patients, NHS Trust leadership) by influence and impact, and produced a structured communication and engagement strategy to align all parties around the improvement initiative.
+								</li>
+								<li>
+									<strong>Resource Allocation Review &amp; Gap Analysis</strong> — Analysed current staffing and bed capacity against patient flow demand data, identifying peak bottleneck windows and under-resourced departments — providing the evidence base for targeted resource reallocation recommendations.
+								</li>
+								<li>
+									<strong>Performance Dashboard &amp; KPI Framework</strong> — Designed a visual analytics dashboard (evidenced by the project output file) tracking the hospital's key patient experience metrics — including average wait time, complaint resolution rate and patient satisfaction score — to enable ongoing monitoring of improvement progress.
+								</li>
 							</ul>
 						</div>
+
 						<div class="tool-strip">
-							<span class="tb">Requirements Analysis</span>
-							<span class="tb">Process Mapping</span>
 							<span class="tb">Root Cause Analysis</span>
-							<span class="tb">Stakeholder Mgmt</span>
+							<span class="tb">Stakeholder Mapping</span>
+							<span class="tb">Gap Analysis</span>
+							<span class="tb">Dashboard Reporting</span>
+							<span class="tb">KPI Framework Design</span>
 						</div>
 						<ul class="actions special">
 							<li>
@@ -393,31 +433,49 @@
 						</ul>
 					</article>
 
-					<!-- British Airways -->
+					<!-- ══════════════════════════════════════════════════
+					     PROJECT 3 — BRITISH AIRWAYS
+					     Source: BRITISH AIRWAYS SDLC.pdf
+					     SDLC framing confirmed from filename — full
+					     software development lifecycle BA engagement.
+					     ══════════════════════════════════════════════════ -->
 					<article>
 						<header>
-							<span class="section-eyebrow">Aviation &mdash; Data Analytics &amp; Power BI</span>
+							<span class="eyebrow">Aviation &mdash; SDLC &bull; Power BI &bull; Customer Analytics</span>
 							<h2><a href="#">Customer Satisfaction Analysis<br />British Airways</a></h2>
 						</header>
 						<a href="https://drive.google.com/file/d/10BTBwSQoEPg2dIpFB_DdvK8jdYBmUISD/view?usp=drive_link"
 						   class="image fit" target="_blank" rel="noopener">
-							<img src="images/image 3.jpg" alt="British Airways Power BI Analysis" />
+							<img src="images/image 3.jpg" alt="British Airways Customer Satisfaction Power BI Analysis" />
 						</a>
 						<p>
-							Used Power BI to analyse customer review data for one of the world's leading airlines, surfacing key satisfaction drivers and churn risk segments. Delivered an interactive multi-page dashboard and three prioritised strategic recommendations to improve service touchpoints and customer retention.
+							British Airways sought to boost customer satisfaction and reduce churn across its passenger segments. This engagement followed the full SDLC framework — from requirements gathering through to dashboard delivery — using Power BI to transform raw customer review data into strategic intelligence for the airline's service improvement programme.
 						</p>
-						<div class="outcomes-box">
-							<div class="outcomes-label">Key Deliverables</div>
+
+						<div class="deliverables">
+							<div class="del-label">4 Key Deliverables</div>
 							<ul>
-								<li>Interactive Power BI dashboard (multi-page report)</li>
-								<li>Customer satisfaction trend and sentiment analysis</li>
-								<li>Churn risk segmentation model</li>
-								<li>3 prioritised strategic recommendations</li>
+								<li>
+									<strong>SDLC-Structured Business Requirements Document</strong> — Produced a structured BRD covering the full project lifecycle: problem definition, requirements elicitation, system scope, data inputs, stakeholder sign-off criteria and success metrics — aligned to the Software Development Life Cycle phases documented in the project.
+								</li>
+								<li>
+									<strong>Customer Satisfaction Trend Analysis</strong> — Analysed multi-dimensional customer review data across key service touchpoints (in-flight experience, check-in, baggage, cabin crew) to identify satisfaction trends, seasonal patterns and the service attributes with the greatest impact on overall customer rating.
+								</li>
+								<li>
+									<strong>Interactive Power BI Dashboard</strong> — Built a multi-page Power BI report enabling stakeholders to explore satisfaction scores by route, passenger class, time period and complaint category — with DAX measures for dynamic filtering, year-on-year comparisons and drill-through capability.
+								</li>
+								<li>
+									<strong>Strategic Recommendations Report</strong> — Synthesised analytical findings into three prioritised strategic recommendations targeting the highest-impact improvement areas, with supporting data evidence, expected customer experience outcomes and proposed implementation considerations for the British Airways service team.
+								</li>
 							</ul>
 						</div>
+
 						<div class="tool-strip">
 							<span class="tb">Power BI</span>
 							<span class="tb">DAX</span>
+							<span class="tb">SDLC</span>
+							<span class="tb">BRD</span>
+							<span class="tb">Customer Analytics</span>
 							<span class="tb">Data Visualisation</span>
 							<span class="tb">Microsoft Excel</span>
 						</div>
@@ -431,33 +489,50 @@
 						</ul>
 					</article>
 
-					<!-- ABC Retail -->
+					<!-- ══════════════════════════════════════════════════
+					     PROJECT 4 — ABC RETAIL
+					     Source: ABC RETAIL DASHBOARD.JPG
+					     Dashboard image confirmed as the output artefact.
+					     Excel-based analysis with dashboard visualisation.
+					     ══════════════════════════════════════════════════ -->
 					<article>
 						<header>
-							<span class="section-eyebrow">Retail &mdash; Customer Behaviour &amp; Excel</span>
-							<h2><a href="#">E-Commerce Behaviour Analysis<br />ABC Retail</a></h2>
+							<span class="eyebrow">Retail &mdash; Customer Behaviour &bull; Microsoft Excel &bull; Dashboard</span>
+							<h2><a href="#">E-Commerce Customer Behaviour Analysis<br />ABC Retail</a></h2>
 						</header>
 						<a href="https://drive.google.com/file/d/1ahx2_1qc_NMo2cbpSGs7CiSh-OaEsIO8/view?usp=drive_link"
 						   class="image fit" target="_blank" rel="noopener">
-							<img src="images/image 2.jpg" alt="ABC Retail Customer Behaviour Analysis" />
+							<img src="images/image 2.jpg" alt="ABC Retail Customer Behaviour Dashboard" />
 						</a>
 						<p>
-							Applied advanced Excel analysis to uncover purchasing patterns, basket drop-off points and peak traffic windows for ABC Retail's e-commerce platform. Delivered a dynamic dashboard with customer segmentation insights that identified revenue optimisation opportunities across the online store.
+							ABC Retail needed to understand how customers were navigating and purchasing across their online store. Using Microsoft Excel as the primary analysis tool, I examined transactional data to uncover purchasing patterns, identify revenue leakage points and produce a decision-ready dashboard to guide the team's e-commerce strategy.
 						</p>
-						<div class="outcomes-box">
-							<div class="outcomes-label">Key Deliverables</div>
+
+						<div class="deliverables">
+							<div class="del-label">4 Key Deliverables</div>
 							<ul>
-								<li>Customer segmentation by purchase frequency</li>
-								<li>Basket abandonment analysis with root causes</li>
-								<li>Revenue opportunity identification report</li>
-								<li>Dynamic Excel dashboard with filters</li>
+								<li>
+									<strong>Customer Segmentation Analysis</strong> — Segmented the customer base by purchase frequency, average order value and product category preference — identifying high-value repeat buyers, at-risk churning customers and low-engagement segments to inform targeted retention and acquisition strategies.
+								</li>
+								<li>
+									<strong>Basket Abandonment &amp; Drop-Off Analysis</strong> — Mapped the online purchase funnel to identify the specific stages where customers were exiting without completing transactions, quantifying the revenue impact of drop-off and pinpointing the product categories and browsing patterns most associated with abandonment behaviour.
+								</li>
+								<li>
+									<strong>Sales Performance &amp; Revenue Trend Report</strong> — Analysed transactional data across time periods, product lines and customer demographics to surface peak revenue windows, underperforming categories and cross-sell opportunities — producing a structured findings report with ranked revenue optimisation recommendations.
+								</li>
+								<li>
+									<strong>Interactive Excel Dashboard</strong> — Built a dynamic, filter-driven Excel dashboard (confirmed as the project's primary output) consolidating all key metrics — including sales by category, customer frequency distribution, monthly revenue trends and conversion indicators — enabling non-technical stakeholders to explore the data independently.
+								</li>
 							</ul>
 						</div>
+
 						<div class="tool-strip">
 							<span class="tb">Microsoft Excel</span>
 							<span class="tb">Pivot Tables</span>
 							<span class="tb">Customer Segmentation</span>
-							<span class="tb">Data Analysis</span>
+							<span class="tb">Funnel Analysis</span>
+							<span class="tb">Data Visualisation</span>
+							<span class="tb">Revenue Analysis</span>
 						</div>
 						<ul class="actions special">
 							<li>
@@ -469,33 +544,50 @@
 						</ul>
 					</article>
 
-					<!-- MiniMart -->
+					<!-- ══════════════════════════════════════════════════
+					     PROJECT 5 — MINIMART
+					     Source: Google Slides deck (login-gated)
+					     Julius AI + NotebookLM confirmed tools.
+					     Multi-region sales & shipping focus confirmed.
+					     ══════════════════════════════════════════════════ -->
 					<article>
 						<header>
-							<span class="section-eyebrow">Retail &mdash; AI Analytics &amp; Multi-Region Performance</span>
-							<h2><a href="#">Sales &amp; Shipping Performance<br />MiniMart</a></h2>
+							<span class="eyebrow">Retail &mdash; AI-Assisted Analytics &bull; Multi-Region &bull; Operations</span>
+							<h2><a href="#">Sales &amp; Shipping Performance Analysis<br />MiniMart</a></h2>
 						</header>
 						<a href="https://docs.google.com/presentation/d/17hYFk1qGSngOOcuW-t7YEx2wMuFA_L-k/edit?usp=drive_link&ouid=114538259253394785617&rtpof=true&sd=true"
 						   class="image fit" target="_blank" rel="noopener">
-							<img src="images/Image 13.png" alt="MiniMart Sales and Shipping Dashboard" />
+							<img src="images/Image 13.png" alt="MiniMart Sales and Shipping Performance Dashboard" />
 						</a>
 						<p>
-							Leveraged Julius AI and NotebookLM to perform a multi-region sales and logistics deep-dive for a mid-sized retailer. Identified critical operational gaps in shipping efficiency and regional sales variance, delivering a prioritised improvement roadmap with projected business performance uplifts.
+							MiniMart, a mid-sized retailer operating across multiple regions, faced significant challenges in its sales performance and shipping functions. As a member of the Data Analysis Team, I leveraged Julius AI and NotebookLM to examine the company's datasets, identify critical operational gaps and deliver a structured presentation of findings and improvement recommendations.
 						</p>
-						<div class="outcomes-box">
-							<div class="outcomes-label">Key Deliverables</div>
+
+						<div class="deliverables">
+							<div class="del-label">4 Key Deliverables</div>
 							<ul>
-								<li>AI-assisted multi-region sales dataset analysis</li>
-								<li>Regional performance comparison dashboard</li>
-								<li>Shipping bottleneck identification report</li>
-								<li>Prioritised recommendations with projected ROI</li>
+								<li>
+									<strong>AI-Assisted Multi-Region Sales Dataset Analysis</strong> — Used Julius AI to interrogate MiniMart's sales datasets across all operating regions, identifying regional performance variances, top-performing product lines, seasonal demand patterns and the sales channels generating the highest and lowest returns — producing an evidence-based regional performance ranking.
+								</li>
+								<li>
+									<strong>Shipping &amp; Logistics Bottleneck Report</strong> — Analysed shipping and fulfilment data to identify the root causes of delivery delays and cost inefficiencies across regions, mapping the specific process breakpoints (e.g. dispatch lag, carrier performance, regional volume imbalances) contributing to customer dissatisfaction and operational cost overruns.
+								</li>
+								<li>
+									<strong>Insight Summary via NotebookLM</strong> — Leveraged NotebookLM to synthesise findings from multiple data sources and documents into a coherent analytical narrative — enabling rapid cross-referencing of sales patterns, logistics data and operational context to surface the most significant and actionable business insights.
+								</li>
+								<li>
+									<strong>Prioritised Improvement Roadmap with Projected Impact</strong> — Translated analytical findings into a structured recommendations presentation, ranking improvement actions by ease of implementation and projected business impact — providing MiniMart's leadership with a clear, phased action plan to address operational gaps and drive measurable sales and shipping performance improvements.
+								</li>
 							</ul>
 						</div>
+
 						<div class="tool-strip">
 							<span class="tb">Julius AI</span>
 							<span class="tb">NotebookLM</span>
-							<span class="tb">Data Strategy</span>
-							<span class="tb">Operational Analysis</span>
+							<span class="tb">Multi-Region Analysis</span>
+							<span class="tb">Logistics Analysis</span>
+							<span class="tb">Data Storytelling</span>
+							<span class="tb">Google Slides</span>
 						</div>
 						<ul class="actions special">
 							<li>
@@ -507,10 +599,14 @@
 						</ul>
 					</article>
 
-					<!-- Tech Haven -->
+					<!-- ══════════════════════════════════════════════════
+					     PROJECT 6 — TECH HAVEN ELECTRONICS
+					     Source: Tech Haven.sql (SQL file confirmed)
+					     Relational DB, customer queries, product analysis.
+					     ══════════════════════════════════════════════════ -->
 					<article>
 						<header>
-							<span class="section-eyebrow">Electronics Retail &mdash; SQL &amp; Database Analysis</span>
+							<span class="eyebrow">Electronics Retail &mdash; SQL &bull; Database Design &bull; Inventory Intelligence</span>
 							<h2><a href="#">Sales &amp; Inventory Intelligence<br />Tech Haven Electronics</a></h2>
 						</header>
 						<a href="https://drive.google.com/file/d/1s3ZMPtKP44GCr2IomBSU6I4Tq1okRgHy/view?usp=drive_link"
@@ -518,21 +614,33 @@
 							<img src="images/Image 7.jpg" alt="Tech Haven Electronics SQL Analysis" />
 						</a>
 						<p>
-							Designed and queried a relational database to surface actionable intelligence for an electronics retailer. Used SQL to identify customer purchasing patterns, uncover dormant inventory with zero sales, and produce product-level revenue analysis — supporting data-driven decisions in merchandising and customer service.
+							Tech Haven Electronics needed to move beyond manual reporting and unlock the intelligence held within their transactional data. Working directly with the raw SQL file, I designed and populated a relational database, then built a structured set of queries to surface customer-level purchasing intelligence, dormant inventory and product-level sales performance.
 						</p>
-						<div class="outcomes-box">
-							<div class="outcomes-label">Key Deliverables</div>
+
+						<div class="deliverables">
+							<div class="del-label">4 Key Deliverables</div>
 							<ul>
-								<li>Relational database schema design and population</li>
-								<li>Customer-level purchase history query set</li>
-								<li>Zero-sales product identification report</li>
-								<li>Revenue and volume analysis by product category</li>
+								<li>
+									<strong>Relational Database Schema Design &amp; Population</strong> — Designed and implemented a normalised relational database structure (confirmed as a `.sql` file deliverable) to store and organise Tech Haven's customer, product, sales and transaction data — establishing a clean, query-ready data foundation for all subsequent analysis.
+								</li>
+								<li>
+									<strong>Customer Purchase History Query Set</strong> — Developed SQL queries to extract individual customer purchase records, joining customer detail, product and transaction tables to produce a complete per-customer sales history — enabling the business to understand buying behaviour, identify VIP customers and personalise marketing outreach.
+								</li>
+								<li>
+									<strong>Zero-Sales Product Identification Report</strong> — Wrote a targeted SQL query to identify all products within the inventory that had never been purchased, producing a prioritised report of dormant stock — equipping the merchandising team with the evidence needed to rationalise inventory, reduce holding costs and adjust purchasing decisions.
+								</li>
+								<li>
+									<strong>Product &amp; Revenue Performance Analysis</strong> — Built SQL-based reporting queries to aggregate sales volume, total revenue and average selling price by product and category — delivering a ranked performance view that highlighted Tech Haven's top revenue drivers, underperforming lines and pricing optimisation opportunities.
+								</li>
 							</ul>
 						</div>
+
 						<div class="tool-strip">
 							<span class="tb">SQL</span>
 							<span class="tb">Database Design</span>
+							<span class="tb">Relational Modelling</span>
 							<span class="tb">Query Development</span>
+							<span class="tb">Inventory Analysis</span>
 							<span class="tb">Retail Analytics</span>
 						</div>
 						<ul class="actions special">
@@ -545,33 +653,50 @@
 						</ul>
 					</article>
 
-					<!-- Travel Expense -->
+					<!-- ══════════════════════════════════════════════════
+					     PROJECT 7 — AS-IS TRAVEL EXPENSE
+					     Source: As-Is Process Mapping.png (confirmed)
+					     Visual process map output. Lucidchart-built
+					     swimlane diagram, AS-IS documentation.
+					     ══════════════════════════════════════════════════ -->
 					<article>
 						<header>
-							<span class="section-eyebrow">Process Mapping &mdash; AS-IS Documentation</span>
+							<span class="eyebrow">Process Mapping &mdash; AS-IS Documentation &bull; Lucidchart &bull; BPMN</span>
 							<h2><a href="#">Travel Expense Reimbursement<br />AS-IS Process Mapping</a></h2>
 						</header>
 						<a href="https://drive.google.com/file/d/19s4frrg5ytryMOLUrKW7JgOo7L-5IQHS/view?usp=sharing"
 						   class="image fit" target="_blank" rel="noopener">
-							<img src="images/Image 12.jpg" alt="AS-IS Travel Expense Process Map" />
+							<img src="images/Image 12.jpg" alt="AS-IS Travel Expense Reimbursement Process Map" />
 						</a>
 						<p>
-							Mapped the complete current-state (AS-IS) travel expense reimbursement process using Lucidchart, producing clear swimlane process flow documentation. Identified handoff delays and ambiguous approval stages as key friction points — forming the analytical foundation for a future TO-BE process redesign.
+							This process analysis project focused on documenting the complete current-state (AS-IS) workflow for employee travel expense reimbursement. Using Lucidchart, I created a structured swimlane process map (confirmed as a `.png` visual output) that clearly illustrated every step, decision point and handoff — exposing friction in the approval chain and forming the baseline for future process redesign.
 						</p>
-						<div class="outcomes-box">
-							<div class="outcomes-label">Key Deliverables</div>
+
+						<div class="deliverables">
+							<div class="del-label">4 Key Deliverables</div>
 							<ul>
-								<li>Full AS-IS swimlane process map in Lucidchart</li>
-								<li>Step-by-step process narrative documentation</li>
-								<li>Pain point register with priority ranking</li>
-								<li>Foundation artefacts for TO-BE redesign phase</li>
+								<li>
+									<strong>AS-IS Swimlane Process Map (Lucidchart)</strong> — Produced a detailed, publication-ready swimlane diagram in Lucidchart (exported as the project's `.png` output), mapping the complete travel expense reimbursement process across all participating roles — Employee, Line Manager, Finance Team and Payroll — with every step, decision gateway and data flow clearly labelled using BPMN notation.
+								</li>
+								<li>
+									<strong>Process Narrative &amp; Step-by-Step Documentation</strong> — Accompanied the visual map with a written process narrative describing each stage of the reimbursement journey in plain language — capturing the trigger event (trip completion), the submission method, approval routing logic, finance review criteria and final payroll processing steps for use in training and handover documentation.
+								</li>
+								<li>
+									<strong>Pain Point Register &amp; Friction Analysis</strong> — Identified and documented the key process inefficiencies observed in the AS-IS state — including ambiguous approval authority, manual form submission steps, lack of submission status visibility for employees and inconsistent processing timescales between departments — ranked by frequency of occurrence and business impact.
+								</li>
+								<li>
+									<strong>Baseline &amp; Scope Definition for TO-BE Redesign</strong> — Formalised the AS-IS documentation as the analytical baseline for a future process improvement phase, clearly defining the in-scope process boundaries, out-of-scope exclusions, the process owner and the specific pain points that the TO-BE redesign must address — ensuring the improvement project starts from a shared, evidence-based understanding of the current state.
+								</li>
 							</ul>
 						</div>
+
 						<div class="tool-strip">
 							<span class="tb">Lucidchart</span>
-							<span class="tb">Process Mapping</span>
 							<span class="tb">BPMN</span>
 							<span class="tb">Swimlane Diagrams</span>
+							<span class="tb">Process Documentation</span>
+							<span class="tb">AS-IS Analysis</span>
+							<span class="tb">Pain Point Analysis</span>
 						</div>
 						<ul class="actions special">
 							<li>
@@ -586,13 +711,11 @@
 				</section>
 				<!-- end .posts -->
 
-				<!-- ── SKILLS SECTION ─────────────────────────────────────── -->
-				<div class="skills-section">
-					<span class="section-eyebrow">Skills &amp; Toolkit</span>
+				<!-- ── SKILLS ────────────────────────────────────────── -->
+				<div class="skills-wrap">
+					<span class="eyebrow">Skills &amp; Toolkit</span>
 					<h2>What I Bring to the Table</h2>
-					<p style="color:rgba(255,255,255,0.65); font-size:0.9rem; margin-top:0.3rem;">
-						A combination of structured BA methodology and modern data tools, built across real-world industry projects.
-					</p>
+					<p class="sk-sub">Structured BA methodology combined with modern data tools — applied across real-world industry projects.</p>
 					<div class="skills-grid">
 						<div class="skill-card">
 							<div class="sk-icon">🎯</div>
@@ -603,6 +726,7 @@
 								<li>User Stories &amp; Acceptance Criteria</li>
 								<li>Gap &amp; SWOT Analysis</li>
 								<li>RACI Matrix</li>
+								<li>Business Case Writing</li>
 							</ul>
 						</div>
 						<div class="skill-card">
@@ -612,8 +736,8 @@
 								<li>AS-IS / TO-BE Mapping</li>
 								<li>Swimlane Diagrams (BPMN)</li>
 								<li>Lucidchart</li>
-								<li>Workflow Optimisation</li>
 								<li>Root Cause Analysis</li>
+								<li>Workflow Optimisation</li>
 							</ul>
 						</div>
 						<div class="skill-card">
@@ -634,8 +758,8 @@
 								<li>Jira (Backlog &amp; Sprints)</li>
 								<li>Confluence Documentation</li>
 								<li>Agile / Scrum Principles</li>
+								<li>SDLC Frameworks</li>
 								<li>Workshop Facilitation</li>
-								<li>Stakeholder Reporting</li>
 							</ul>
 						</div>
 						<div class="skill-card">
@@ -653,11 +777,11 @@
 							<div class="sk-icon">📝</div>
 							<div class="sk-title">BA Artefacts</div>
 							<ul>
-								<li>Business Requirements Docs</li>
+								<li>Business Requirements Docs (BRD)</li>
 								<li>Functional Specifications</li>
 								<li>Process Flow Documentation</li>
+								<li>Options Analysis</li>
 								<li>Executive Presentations</li>
-								<li>Test Plans &amp; UAT Support</li>
 							</ul>
 						</div>
 					</div>
@@ -666,22 +790,22 @@
 			</div>
 			<!-- end #main -->
 
-			<!-- ══ FOOTER ════════════════════════════════════════════════════ -->
+			<!-- ══ FOOTER ════════════════════════════════════════════ -->
 			<footer id="footer">
 				<section class="split contact">
 
 					<section class="alt">
 						<h3>Location</h3>
-						<p>Darlington, UK<br />
-						<em style="font-size:0.8rem; opacity:0.7;">Open to Remote &amp; Hybrid Roles Nationwide</em></p>
+						<p>
+							Darlington, UK<br />
+							<em style="font-size:0.8rem; opacity:0.7;">Open to Remote &amp; Hybrid Roles Nationwide</em>
+						</p>
 					</section>
 
 					<section>
 						<h3>Email</h3>
 						<p>
-							<a href="mailto:eoaadenuga@gmail.com" class="contact-email-fix">
-								eoaadenuga@gmail.com
-							</a>
+							<a href="mailto:eoaadenuga@gmail.com">eoaadenuga@gmail.com</a>
 						</p>
 					</section>
 
@@ -710,7 +834,7 @@
 				</section>
 			</footer>
 
-			<!-- ══ COPYRIGHT ═════════════════════════════════════════════════ -->
+			<!-- ══ COPYRIGHT ═════════════════════════════════════════ -->
 			<div id="copyright">
 				<ul>
 					<li>&copy; 2025 Emmanuel Adenuga</li>
@@ -721,7 +845,7 @@
 		</div>
 		<!-- end #wrapper -->
 
-		<!-- Scripts — keep all original Massively JS intact -->
+		<!-- Scripts — all original Massively JS intact -->
 		<script src="assets/js/jquery.min.js"></script>
 		<script src="assets/js/jquery.scrollex.min.js"></script>
 		<script src="assets/js/jquery.scrolly.min.js"></script>
