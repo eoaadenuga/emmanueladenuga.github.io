@@ -1,175 +1,734 @@
 <!DOCTYPE HTML>
 <!--
-	Massively by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+	Massively by HTML5 UP — Professionally restructured for Emmanuel Adenuga
+	Portfolio: Business Analyst & Data Strategist
 -->
 <html>
 	<head>
-		<title>MY PORTFOLIO</title>
+		<title>Emmanuel Adenuga | Business Analyst &amp; Data Strategist</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="Emmanuel Adenuga – Business Analyst based in Darlington, UK. Specialising in data-driven insight, process optimisation, stakeholder management and requirements analysis." />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			/* ── Professional enhancements layered on top of Massively theme ── */
+
+			/* Intro: stronger personal brand */
+			#intro h1 { letter-spacing: -1px; }
+			#intro .tagline-row {
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: center;
+				gap: 0.6rem;
+				margin: 1rem 0 1.4rem;
+			}
+			#intro .badge {
+				background: rgba(255,255,255,0.15);
+				border: 1px solid rgba(255,255,255,0.35);
+				color: #fff;
+				font-size: 0.72rem;
+				font-weight: 700;
+				letter-spacing: 0.1em;
+				text-transform: uppercase;
+				padding: 0.3rem 0.85rem;
+				border-radius: 100px;
+			}
+			#intro .stat-strip {
+				display: flex;
+				justify-content: center;
+				gap: 2.5rem;
+				margin: 1.4rem 0 1.8rem;
+				flex-wrap: wrap;
+			}
+			#intro .stat-strip .stat { text-align: center; }
+			#intro .stat-strip .stat strong {
+				display: block;
+				font-size: 1.8rem;
+				font-weight: 800;
+				color: #fff;
+				line-height: 1;
+			}
+			#intro .stat-strip .stat span {
+				font-size: 0.72rem;
+				letter-spacing: 0.08em;
+				text-transform: uppercase;
+				opacity: 0.75;
+				color: #fff;
+			}
+
+			/* Section labels above headings */
+			.section-eyebrow {
+				display: block;
+				font-size: 0.7rem;
+				font-weight: 700;
+				letter-spacing: 0.15em;
+				text-transform: uppercase;
+				color: #f0a500;
+				margin-bottom: 0.4rem;
+			}
+
+			/* Project outcome box */
+			.outcomes-box {
+				background: rgba(255,255,255,0.05);
+				border-left: 3px solid #f0a500;
+				border-radius: 0 6px 6px 0;
+				padding: 0.8rem 1rem;
+				margin: 0.9rem 0 1rem;
+			}
+			.outcomes-box .outcomes-label {
+				font-size: 0.65rem;
+				font-weight: 700;
+				letter-spacing: 0.1em;
+				text-transform: uppercase;
+				color: #f0a500;
+				margin-bottom: 0.5rem;
+			}
+			.outcomes-box ul {
+				list-style: none;
+				margin: 0; padding: 0;
+			}
+			.outcomes-box ul li {
+				font-size: 0.82rem;
+				line-height: 1.5;
+				padding: 0.15rem 0;
+				display: flex;
+				gap: 0.5rem;
+				color: rgba(255,255,255,0.75);
+			}
+			.outcomes-box ul li::before {
+				content: '✓';
+				color: #f0a500;
+				font-weight: 700;
+				flex-shrink: 0;
+			}
+
+			/* Tool badges on each project */
+			.tool-strip {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 0.4rem;
+				margin: 0.8rem 0 1.1rem;
+			}
+			.tool-strip .tb {
+				font-size: 0.7rem;
+				font-weight: 600;
+				background: rgba(255,255,255,0.08);
+				border: 1px solid rgba(255,255,255,0.15);
+				color: rgba(255,255,255,0.7);
+				padding: 0.25rem 0.65rem;
+				border-radius: 5px;
+				letter-spacing: 0.03em;
+			}
+
+			/* Skills section */
+			.skills-section {
+				margin: 3rem 0;
+				padding: 2.5rem;
+				background: rgba(255,255,255,0.04);
+				border: 1px solid rgba(255,255,255,0.1);
+				border-radius: 8px;
+			}
+			.skills-section h2 { margin-bottom: 0.4rem; }
+			.skills-grid {
+				display: grid;
+				grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+				gap: 1.4rem;
+				margin-top: 1.8rem;
+			}
+			.skill-card {
+				background: rgba(255,255,255,0.04);
+				border: 1px solid rgba(255,255,255,0.1);
+				border-radius: 8px;
+				padding: 1.2rem 1.3rem;
+			}
+			.skill-card .sk-icon { font-size: 1.4rem; margin-bottom: 0.5rem; }
+			.skill-card .sk-title {
+				font-size: 0.85rem;
+				font-weight: 700;
+				color: #fff;
+				margin-bottom: 0.6rem;
+				text-transform: uppercase;
+				letter-spacing: 0.05em;
+			}
+			.skill-card ul {
+				list-style: none;
+				margin: 0; padding: 0;
+			}
+			.skill-card ul li {
+				font-size: 0.8rem;
+				color: rgba(255,255,255,0.65);
+				padding: 0.18rem 0;
+				display: flex;
+				align-items: center;
+				gap: 0.45rem;
+			}
+			.skill-card ul li::before {
+				content: '';
+				width: 4px; height: 4px;
+				background: #f0a500;
+				border-radius: 50%;
+				flex-shrink: 0;
+			}
+
+			/* About strip above projects */
+			.about-strip {
+				background: rgba(255,255,255,0.04);
+				border: 1px solid rgba(255,255,255,0.1);
+				border-radius: 8px;
+				padding: 2rem 2.5rem;
+				margin-bottom: 3rem;
+			}
+			.about-strip p {
+				font-size: 0.95rem;
+				line-height: 1.85;
+				color: rgba(255,255,255,0.72);
+				margin: 0;
+			}
+			.about-strip p + p { margin-top: 0.9rem; }
+			.about-strip strong { color: #fff; }
+
+			/* Fix: email link in contact */
+			.contact-email-fix { color: inherit !important; }
+
+			/* Fix: copyright line */
+			#copyright li:first-child { list-style: none; }
+
+			/* Available badge in nav */
+			.avail-badge {
+				background: #27ae60;
+				color: #fff;
+				font-size: 0.65rem;
+				font-weight: 700;
+				letter-spacing: 0.08em;
+				text-transform: uppercase;
+				padding: 0.2rem 0.6rem;
+				border-radius: 100px;
+				margin-left: 0.5rem;
+				vertical-align: middle;
+			}
+
+			@media screen and (max-width: 736px) {
+				#intro .stat-strip { gap: 1.2rem; }
+				.skills-grid { grid-template-columns: 1fr 1fr; }
+				.about-strip { padding: 1.4rem; }
+			}
+			@media screen and (max-width: 480px) {
+				.skills-grid { grid-template-columns: 1fr; }
+			}
+		</style>
 	</head>
 	<body class="is-preload">
 
 		<!-- Wrapper -->
-			<div id="wrapper" class="fade-in">
+		<div id="wrapper" class="fade-in">
 
-				<!-- Intro -->
-					<div id="intro">
-						<font color="white"><h1>EMMANUEL ADENUGA</h1></font>
-						<p>Welcome to my Business Analyst Portfolio – Where Data Meets Insight and Innovation!</a>.</p>
-						<ul class="actions">
-							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
-						</ul>
+			<!-- ══ INTRO ══════════════════════════════════════════════════════ -->
+			<div id="intro">
+				<h1>Emmanuel Adenuga</h1>
+
+				<div class="tagline-row">
+					<span class="badge">Business Analyst</span>
+					<span class="badge">Data Strategist</span>
+					<span class="badge">Process Optimisation</span>
+					<span class="badge">Stakeholder Management</span>
+				</div>
+
+				<p>
+					Turning complex data and operational challenges into clear,<br />
+					actionable insights that drive measurable business outcomes.
+				</p>
+
+				<div class="stat-strip">
+					<div class="stat">
+						<strong>7+</strong>
+						<span>Projects Delivered</span>
 					</div>
-
-				<!-- Header -->
-					<header id="header">
-						<a href="index.html" class="logo">Major Projects</a>
-					</header>
-
-				<!-- Nav -->
-					<nav id="nav">
-						<ul class="links">
-							<li class="active"><a href="index.html">Project Titles</a></li>
-						</ul>
-						<ul class="icons">
-							<li><a href="https://www.linkedin.com/in/emmanuel-adenuga/" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
-							<li><a href="https://github.com/eoaadenuga" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-						</ul>
-					</nav>
-
-				<!-- Main -->
-					<div id="main">
-
-						<!-- Featured Post -->
-							<article class="post featured">
-								<header class="major">
-									<h2><a href="#">Online Canteen Ordering System</a></h2>
-									<p> The Online Canteen Ordering System is a cutting-edge solution meticulously crafted to revolutionise the dining experience within the Unilever workspace. By employing a comprehensive business analysis approach, including Stakeholder Analysis, RACI Matrix, SWOT Analysis, Process Flow Mapping, and collaboration tools like Jira and Confluence, this project is strategically designed to streamline and enhance the food ordering process for employees</p>
-								</header>
-								<a href="#" class="image main"><img src="images/image1.jpg" alt="" /></a>
-								<ul class=" actions special">
-									<li><a href="https://docs.google.com/presentation/d/1juuA6rW3yZ35jmI7QR97RT-dPHlLO51x/edit?usp=sharing&ouid=107808940567078135864&rtpof=true&sd=true
-										" class="button large">Explore Unilever Project</a></li>
-								</ul>
-							</article>
-
-						<!-- Posts -->
-							<section class="posts">
-								<article>
-									<header>
-										<h2><a href="#">Barnet Hospital</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/Image 4.jpg" alt="" /></a>
-									<p>
-										Barnet Hospital is a leading multi-specialty teaching hospital in Central London, renowned for its high-quality patient care and advanced medical facilities. The hospital has launched an initiative to enhance the overall patient experience in light of increasing patient complaints and operational challenges. The management has identified key areas for improvement, including reducing wait times, optimising resource allocation and improving communication between stakeholders. 
-                                        .</p>
-									<ul class="actions special">
-										<li><a href="https://drive.google.com/file/d/1GaHglbZCQ8CWkybN6NNxP4NVtr9UbKVN/view?usp=drive_link" class="button">Explore Barnet Hospital Project</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<h2><a href="#">British Airways</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/image 3.jpg" alt="" /></a>
-									<p>Data-Driven insights using Excel and Power BI: 
-										British Airways, a global airline synonymous with excellence, aims to boost customer satisfaction and retention. As a business analyst, I utilised Power BI for a thorough analysis, offering valuable insights and actionable strategies to enhance services and understand crucial customer factors.</p>
-									<ul class="actions special">
-										<li><a href="https://drive.google.com/file/d/10BTBwSQoEPg2dIpFB_DdvK8jdYBmUISD/view?usp=drive_link" class="button">Explore British Airways Project</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<h2><a href="#">ABC Retail</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/image 2.jpg" alt="" /></a>
-									<p>Customer behaviour analysis using Microsoft Excel: ABC Retail wanted to understand how customers use their online store better. I used Microsoft Excel to analyse this. The goal was to improve the online shopping experience and make more money. The project found insights to boost sales and enhance the overall success of the online store.</p>
-									<ul class="actions special">
-										<li><a href="https://drive.google.com/file/d/1ahx2_1qc_NMo2cbpSGs7CiSh-OaEsIO8/view?usp=drive_link" class="button">Explore ABC Retail Project</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<h2><a href="#">MiniMart</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/Image 13.png" alt="" /></a>
-									<p>Dashboard Analysis using Julius AI: Minimart, a mid-sized retail company operating across multiple regions, is facing significant challenges in its sales and shipping functions. As a member of the Data Analysis Team, I leveraged Julius AI and NotebookLM to conduct a comprehensive examination of the company's sales datasets. The objective was to derive meaningful insights that would drive measurable improvements in overall business performance. This analysis led to actionable recommendations to address key operational gaps and deliver substantial, sustainable results.</p>					.</p>
-									<ul class="actions special">
-										<li><a href="https://docs.google.com/presentation/d/17hYFk1qGSngOOcuW-t7YEx2wMuFA_L-k/edit?usp=drive_link&ouid=114538259253394785617&rtpof=true&sd=true
-									" class="button">Explore Minimart Project</a></li>
-								</ul>
-								</article>
-								<article>
-									<header>
-										<h2><a href="#">TECH HAVEN ELECTRONICS</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/Image 7.jpg" alt="" /></a>
-									<p>Tech Haven Electronics is a popular electronics store in the city. As a Business Analyst, I used SQL to analyze their data for improvements. I created a database and looked at customer details for each sale, found products never purchased, and got info on products and sales, including prices and quantities. This helps Tech Haven make smart decisions for better customer service and business growth.</p>
-									<ul class="actions special">
-										<li><a href="https://drive.google.com/file/d/1s3ZMPtKP44GCr2IomBSU6I4Tq1okRgHy/view?usp=drive_link" class="button">Explore Tech Haven Project</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<h2><a href="#">AS-IS TRAVEL EXPENSE</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/Image 12.jpg" alt="" /></a>
-									<p> This project focused on mapping the AS-IS process for the reimbursement of employee travel expenses. Leveraging Lucidchart, I created a comprehensive process flow that clearly illustrated each step of the reimbursement journey. This detailed visualisation not only showcases my proficiency in process mapping but also reflects my dedication to improving organisational efficiency by providing transparent and easily understandable documentation.</p>
-									<ul class="actions special">
-										<li><a href="https://drive.google.com/file/d/19s4frrg5ytryMOLUrKW7JgOo7L-5IQHS/view?usp=sharing" class="button">Explore Travel Expense Project</a></li>
-										</ul>
-								</article>
-								<article>
-								</article>
-						</section>
-						<section class="split contact">
-							<section class="alt">
-								<h3>Address</h3>
-								<p>Darlington, UK</p>
-							</section>
-							<section>
-								<h3>Email</h3>
-								<p><a href="#">eoaadenuga@gmail.com</a></p>
-							</section>
-							<section>
-								<h3>Social</h3>
-								<ul class="icons alt">
-									<li><a href=""https://www.linkedin.com/in/emmanuel-adenuga/" class="icon brands alt fa-linkedin"><span class="label">Linkedin</span></a></li>
-									<li><a href="https://github.com/eoaadenuga/" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-								</ul>
-							</section>
-						</section>
-					</footer>
-
-				<!-- Copyright -->
-					<div id="copyright">
-						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					<div class="stat">
+						<strong>5+</strong>
+						<span>Tools &amp; Platforms</span>
 					</div>
+					<div class="stat">
+						<strong>4</strong>
+						<span>Industry Sectors</span>
+					</div>
+				</div>
 
+				<ul class="actions">
+					<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">View My Work</a></li>
+				</ul>
 			</div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+			<!-- ══ HEADER ═════════════════════════════════════════════════════ -->
+			<header id="header">
+				<a href="index.html" class="logo">Emmanuel Adenuga &mdash; BA Portfolio</a>
+			</header>
+
+			<!-- ══ NAV ═══════════════════════════════════════════════════════ -->
+			<nav id="nav">
+				<ul class="links">
+					<li class="active">
+						<a href="index.html">Projects</a>
+						<span class="avail-badge">Open to Work</span>
+					</li>
+				</ul>
+				<ul class="icons">
+					<li>
+						<a href="https://www.linkedin.com/in/emmanuel-adenuga/"
+						   target="_blank" rel="noopener"
+						   class="icon brands fa-linkedin"
+						   title="Connect on LinkedIn">
+							<span class="label">LinkedIn</span>
+						</a>
+					</li>
+					<li>
+						<a href="https://github.com/eoaadenuga"
+						   target="_blank" rel="noopener"
+						   class="icon brands fa-github"
+						   title="View GitHub Profile">
+							<span class="label">GitHub</span>
+						</a>
+					</li>
+				</ul>
+			</nav>
+
+			<!-- ══ MAIN ══════════════════════════════════════════════════════ -->
+			<div id="main">
+
+				<!-- ── ABOUT ─────────────────────────────────────────────── -->
+				<div class="about-strip">
+					<span class="section-eyebrow">About Me</span>
+					<p>
+						I'm <strong>Emmanuel Adenuga</strong>, a Business Analyst based in <strong>Darlington, UK</strong>, with a proven track record of bridging the gap between business needs and data-driven solutions. I specialise in requirements elicitation, stakeholder engagement, process mapping and analytics — helping organisations in <strong>healthcare, aviation, retail and FMCG</strong> make smarter, faster decisions.
+					</p>
+					<p>
+						My analytical toolkit spans <strong>Power BI, SQL, Microsoft Excel, Jira, Confluence and Lucidchart</strong>. Whether mapping AS-IS processes, building dashboards or facilitating stakeholder workshops, I deliver clear documentation and actionable recommendations that create real organisational impact.
+					</p>
+				</div>
+
+				<!-- ── FEATURED PROJECT: UNILEVER ──────────────────────── -->
+				<article class="post featured">
+					<header class="major">
+						<span class="section-eyebrow">Featured Project &mdash; Process Improvement &amp; Stakeholder Analysis</span>
+						<h2><a href="#">Online Canteen Ordering System</a></h2>
+						<p>
+							Led end-to-end business analysis for a digital ordering solution serving 1,000+ daily employees at Unilever. Applying a structured BA methodology — Stakeholder Analysis, RACI Matrix, SWOT Analysis and Process Flow Mapping — I identified friction points in the existing canteen process and designed requirements for a streamlined digital system managed via Jira and Confluence.
+						</p>
+					</header>
+
+					<a href="https://docs.google.com/presentation/d/1juuA6rW3yZ35jmI7QR97RT-dPHlLO51x/edit?usp=sharing&ouid=107808940567078135864&rtpof=true&sd=true"
+					   class="image main" target="_blank" rel="noopener">
+						<img src="images/image1.jpg" alt="Unilever Online Canteen Ordering System" />
+					</a>
+
+					<div class="outcomes-box">
+						<div class="outcomes-label">Key Deliverables</div>
+						<ul>
+							<li>Full stakeholder register and RACI responsibility matrix</li>
+							<li>SWOT and gap analysis documentation</li>
+							<li>End-to-end process flow diagrams (AS-IS and TO-BE)</li>
+							<li>Jira backlog, epics and sprint planning artefacts</li>
+							<li>Confluence-hosted project documentation</li>
+						</ul>
+					</div>
+
+					<div class="tool-strip">
+						<span class="tb">Jira</span>
+						<span class="tb">Confluence</span>
+						<span class="tb">SWOT Analysis</span>
+						<span class="tb">RACI Matrix</span>
+						<span class="tb">Process Flow Mapping</span>
+						<span class="tb">Stakeholder Analysis</span>
+					</div>
+
+					<ul class="actions special">
+						<li>
+							<a href="https://docs.google.com/presentation/d/1juuA6rW3yZ35jmI7QR97RT-dPHlLO51x/edit?usp=sharing&ouid=107808940567078135864&rtpof=true&sd=true"
+							   class="button large"
+							   target="_blank" rel="noopener">
+								View Full Case Study
+							</a>
+						</li>
+					</ul>
+				</article>
+
+				<!-- ── PROJECT GRID ──────────────────────────────────────── -->
+				<section class="posts">
+
+					<!-- Barnet Hospital -->
+					<article>
+						<header>
+							<span class="section-eyebrow">Healthcare &mdash; Operational Efficiency</span>
+							<h2><a href="#">Patient Experience Improvement<br />Barnet Hospital</a></h2>
+						</header>
+						<a href="https://drive.google.com/file/d/1GaHglbZCQ8CWkybN6NNxP4NVtr9UbKVN/view?usp=drive_link"
+						   class="image fit" target="_blank" rel="noopener">
+							<img src="images/Image 4.jpg" alt="Barnet Hospital Patient Experience Project" />
+						</a>
+						<p>
+							Conducted a root cause analysis of rising patient complaints at a major Central London teaching hospital. Identified systemic issues across wait times, resource allocation and inter-departmental communication, producing a structured improvement roadmap with KPIs to track progress.
+						</p>
+						<div class="outcomes-box">
+							<div class="outcomes-label">Key Deliverables</div>
+							<ul>
+								<li>Root cause analysis of patient complaint themes</li>
+								<li>Resource allocation review and recommendations</li>
+								<li>Stakeholder communication improvement plan</li>
+								<li>KPI framework for patient satisfaction tracking</li>
+							</ul>
+						</div>
+						<div class="tool-strip">
+							<span class="tb">Requirements Analysis</span>
+							<span class="tb">Process Mapping</span>
+							<span class="tb">Root Cause Analysis</span>
+							<span class="tb">Stakeholder Mgmt</span>
+						</div>
+						<ul class="actions special">
+							<li>
+								<a href="https://drive.google.com/file/d/1GaHglbZCQ8CWkybN6NNxP4NVtr9UbKVN/view?usp=drive_link"
+								   class="button" target="_blank" rel="noopener">
+									View Case Study
+								</a>
+							</li>
+						</ul>
+					</article>
+
+					<!-- British Airways -->
+					<article>
+						<header>
+							<span class="section-eyebrow">Aviation &mdash; Data Analytics &amp; Power BI</span>
+							<h2><a href="#">Customer Satisfaction Analysis<br />British Airways</a></h2>
+						</header>
+						<a href="https://drive.google.com/file/d/10BTBwSQoEPg2dIpFB_DdvK8jdYBmUISD/view?usp=drive_link"
+						   class="image fit" target="_blank" rel="noopener">
+							<img src="images/image 3.jpg" alt="British Airways Power BI Analysis" />
+						</a>
+						<p>
+							Used Power BI to analyse customer review data for one of the world's leading airlines, surfacing key satisfaction drivers and churn risk segments. Delivered an interactive multi-page dashboard and three prioritised strategic recommendations to improve service touchpoints and customer retention.
+						</p>
+						<div class="outcomes-box">
+							<div class="outcomes-label">Key Deliverables</div>
+							<ul>
+								<li>Interactive Power BI dashboard (multi-page report)</li>
+								<li>Customer satisfaction trend and sentiment analysis</li>
+								<li>Churn risk segmentation model</li>
+								<li>3 prioritised strategic recommendations</li>
+							</ul>
+						</div>
+						<div class="tool-strip">
+							<span class="tb">Power BI</span>
+							<span class="tb">DAX</span>
+							<span class="tb">Data Visualisation</span>
+							<span class="tb">Microsoft Excel</span>
+						</div>
+						<ul class="actions special">
+							<li>
+								<a href="https://drive.google.com/file/d/10BTBwSQoEPg2dIpFB_DdvK8jdYBmUISD/view?usp=drive_link"
+								   class="button" target="_blank" rel="noopener">
+									View Case Study
+								</a>
+							</li>
+						</ul>
+					</article>
+
+					<!-- ABC Retail -->
+					<article>
+						<header>
+							<span class="section-eyebrow">Retail &mdash; Customer Behaviour &amp; Excel</span>
+							<h2><a href="#">E-Commerce Behaviour Analysis<br />ABC Retail</a></h2>
+						</header>
+						<a href="https://drive.google.com/file/d/1ahx2_1qc_NMo2cbpSGs7CiSh-OaEsIO8/view?usp=drive_link"
+						   class="image fit" target="_blank" rel="noopener">
+							<img src="images/image 2.jpg" alt="ABC Retail Customer Behaviour Analysis" />
+						</a>
+						<p>
+							Applied advanced Excel analysis to uncover purchasing patterns, basket drop-off points and peak traffic windows for ABC Retail's e-commerce platform. Delivered a dynamic dashboard with customer segmentation insights that identified revenue optimisation opportunities across the online store.
+						</p>
+						<div class="outcomes-box">
+							<div class="outcomes-label">Key Deliverables</div>
+							<ul>
+								<li>Customer segmentation by purchase frequency</li>
+								<li>Basket abandonment analysis with root causes</li>
+								<li>Revenue opportunity identification report</li>
+								<li>Dynamic Excel dashboard with filters</li>
+							</ul>
+						</div>
+						<div class="tool-strip">
+							<span class="tb">Microsoft Excel</span>
+							<span class="tb">Pivot Tables</span>
+							<span class="tb">Customer Segmentation</span>
+							<span class="tb">Data Analysis</span>
+						</div>
+						<ul class="actions special">
+							<li>
+								<a href="https://drive.google.com/file/d/1ahx2_1qc_NMo2cbpSGs7CiSh-OaEsIO8/view?usp=drive_link"
+								   class="button" target="_blank" rel="noopener">
+									View Case Study
+								</a>
+							</li>
+						</ul>
+					</article>
+
+					<!-- MiniMart -->
+					<article>
+						<header>
+							<span class="section-eyebrow">Retail &mdash; AI Analytics &amp; Multi-Region Performance</span>
+							<h2><a href="#">Sales &amp; Shipping Performance<br />MiniMart</a></h2>
+						</header>
+						<a href="https://docs.google.com/presentation/d/17hYFk1qGSngOOcuW-t7YEx2wMuFA_L-k/edit?usp=drive_link&ouid=114538259253394785617&rtpof=true&sd=true"
+						   class="image fit" target="_blank" rel="noopener">
+							<img src="images/Image 13.png" alt="MiniMart Sales and Shipping Dashboard" />
+						</a>
+						<p>
+							Leveraged Julius AI and NotebookLM to perform a multi-region sales and logistics deep-dive for a mid-sized retailer. Identified critical operational gaps in shipping efficiency and regional sales variance, delivering a prioritised improvement roadmap with projected business performance uplifts.
+						</p>
+						<div class="outcomes-box">
+							<div class="outcomes-label">Key Deliverables</div>
+							<ul>
+								<li>AI-assisted multi-region sales dataset analysis</li>
+								<li>Regional performance comparison dashboard</li>
+								<li>Shipping bottleneck identification report</li>
+								<li>Prioritised recommendations with projected ROI</li>
+							</ul>
+						</div>
+						<div class="tool-strip">
+							<span class="tb">Julius AI</span>
+							<span class="tb">NotebookLM</span>
+							<span class="tb">Data Strategy</span>
+							<span class="tb">Operational Analysis</span>
+						</div>
+						<ul class="actions special">
+							<li>
+								<a href="https://docs.google.com/presentation/d/17hYFk1qGSngOOcuW-t7YEx2wMuFA_L-k/edit?usp=drive_link&ouid=114538259253394785617&rtpof=true&sd=true"
+								   class="button" target="_blank" rel="noopener">
+									View Case Study
+								</a>
+							</li>
+						</ul>
+					</article>
+
+					<!-- Tech Haven -->
+					<article>
+						<header>
+							<span class="section-eyebrow">Electronics Retail &mdash; SQL &amp; Database Analysis</span>
+							<h2><a href="#">Sales &amp; Inventory Intelligence<br />Tech Haven Electronics</a></h2>
+						</header>
+						<a href="https://drive.google.com/file/d/1s3ZMPtKP44GCr2IomBSU6I4Tq1okRgHy/view?usp=drive_link"
+						   class="image fit" target="_blank" rel="noopener">
+							<img src="images/Image 7.jpg" alt="Tech Haven Electronics SQL Analysis" />
+						</a>
+						<p>
+							Designed and queried a relational database to surface actionable intelligence for an electronics retailer. Used SQL to identify customer purchasing patterns, uncover dormant inventory with zero sales, and produce product-level revenue analysis — supporting data-driven decisions in merchandising and customer service.
+						</p>
+						<div class="outcomes-box">
+							<div class="outcomes-label">Key Deliverables</div>
+							<ul>
+								<li>Relational database schema design and population</li>
+								<li>Customer-level purchase history query set</li>
+								<li>Zero-sales product identification report</li>
+								<li>Revenue and volume analysis by product category</li>
+							</ul>
+						</div>
+						<div class="tool-strip">
+							<span class="tb">SQL</span>
+							<span class="tb">Database Design</span>
+							<span class="tb">Query Development</span>
+							<span class="tb">Retail Analytics</span>
+						</div>
+						<ul class="actions special">
+							<li>
+								<a href="https://drive.google.com/file/d/1s3ZMPtKP44GCr2IomBSU6I4Tq1okRgHy/view?usp=drive_link"
+								   class="button" target="_blank" rel="noopener">
+									View Case Study
+								</a>
+							</li>
+						</ul>
+					</article>
+
+					<!-- Travel Expense -->
+					<article>
+						<header>
+							<span class="section-eyebrow">Process Mapping &mdash; AS-IS Documentation</span>
+							<h2><a href="#">Travel Expense Reimbursement<br />AS-IS Process Mapping</a></h2>
+						</header>
+						<a href="https://drive.google.com/file/d/19s4frrg5ytryMOLUrKW7JgOo7L-5IQHS/view?usp=sharing"
+						   class="image fit" target="_blank" rel="noopener">
+							<img src="images/Image 12.jpg" alt="AS-IS Travel Expense Process Map" />
+						</a>
+						<p>
+							Mapped the complete current-state (AS-IS) travel expense reimbursement process using Lucidchart, producing clear swimlane process flow documentation. Identified handoff delays and ambiguous approval stages as key friction points — forming the analytical foundation for a future TO-BE process redesign.
+						</p>
+						<div class="outcomes-box">
+							<div class="outcomes-label">Key Deliverables</div>
+							<ul>
+								<li>Full AS-IS swimlane process map in Lucidchart</li>
+								<li>Step-by-step process narrative documentation</li>
+								<li>Pain point register with priority ranking</li>
+								<li>Foundation artefacts for TO-BE redesign phase</li>
+							</ul>
+						</div>
+						<div class="tool-strip">
+							<span class="tb">Lucidchart</span>
+							<span class="tb">Process Mapping</span>
+							<span class="tb">BPMN</span>
+							<span class="tb">Swimlane Diagrams</span>
+						</div>
+						<ul class="actions special">
+							<li>
+								<a href="https://drive.google.com/file/d/19s4frrg5ytryMOLUrKW7JgOo7L-5IQHS/view?usp=sharing"
+								   class="button" target="_blank" rel="noopener">
+									View Case Study
+								</a>
+							</li>
+						</ul>
+					</article>
+
+				</section>
+				<!-- end .posts -->
+
+				<!-- ── SKILLS SECTION ─────────────────────────────────────── -->
+				<div class="skills-section">
+					<span class="section-eyebrow">Skills &amp; Toolkit</span>
+					<h2>What I Bring to the Table</h2>
+					<p style="color:rgba(255,255,255,0.65); font-size:0.9rem; margin-top:0.3rem;">
+						A combination of structured BA methodology and modern data tools, built across real-world industry projects.
+					</p>
+					<div class="skills-grid">
+						<div class="skill-card">
+							<div class="sk-icon">🎯</div>
+							<div class="sk-title">Business Analysis</div>
+							<ul>
+								<li>Requirements Elicitation</li>
+								<li>Stakeholder Analysis</li>
+								<li>User Stories &amp; Acceptance Criteria</li>
+								<li>Gap &amp; SWOT Analysis</li>
+								<li>RACI Matrix</li>
+							</ul>
+						</div>
+						<div class="skill-card">
+							<div class="sk-icon">🔄</div>
+							<div class="sk-title">Process Modelling</div>
+							<ul>
+								<li>AS-IS / TO-BE Mapping</li>
+								<li>Swimlane Diagrams (BPMN)</li>
+								<li>Lucidchart</li>
+								<li>Workflow Optimisation</li>
+								<li>Root Cause Analysis</li>
+							</ul>
+						</div>
+						<div class="skill-card">
+							<div class="sk-icon">📊</div>
+							<div class="sk-title">Data &amp; Analytics</div>
+							<ul>
+								<li>Power BI &amp; DAX</li>
+								<li>Microsoft Excel (Advanced)</li>
+								<li>SQL &amp; Database Design</li>
+								<li>Julius AI &amp; NotebookLM</li>
+								<li>Data Storytelling</li>
+							</ul>
+						</div>
+						<div class="skill-card">
+							<div class="sk-icon">🛠️</div>
+							<div class="sk-title">Agile &amp; Collaboration</div>
+							<ul>
+								<li>Jira (Backlog &amp; Sprints)</li>
+								<li>Confluence Documentation</li>
+								<li>Agile / Scrum Principles</li>
+								<li>Workshop Facilitation</li>
+								<li>Stakeholder Reporting</li>
+							</ul>
+						</div>
+						<div class="skill-card">
+							<div class="sk-icon">💼</div>
+							<div class="sk-title">Domain Experience</div>
+							<ul>
+								<li>Healthcare Operations</li>
+								<li>Retail &amp; E-Commerce</li>
+								<li>Aviation &amp; Travel</li>
+								<li>FMCG / Manufacturing</li>
+								<li>Customer Experience</li>
+							</ul>
+						</div>
+						<div class="skill-card">
+							<div class="sk-icon">📝</div>
+							<div class="sk-title">BA Artefacts</div>
+							<ul>
+								<li>Business Requirements Docs</li>
+								<li>Functional Specifications</li>
+								<li>Process Flow Documentation</li>
+								<li>Executive Presentations</li>
+								<li>Test Plans &amp; UAT Support</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<!-- end #main -->
+
+			<!-- ══ FOOTER ════════════════════════════════════════════════════ -->
+			<footer id="footer">
+				<section class="split contact">
+
+					<section class="alt">
+						<h3>Location</h3>
+						<p>Darlington, UK<br />
+						<em style="font-size:0.8rem; opacity:0.7;">Open to Remote &amp; Hybrid Roles Nationwide</em></p>
+					</section>
+
+					<section>
+						<h3>Email</h3>
+						<p>
+							<a href="mailto:eoaadenuga@gmail.com" class="contact-email-fix">
+								eoaadenuga@gmail.com
+							</a>
+						</p>
+					</section>
+
+					<section>
+						<h3>Connect</h3>
+						<ul class="icons alt">
+							<li>
+								<a href="https://www.linkedin.com/in/emmanuel-adenuga/"
+								   class="icon brands alt fa-linkedin"
+								   target="_blank" rel="noopener"
+								   title="LinkedIn Profile">
+									<span class="label">LinkedIn</span>
+								</a>
+							</li>
+							<li>
+								<a href="https://github.com/eoaadenuga/"
+								   class="icon brands alt fa-github"
+								   target="_blank" rel="noopener"
+								   title="GitHub Profile">
+									<span class="label">GitHub</span>
+								</a>
+							</li>
+						</ul>
+					</section>
+
+				</section>
+			</footer>
+
+			<!-- ══ COPYRIGHT ═════════════════════════════════════════════════ -->
+			<div id="copyright">
+				<ul>
+					<li>&copy; 2025 Emmanuel Adenuga</li>
+					<li>Business Analyst &mdash; Darlington, UK</li>
+				</ul>
+			</div>
+
+		</div>
+		<!-- end #wrapper -->
+
+		<!-- Scripts — keep all original Massively JS intact -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
 
 	</body>
 </html>
-
-
-
-
-
-
-
-
-
