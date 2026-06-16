@@ -1,243 +1,248 @@
 <!DOCTYPE HTML>
 <!--
 	Massively by HTML5 UP — Emmanuel Adenuga BA Portfolio
-	Version 5.0 — CSS conflicts resolved, all sections rendering correctly
+	Version 6.0 — Fixed: dark text on light background for all custom sections
 -->
 <html>
 	<head>
 		<title>Emmanuel Adenuga | Business Analyst &amp; Data Strategist</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<meta name="description" content="Emmanuel Adenuga – Certified Business Analyst and Test Professional with 9+ years experience across Technology, FinTech, Academic, Media and Telecom sectors." />
+		<meta name="description" content="Emmanuel Adenuga – Certified Business Analyst and Test Professional with 9+ years experience." />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<style>
 
 		/* ============================================================
-		   RESET — override Massively theme defaults that blank out text
+		   CORE FIX: The Massively theme uses a LIGHT background for
+		   #main content sections. All custom text must use DARK colours.
+		   We use high-specificity selectors + !important to win.
 		   ============================================================ */
 
-		/* Massively sets article p, li colours to semi-transparent —
-		   we override inside our custom containers only */
-		.ea-about p,
-		.ea-about li,
-		.ea-comp-desc,
-		.ea-disc p,
-		.ea-del li,
-		.ea-del li strong,
-		.ea-sk-list li {
-			color: rgba(255,255,255,0.78) !important;
-			font-size: 0.875rem !important;
-			line-height: 1.75 !important;
+		#main .ea-about *,
+		#main .ea-skills-wrap *,
+		#main .ea-del *,
+		#main .ea-tools * {
+			box-sizing: border-box;
 		}
 
-		.ea-about strong,
-		.ea-about em,
-		.ea-sk-title,
-		.ea-comp-label,
-		.ea-about h3 {
-			color: #ffffff !important;
-		}
-
-		/* ============================================================
-		   INTRO ENHANCEMENTS
-		   ============================================================ */
+		/* ── INTRO ─────────────────────────────────────────────────── */
 		#intro h1 { letter-spacing: -1px; }
 
 		.ea-badge-row {
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: center;
-			gap: 0.5rem;
-			margin: 0.9rem 0 1.2rem;
+			display: flex !important;
+			flex-wrap: wrap !important;
+			justify-content: center !important;
+			gap: 0.5rem !important;
+			margin: 0.9rem 0 1.2rem !important;
 		}
 		.ea-badge {
-			background: rgba(255,255,255,0.13) !important;
-			border: 1px solid rgba(255,255,255,0.3) !important;
-			color: #fff !important;
+			background: rgba(255,255,255,0.15) !important;
+			border: 1px solid rgba(255,255,255,0.35) !important;
+			color: #ffffff !important;
 			font-size: 0.68rem !important;
 			font-weight: 700 !important;
-			letter-spacing: 0.1em;
-			text-transform: uppercase;
-			padding: 0.28rem 0.85rem;
-			border-radius: 100px;
-			display: inline-block;
+			letter-spacing: 0.1em !important;
+			text-transform: uppercase !important;
+			padding: 0.28rem 0.85rem !important;
+			border-radius: 100px !important;
+			display: inline-block !important;
 		}
-
 		.ea-stat-strip {
-			display: flex;
-			justify-content: center;
-			gap: 2.5rem;
-			margin: 1.1rem 0 1.7rem;
-			flex-wrap: wrap;
+			display: flex !important;
+			justify-content: center !important;
+			gap: 2.5rem !important;
+			margin: 1.1rem 0 1.7rem !important;
+			flex-wrap: wrap !important;
 		}
-		.ea-stat { text-align: center; }
+		.ea-stat { text-align: center !important; }
 		.ea-stat strong {
-			display: block;
-			font-size: 1.9rem !important;
+			display: block !important;
+			font-size: 2rem !important;
 			font-weight: 800 !important;
-			color: #fff !important;
-			line-height: 1;
+			color: #ffffff !important;
+			line-height: 1 !important;
 		}
 		.ea-stat span {
 			font-size: 0.66rem !important;
-			letter-spacing: 0.08em;
-			text-transform: uppercase;
-			color: rgba(255,255,255,0.65) !important;
+			letter-spacing: 0.08em !important;
+			text-transform: uppercase !important;
+			color: rgba(255,255,255,0.7) !important;
 		}
 
-		/* ============================================================
-		   EYEBROW LABELS
-		   ============================================================ */
+		/* ── EYEBROW LABELS ────────────────────────────────────────── */
 		.ea-eyebrow {
-			display: block;
+			display: block !important;
 			font-size: 0.66rem !important;
 			font-weight: 700 !important;
-			letter-spacing: 0.14em;
-			text-transform: uppercase;
-			color: #f0a500 !important;
-			margin-bottom: 0.4rem;
+			letter-spacing: 0.15em !important;
+			text-transform: uppercase !important;
+			color: #c47f00 !important;  /* darker gold — readable on white bg */
+			margin-bottom: 0.4rem !important;
+		}
+
+		/* ── NAV BADGE ─────────────────────────────────────────────── */
+		.ea-avail {
+			background: #27ae60 !important;
+			color: #fff !important;
+			font-size: 0.58rem !important;
+			font-weight: 700 !important;
+			letter-spacing: 0.06em !important;
+			text-transform: uppercase !important;
+			padding: 0.17rem 0.5rem !important;
+			border-radius: 100px !important;
+			margin-left: 0.4rem !important;
+			vertical-align: middle !important;
+			display: inline-block !important;
 		}
 
 		/* ============================================================
-		   ABOUT SECTION
+		   ABOUT SECTION — dark text, coloured borders, light bg aware
 		   ============================================================ */
-		.ea-about {
-			margin-bottom: 3rem;
-		}
+		.ea-about { margin-bottom: 3rem !important; }
+
 		.ea-about-bio {
-			background: rgba(255,255,255,0.04);
-			border: 1px solid rgba(255,255,255,0.1);
-			border-radius: 10px;
-			padding: 2rem 2.4rem;
-			margin-bottom: 1.4rem;
+			background: #f8f9fa !important;
+			border: 1px solid #dee2e6 !important;
+			border-left: 4px solid #c47f00 !important;
+			border-radius: 8px !important;
+			padding: 2rem 2.4rem !important;
+			margin-bottom: 1.4rem !important;
 		}
-		.ea-about h3 {
-			font-size: 1.25rem !important;
+		.ea-about-bio h3 {
+			font-size: 1.2rem !important;
 			font-weight: 700 !important;
-			margin: 0 0 1.1rem 0 !important;
-			padding-bottom: 0.8rem;
-			border-bottom: 1px solid rgba(255,255,255,0.09);
-			line-height: 1.3;
+			color: #1a1a2e !important;
+			margin: 0 0 1rem 0 !important;
+			padding-bottom: 0.75rem !important;
+			border-bottom: 1px solid #dee2e6 !important;
+			line-height: 1.3 !important;
 		}
-		.ea-about p { margin: 0 0 0.9rem 0 !important; }
-		.ea-about p:last-child { margin-bottom: 0 !important; }
-		.ea-about em {
+		.ea-about-bio p {
+			font-size: 0.9rem !important;
+			line-height: 1.85 !important;
+			color: #3d3d3d !important;
+			margin: 0 0 0.85rem 0 !important;
+		}
+		.ea-about-bio p:last-child { margin-bottom: 0 !important; }
+		.ea-about-bio strong { color: #1a1a2e !important; font-weight: 700 !important; }
+		.ea-about-bio em {
 			font-style: normal !important;
-			color: #f0a500 !important;
+			color: #c47f00 !important;
 			font-weight: 600 !important;
 		}
 
-		/* ── Sectors ── */
+		/* Sectors */
 		.ea-sectors {
-			background: rgba(255,255,255,0.03);
-			border: 1px solid rgba(255,255,255,0.08);
-			border-radius: 10px;
-			padding: 1.2rem 2rem;
-			margin-bottom: 1.4rem;
-			display: flex;
-			align-items: center;
-			gap: 1rem;
-			flex-wrap: wrap;
+			background: #f8f9fa !important;
+			border: 1px solid #dee2e6 !important;
+			border-radius: 8px !important;
+			padding: 1.1rem 1.8rem !important;
+			margin-bottom: 1.4rem !important;
+			display: flex !important;
+			align-items: center !important;
+			gap: 1rem !important;
+			flex-wrap: wrap !important;
 		}
 		.ea-sectors-label {
 			font-size: 0.66rem !important;
 			font-weight: 700 !important;
-			letter-spacing: 0.1em;
-			text-transform: uppercase;
-			color: #f0a500 !important;
-			white-space: nowrap;
+			letter-spacing: 0.12em !important;
+			text-transform: uppercase !important;
+			color: #c47f00 !important;
+			white-space: nowrap !important;
 		}
-		.ea-sec-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+		.ea-sec-tags { display: flex !important; flex-wrap: wrap !important; gap: 0.4rem !important; }
 		.ea-sec-tag {
-			font-size: 0.7rem !important;
+			font-size: 0.71rem !important;
 			font-weight: 600 !important;
-			background: rgba(255,255,255,0.07);
-			border: 1px solid rgba(255,255,255,0.12);
-			color: rgba(255,255,255,0.72) !important;
-			padding: 0.22rem 0.7rem;
-			border-radius: 100px;
-			display: inline-block;
+			background: #ffffff !important;
+			border: 1px solid #c47f00 !important;
+			color: #6b4400 !important;
+			padding: 0.22rem 0.72rem !important;
+			border-radius: 100px !important;
+			display: inline-block !important;
 		}
 
-		/* ── Core Competencies ── */
+		/* Core Competencies */
 		.ea-comp-wrap {
-			background: rgba(255,255,255,0.04);
-			border: 1px solid rgba(255,255,255,0.1);
-			border-radius: 10px;
-			padding: 1.8rem 2.2rem;
-			margin-bottom: 1.4rem;
+			background: #f8f9fa !important;
+			border: 1px solid #dee2e6 !important;
+			border-radius: 8px !important;
+			padding: 1.8rem 2rem !important;
+			margin-bottom: 1.4rem !important;
 		}
 		.ea-comp-heading {
 			font-size: 0.72rem !important;
 			font-weight: 700 !important;
-			letter-spacing: 0.12em;
-			text-transform: uppercase;
-			color: #f0a500 !important;
-			margin-bottom: 1.2rem;
-			display: block;
+			letter-spacing: 0.12em !important;
+			text-transform: uppercase !important;
+			color: #c47f00 !important;
+			margin-bottom: 1.2rem !important;
+			display: block !important;
 		}
 		.ea-comp-grid {
-			display: grid;
-			grid-template-columns: repeat(3, 1fr);
-			gap: 1rem;
+			display: grid !important;
+			grid-template-columns: repeat(3, 1fr) !important;
+			gap: 1rem !important;
 		}
+		/* 9 competency cards: 3 rows x 3 cols on desktop */
 		.ea-comp-card {
-			background: rgba(255,255,255,0.04);
-			border: 1px solid rgba(255,255,255,0.08);
-			border-radius: 8px;
-			padding: 1rem 1.1rem;
+			background: #ffffff !important;
+			border: 1px solid #dee2e6 !important;
+			border-top: 3px solid #c47f00 !important;
+			border-radius: 6px !important;
+			padding: 1rem 1.1rem !important;
 		}
 		.ea-comp-label {
 			font-size: 0.78rem !important;
 			font-weight: 700 !important;
-			color: #fff !important;
-			display: block;
-			margin-bottom: 0.35rem;
+			color: #1a1a2e !important;
+			display: block !important;
+			margin-bottom: 0.4rem !important;
 		}
 		.ea-comp-desc {
 			font-size: 0.76rem !important;
-			color: rgba(255,255,255,0.58) !important;
-			line-height: 1.55 !important;
-			display: block;
+			color: #555555 !important;
+			line-height: 1.6 !important;
+			display: block !important;
 		}
 
-		/* ── Disclaimer ── */
+		/* Disclaimer */
 		.ea-disc {
-			background: rgba(255,255,255,0.02);
-			border: 1px solid rgba(255,255,255,0.07);
-			border-left: 3px solid rgba(240,165,0,0.45);
-			border-radius: 0 8px 8px 0;
-			padding: 0.95rem 1.4rem;
+			background: #fffbf0 !important;
+			border: 1px solid #e8d5a3 !important;
+			border-left: 3px solid #c47f00 !important;
+			border-radius: 0 6px 6px 0 !important;
+			padding: 0.9rem 1.4rem !important;
 		}
 		.ea-disc p {
 			font-size: 0.76rem !important;
-			color: rgba(255,255,255,0.42) !important;
-			line-height: 1.65 !important;
+			color: #6b5c2e !important;
+			line-height: 1.7 !important;
 			margin: 0 !important;
 		}
-		.ea-disc strong { color: rgba(255,255,255,0.62) !important; }
+		.ea-disc strong { color: #4a3d1a !important; }
 
 		/* ============================================================
-		   DELIVERABLES BOX
+		   DELIVERABLES BOX — dark text on light background
 		   ============================================================ */
 		.ea-del {
-			background: rgba(255,255,255,0.05);
-			border-left: 3px solid #f0a500;
-			border-radius: 0 7px 7px 0;
-			padding: 1rem 1.2rem;
-			margin: 1rem 0 1rem;
+			background: #f8f9fa !important;
+			border-left: 4px solid #c47f00 !important;
+			border-radius: 0 6px 6px 0 !important;
+			padding: 1.1rem 1.3rem !important;
+			margin: 1rem 0 !important;
 		}
 		.ea-del-label {
 			font-size: 0.62rem !important;
 			font-weight: 700 !important;
-			letter-spacing: 0.13em;
-			text-transform: uppercase;
-			color: #f0a500 !important;
-			display: block;
-			margin-bottom: 0.7rem;
+			letter-spacing: 0.14em !important;
+			text-transform: uppercase !important;
+			color: #c47f00 !important;
+			display: block !important;
+			margin-bottom: 0.8rem !important;
 		}
-		/* CRITICAL: reset list styles that Massively blanks out */
 		.ea-del ul {
 			list-style: none !important;
 			margin: 0 !important;
@@ -246,155 +251,142 @@
 		.ea-del ul li {
 			font-size: 0.84rem !important;
 			line-height: 1.65 !important;
-			color: rgba(255,255,255,0.78) !important;
-			padding: 0.35rem 0 0.35rem 1.6rem !important;
-			position: relative;
-			border-bottom: 1px solid rgba(255,255,255,0.05);
+			color: #3d3d3d !important;
+			padding: 0.5rem 0 0.5rem 1.7rem !important;
+			position: relative !important;
+			border-bottom: 1px solid #e2e6ea !important;
+			margin: 0 !important;
 		}
-		.ea-del ul li:last-child { border-bottom: none; }
+		.ea-del ul li:last-child { border-bottom: none !important; }
 		.ea-del ul li::before {
-			content: '✓';
-			color: #f0a500 !important;
-			font-weight: 700;
-			font-size: 0.85rem;
-			position: absolute;
-			left: 0;
-			top: 0.38rem;
+			content: '✓' !important;
+			color: #c47f00 !important;
+			font-weight: 700 !important;
+			font-size: 0.9rem !important;
+			position: absolute !important;
+			left: 0 !important;
+			top: 0.52rem !important;
 		}
 		.ea-del ul li strong {
-			color: #fff !important;
+			color: #1a1a2e !important;
 			font-weight: 700 !important;
-			display: block;
-			margin-bottom: 0.15rem;
-			font-size: 0.84rem !important;
+			display: block !important;
+			margin-bottom: 0.18rem !important;
+			font-size: 0.85rem !important;
 		}
 
 		/* ============================================================
-		   TOOL STRIP
+		   TOOL BADGES
 		   ============================================================ */
 		.ea-tools {
-			display: flex;
-			flex-wrap: wrap;
-			gap: 0.38rem;
-			margin: 0.8rem 0 1.2rem;
+			display: flex !important;
+			flex-wrap: wrap !important;
+			gap: 0.38rem !important;
+			margin: 0.8rem 0 1.2rem !important;
 		}
 		.ea-tb {
 			font-size: 0.68rem !important;
 			font-weight: 600 !important;
-			background: rgba(255,255,255,0.07);
-			border: 1px solid rgba(255,255,255,0.14);
-			color: rgba(255,255,255,0.68) !important;
-			padding: 0.22rem 0.65rem;
-			border-radius: 5px;
-			letter-spacing: 0.02em;
-			display: inline-block;
+			background: #ffffff !important;
+			border: 1px solid #c47f00 !important;
+			color: #6b4400 !important;
+			padding: 0.22rem 0.68rem !important;
+			border-radius: 5px !important;
+			letter-spacing: 0.02em !important;
+			display: inline-block !important;
 		}
 
 		/* ============================================================
-		   SKILLS SECTION
+		   SKILLS SECTION — dark text on light background
 		   ============================================================ */
 		.ea-skills-wrap {
-			margin: 3rem 0 0;
-			padding: 2.2rem;
-			background: rgba(255,255,255,0.04);
-			border: 1px solid rgba(255,255,255,0.09);
-			border-radius: 10px;
+			margin: 3rem 0 0 !important;
+			padding: 2.2rem !important;
+			background: #f8f9fa !important;
+			border: 1px solid #dee2e6 !important;
+			border-top: 4px solid #c47f00 !important;
+			border-radius: 8px !important;
 		}
 		.ea-skills-wrap h2 {
+			color: #1a1a2e !important;
 			margin-bottom: 0.3rem !important;
-			color: #fff !important;
 		}
 		.ea-skills-sub {
 			font-size: 0.875rem !important;
-			color: rgba(255,255,255,0.5) !important;
+			color: #666666 !important;
 			margin-bottom: 1.8rem !important;
-			display: block;
+			display: block !important;
 		}
 		.ea-sk-grid {
-			display: grid;
-			grid-template-columns: repeat(3, 1fr);
-			gap: 1.2rem;
+			display: grid !important;
+			grid-template-columns: repeat(3, 1fr) !important;
+			gap: 1.2rem !important;
 		}
+		/* 9 cards: 3 rows of 3 on desktop — no change needed.
+		   Responsive overrides below handle narrower viewports. */
 		.ea-sk-card {
-			background: rgba(255,255,255,0.04);
-			border: 1px solid rgba(255,255,255,0.09);
-			border-radius: 8px;
-			padding: 1.3rem 1.3rem;
+			background: #ffffff !important;
+			border: 1px solid #dee2e6 !important;
+			border-top: 3px solid #c47f00 !important;
+			border-radius: 6px !important;
+			padding: 1.3rem !important;
 		}
 		.ea-sk-icon {
-			font-size: 1.4rem;
-			display: block;
-			margin-bottom: 0.5rem;
+			font-size: 1.5rem !important;
+			display: block !important;
+			margin-bottom: 0.5rem !important;
 		}
 		.ea-sk-title {
 			font-size: 0.75rem !important;
 			font-weight: 700 !important;
-			color: #fff !important;
-			text-transform: uppercase;
-			letter-spacing: 0.07em;
-			display: block;
-			margin-bottom: 0.7rem;
-			padding-bottom: 0.5rem;
-			border-bottom: 1px solid rgba(255,255,255,0.08);
+			color: #1a1a2e !important;
+			text-transform: uppercase !important;
+			letter-spacing: 0.07em !important;
+			display: block !important;
+			margin-bottom: 0.7rem !important;
+			padding-bottom: 0.5rem !important;
+			border-bottom: 1px solid #e9ecef !important;
 		}
-		/* CRITICAL: force list items to show inside skill cards */
 		.ea-sk-list {
 			list-style: none !important;
 			margin: 0 !important;
 			padding: 0 !important;
 		}
 		.ea-sk-list li {
-			font-size: 0.79rem !important;
-			color: rgba(255,255,255,0.65) !important;
-			padding: 0.2rem 0 0.2rem 1.1rem !important;
-			position: relative;
+			font-size: 0.8rem !important;
+			color: #444444 !important;
+			padding: 0.22rem 0 0.22rem 1.1rem !important;
+			position: relative !important;
 			line-height: 1.5 !important;
+			margin: 0 !important;
 		}
 		.ea-sk-list li::before {
-			content: '';
-			width: 4px;
-			height: 4px;
-			background: #f0a500;
-			border-radius: 50%;
-			position: absolute;
-			left: 0;
-			top: 0.55rem;
-		}
-
-		/* ============================================================
-		   NAV BADGE
-		   ============================================================ */
-		.ea-avail {
-			background: #27ae60;
-			color: #fff !important;
-			font-size: 0.58rem !important;
-			font-weight: 700 !important;
-			letter-spacing: 0.06em;
-			text-transform: uppercase;
-			padding: 0.17rem 0.5rem;
-			border-radius: 100px;
-			margin-left: 0.4rem;
-			vertical-align: middle;
-			display: inline-block;
+			content: '' !important;
+			width: 5px !important;
+			height: 5px !important;
+			background: #c47f00 !important;
+			border-radius: 50% !important;
+			position: absolute !important;
+			left: 0 !important;
+			top: 0.55rem !important;
 		}
 
 		/* ============================================================
 		   RESPONSIVE
 		   ============================================================ */
 		@media screen and (max-width: 980px) {
-			.ea-comp-grid { grid-template-columns: repeat(2, 1fr); }
-			.ea-sk-grid { grid-template-columns: repeat(2, 1fr); }
+			.ea-comp-grid { grid-template-columns: repeat(2, 1fr) !important; }
+			.ea-sk-grid   { grid-template-columns: repeat(2, 1fr) !important; }
 		}
 		@media screen and (max-width: 736px) {
-			.ea-about-bio { padding: 1.4rem; }
-			.ea-comp-wrap { padding: 1.4rem; }
-			.ea-skills-wrap { padding: 1.4rem; }
-			.ea-sectors { padding: 1.1rem 1.4rem; }
-			#intro .ea-stat-strip { gap: 1.2rem; }
+			.ea-about-bio  { padding: 1.4rem !important; }
+			.ea-comp-wrap  { padding: 1.4rem !important; }
+			.ea-skills-wrap{ padding: 1.4rem !important; }
+			.ea-sectors    { padding: 1rem 1.2rem !important; }
 		}
-		@media screen and (max-width: 580px) {
-			.ea-comp-grid { grid-template-columns: 1fr; }
-			.ea-sk-grid { grid-template-columns: 1fr; }
+		@media screen and (max-width: 560px) {
+			.ea-comp-grid { grid-template-columns: 1fr !important; }
+			.ea-sk-grid   { grid-template-columns: 1fr !important; }
 		}
 
 		</style>
@@ -405,38 +397,26 @@
 			<!-- ══ INTRO ══════════════════════════════════════════════ -->
 			<div id="intro">
 				<h1>Emmanuel Adenuga</h1>
-
 				<div class="ea-badge-row">
 					<span class="ea-badge">Certified Business Analyst</span>
 					<span class="ea-badge">Test Professional</span>
+					<span class="ea-badge">AI &amp; Workflow Automation</span>
+					<span class="ea-badge">Data Analysis</span>
 					<span class="ea-badge">9+ Years Experience</span>
 					<span class="ea-badge">Open to Work</span>
 				</div>
-
 				<p>
 					Bridging the gap between business needs and technical solutions —<br />
 					delivering quality, efficiency and measurable stakeholder value.
 				</p>
-
 				<div class="ea-stat-strip">
-					<div class="ea-stat">
-						<strong>9+</strong>
-						<span>Years Experience</span>
-					</div>
-					<div class="ea-stat">
-						<strong>7+</strong>
-						<span>Projects Delivered</span>
-					</div>
-					<div class="ea-stat">
-						<strong>5</strong>
-						<span>Industry Sectors</span>
-					</div>
+					<div class="ea-stat"><strong>9+</strong><span>Years Experience</span></div>
+					<div class="ea-stat"><strong>7+</strong><span>Projects Delivered</span></div>
+					<div class="ea-stat"><strong>9</strong><span>Skill Areas</span></div>
+					<div class="ea-stat"><strong>5</strong><span>Industry Sectors</span></div>
 				</div>
-
 				<ul class="actions">
-					<li>
-						<a href="#header" class="button icon solid solo fa-arrow-down scrolly">View My Work</a>
-					</li>
+					<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">View My Work</a></li>
 				</ul>
 			</div>
 
@@ -454,50 +434,30 @@
 					</li>
 				</ul>
 				<ul class="icons">
-					<li>
-						<a href="https://www.linkedin.com/in/emmanuel-adenuga/"
-						   target="_blank" rel="noopener"
-						   class="icon brands fa-linkedin" title="LinkedIn">
-							<span class="label">LinkedIn</span>
-						</a>
-					</li>
-					<li>
-						<a href="https://github.com/eoaadenuga"
-						   target="_blank" rel="noopener"
-						   class="icon brands fa-github" title="GitHub">
-							<span class="label">GitHub</span>
-						</a>
-					</li>
+					<li><a href="https://www.linkedin.com/in/emmanuel-adenuga/" target="_blank" rel="noopener" class="icon brands fa-linkedin" title="LinkedIn"><span class="label">LinkedIn</span></a></li>
+					<li><a href="https://github.com/eoaadenuga" target="_blank" rel="noopener" class="icon brands fa-github" title="GitHub"><span class="label">GitHub</span></a></li>
 				</ul>
 			</nav>
 
 			<!-- ══ MAIN ══════════════════════════════════════════════ -->
 			<div id="main">
 
-				<!-- ════════════════════════════════════════════════════
-				     ABOUT ME — from GitHub README
-				     ════════════════════════════════════════════════════ -->
+				<!-- ════════════════════════════════════════════════
+				     ABOUT ME
+				     ════════════════════════════════════════════════ -->
 				<div class="ea-about">
 
-					<!-- Bio -->
 					<div class="ea-about-bio">
 						<span class="ea-eyebrow">About Me</span>
 						<h3>Certified Business Analyst &amp; Test Professional</h3>
-
-						<p>Hi, welcome to my portfolio — where I showcase my projects, achievements and passion for AI Automation and business analysis.</p>
-
+						<p>Hi, welcome to my portfolio — where I showcase my projects, achievements and passion for data science and business analysis.</p>
 						<p>I'm a <strong>certified Business Analyst and Test Professional</strong> with <em>over 9 years of experience</em> delivering high-quality business solutions and robust software testing across <strong>Technology, FinTech, Academic, Media and Telecom</strong> sectors. My career has been built on bridging the gap between business needs and technical solutions — ensuring requirements are clearly defined, solutions are fit-for-purpose and systems are thoroughly validated before release.</p>
-
 						<p>With expertise in <strong>requirements elicitation, process improvement, functional and non-functional testing, API testing, UAT coordination and defect management</strong>, I've led and contributed to projects that improved operational efficiency, enhanced customer experiences and reduced system defects. My background also includes implementing <strong>Agile and Waterfall methodologies</strong>, collaborating with cross-functional teams and ensuring seamless alignment between stakeholders, developers and testers.</p>
-
 						<p>I use industry-leading tools like <strong>Jira, Confluence, Postman, SQL and Charles Proxy</strong>, along with strong analytical and documentation skills, to deliver projects on time, within scope and to the highest quality standards.</p>
-
 						<p>Beyond my technical skills, I bring a strong focus on <strong>clear communication, stakeholder engagement and continuous improvement</strong> — qualities that have helped me navigate complex projects and deliver tangible business value.</p>
-
 						<p>If you are seeking a <em>results-driven Business Analyst and Testing professional</em> with a proven track record of driving quality, efficiency and stakeholder satisfaction — I'd be happy to connect.</p>
 					</div>
 
-					<!-- Sectors -->
 					<div class="ea-sectors">
 						<span class="ea-sectors-label">Industries</span>
 						<div class="ea-sec-tags">
@@ -513,9 +473,8 @@
 						</div>
 					</div>
 
-					<!-- Core Competencies -->
 					<div class="ea-comp-wrap">
-						<span class="ea-comp-heading">⚡ Core Competencies</span>
+						<span class="ea-comp-heading">&#9889; Core Competencies</span>
 						<div class="ea-comp-grid">
 							<div class="ea-comp-card">
 								<span class="ea-comp-label">Business Analysis</span>
@@ -541,42 +500,50 @@
 								<span class="ea-comp-label">Agile &amp; Waterfall</span>
 								<span class="ea-comp-desc">Agile/Scrum ceremonies, Waterfall lifecycle, Jira backlog management, Confluence documentation</span>
 							</div>
+							<div class="ea-comp-card">
+								<span class="ea-comp-label">AI &amp; Workflow Automation</span>
+								<span class="ea-comp-desc">Julius AI, NotebookLM, prompt engineering, automated reporting pipelines, AI tool evaluation and workflow automation design</span>
+							</div>
+							<div class="ea-comp-card">
+								<span class="ea-comp-label">Project Implementation</span>
+								<span class="ea-comp-desc">End-to-end project delivery, business case development, change management, risk registers, UAT sign-off and go-live support</span>
+							</div>
+							<div class="ea-comp-card">
+								<span class="ea-comp-label">Data Analysis</span>
+								<span class="ea-comp-desc">Descriptive and diagnostic analytics, customer and sales data analysis, KPI definition, data cleaning, trend identification and insight-to-action reporting</span>
+							</div>
 						</div>
 					</div>
 
-					<!-- Disclaimer -->
 					<div class="ea-disc">
-						<p><strong>📁 Portfolio Disclaimer:</strong> The datasets, analyses and reports presented in this portfolio are synthetic and created solely for demonstration purposes. They do not contain real proprietary, confidential or sensitive information from any company, institution or individual. These examples are designed to showcase my technical skills in data science and data analysis while adhering to ethical guidelines and respecting data privacy.</p>
+						<p><strong>&#128193; Portfolio Disclaimer:</strong> The datasets, analyses and reports presented in this portfolio are synthetic and created solely for demonstration purposes. They do not contain real proprietary, confidential or sensitive information from any company, institution or individual. These examples are designed to showcase my technical skills in data science and data analysis while adhering to ethical guidelines and respecting data privacy.</p>
 					</div>
 
-				</div>
-				<!-- end .ea-about -->
+				</div><!-- end .ea-about -->
 
 
-				<!-- ════════════════════════════════════════════════════
+				<!-- ════════════════════════════════════════════════
 				     PROJECT 1 — UNILEVER (FEATURED)
-				     ════════════════════════════════════════════════════ -->
-				<article class=" post featured">
+				     ════════════════════════════════════════════════ -->
+				<article class="post featured">
 					<header class="major">
 						<span class="ea-eyebrow">Featured Project &mdash; FMCG &bull; Process Improvement &bull; Requirements Analysis</span>
 						<h2><a href="#">Online Canteen Ordering System<br />Unilever PLC</a></h2>
 						<p>Unilever's 1,500-employee UK office was losing an estimated <strong>35 minutes per employee per lunch break</strong> to canteen queues. I conducted a full business analysis engagement — covering the business case, stakeholder mapping, functional specifications and a RACI-governed project plan — to design a digital ordering solution.</p>
 					</header>
-					<a href="https://docs.google.com/presentation/d/1juuA6rW3yZ35jmI7QR97RT-dPHlLO51x/htmlpresent"
-					   class="image main" target="_blank" rel="noopener">
-						<img src="images/image1.jpg" alt=" Unilever Online Canteen Ordering System" />
+					<a href="https://docs.google.com/presentation/d/1juuA6rW3yZ35jmI7QR97RT-dPHlLO51x/htmlpresent" class="image main" target="_blank" rel="noopener">
+						<img src="images/image1.jpg" alt="Unilever Online Canteen Ordering System" />
 					</a>
-
 					<div class="ea-del">
 						<span class="ea-del-label">4 Key Deliverables</span>
 						<ul>
 							<li>
 								<strong>Business Case with ROI Projection</strong>
-								Documented a £200k total investment with a full cost-benefit analysis across Years 0–6, identifying Year 5 as the break-even point and projecting a 45% reduction in food waste as the primary non-financial benefit.
+								Documented a £200k total investment with full cost-benefit analysis across Years 0–6, identifying Year 5 as the break-even point and projecting a 45% reduction in food waste as the primary non-financial benefit.
 							</li>
 							<li>
 								<strong>Stakeholder Analysis &amp; RACI Matrix</strong>
-								Produced a 12-stakeholder engagement register mapping Power/Interest quadrants and communication strategies, paired with a 9-activity RACI matrix governing all phases from analysis through to delivery.
+								Produced a 12-stakeholder engagement register mapping Power/Interest quadrants and communication strategies, paired with a 9-activity RACI matrix governing all project phases from analysis through to delivery.
 							</li>
 							<li>
 								<strong>Functional Requirements &amp; Use Case Diagram</strong>
@@ -588,7 +555,6 @@
 							</li>
 						</ul>
 					</div>
-
 					<div class="ea-tools">
 						<span class="ea-tb">Jira</span>
 						<span class="ea-tb">Confluence</span>
@@ -599,17 +565,13 @@
 						<span class="ea-tb">Stakeholder Analysis</span>
 						<span class="ea-tb">Requirements Elicitation</span>
 					</div>
-
-					<ul class=" actions special">
-						<li>
-							<a href="https://docs.google.com/presentation/d/1juuA6rW3yZ35jmI7QR97RT-dPHlLO51x/htmlpresent"
-							   class="button large" target="_blank" rel="noopener">View Full Case Study</a>
-						</li>
+					<ul class="actions special">
+						<li><a href="https://docs.google.com/presentation/d/1juuA6rW3yZ35jmI7QR97RT-dPHlLO51x/htmlpresent" class="button large" target="_blank" rel="noopener">View Full Case Study</a></li>
 					</ul>
 				</article>
 
 
-				<!-- ── PROJECT GRID ──────────────────────────────────── -->
+				<!-- ── PROJECT GRID ──────────────────────────────── -->
 				<section class="posts">
 
 					<!-- PROJECT 2 — BARNET HOSPITAL -->
@@ -618,18 +580,16 @@
 							<span class="ea-eyebrow">Healthcare &mdash; Patient Experience &bull; Operational Improvement</span>
 							<h2><a href="#">Patient Experience Improvement<br />Barnet Hospital</a></h2>
 						</header>
-						<a href="https://drive.google.com/file/d/1GaHglbZCQ8CWkybN6NNxP4NVtr9UbKVN/view?usp=drive_link"
-						   class="image fit" target="_blank" rel="noopener">
+						<a href="https://drive.google.com/file/d/1GaHglbZCQ8CWkybN6NNxP4NVtr9UbKVN/view?usp=drive_link" class="image fit" target="_blank" rel="noopener">
 							<img src="images/Image 4.jpg" alt="Barnet Hospital" />
 						</a>
-						<p>Barnet Hospital faced mounting patient complaints and operational inefficiencies across wait times, resource allocation and inter-departmental communication. I analysed root causes and produced a structured improvement report with a visual analytics dashboard for the NHS Trust leadership team.</p>
-
+						<p>Barnet Hospital faced mounting patient complaints and operational inefficiencies across wait times, resource allocation and communication. I analysed root causes and produced a structured improvement report with a visual analytics dashboard for NHS Trust leadership.</p>
 						<div class="ea-del">
 							<span class="ea-del-label">4 Key Deliverables</span>
 							<ul>
 								<li>
 									<strong>Root Cause Analysis Report</strong>
-									Categorised patient complaint themes using fishbone analysis to identify the underlying operational drivers — including staffing gaps, inefficient triage and poor discharge planning — behind declining patient satisfaction scores.
+									Categorised patient complaint themes using fishbone analysis to identify the underlying operational drivers — including staffing gaps, inefficient triage and poor discharge planning — behind declining satisfaction scores.
 								</li>
 								<li>
 									<strong>Stakeholder Impact &amp; Communication Plan</strong>
@@ -645,7 +605,6 @@
 								</li>
 							</ul>
 						</div>
-
 						<div class="ea-tools">
 							<span class="ea-tb">Root Cause Analysis</span>
 							<span class="ea-tb">Stakeholder Mapping</span>
@@ -654,10 +613,7 @@
 							<span class="ea-tb">KPI Framework</span>
 						</div>
 						<ul class="actions special">
-							<li>
-								<a href="https://drive.google.com/file/d/1GaHglbZCQ8CWkybN6NNxP4NVtr9UbKVN/view?usp=drive_link"
-								   class="button" target="_blank" rel="noopener">View Case Study</a>
-							</li>
+							<li><a href="https://drive.google.com/file/d/1GaHglbZCQ8CWkybN6NNxP4NVtr9UbKVN/view?usp=drive_link" class="button" target="_blank" rel="noopener">View Case Study</a></li>
 						</ul>
 					</article>
 
@@ -667,22 +623,20 @@
 							<span class="ea-eyebrow">Aviation &mdash; SDLC &bull; Power BI &bull; Customer Analytics</span>
 							<h2><a href="#">Customer Satisfaction Analysis<br />British Airways</a></h2>
 						</header>
-						<a href="https://drive.google.com/file/d/10BTBwSQoEPg2dIpFB_DdvK8jdYBmUISD/view?usp=drive_link"
-						   class="image fit" target="_blank" rel="noopener">
-							<img src="images/image 3.jpg" alt="British Airways Power BI Analysis" />
+						<a href="https://drive.google.com/file/d/10BTBwSQoEPg2dIpFB_DdvK8jdYBmUISD/view?usp=drive_link" class="image fit" target="_blank" rel="noopener">
+							<img src="images/image 3.jpg" alt="British Airways Power BI" />
 						</a>
-						<p>British Airways sought to boost customer satisfaction and reduce churn across passenger segments. This SDLC-structured engagement used Power BI to transform raw customer review data into strategic intelligence, delivering an interactive dashboard and prioritised service improvement recommendations.</p>
-
+						<p>British Airways sought to boost customer satisfaction and reduce churn. This SDLC-structured engagement used Power BI to transform raw customer review data into strategic intelligence, delivering an interactive dashboard and prioritised service improvement recommendations.</p>
 						<div class="ea-del">
 							<span class="ea-del-label">4 Key Deliverables</span>
 							<ul>
 								<li>
 									<strong>SDLC-Structured Business Requirements Document</strong>
-									Produced a BRD covering the full project lifecycle: problem definition, requirements elicitation, system scope, data inputs, stakeholder sign-off criteria and measurable success metrics aligned to SDLC phases.
+									Produced a BRD covering the full project lifecycle: problem definition, requirements elicitation, system scope, data inputs, stakeholder sign-off criteria and measurable success metrics.
 								</li>
 								<li>
 									<strong>Customer Satisfaction Trend Analysis</strong>
-									Analysed multi-dimensional customer review data across key touchpoints (in-flight experience, check-in, baggage, cabin crew) to surface satisfaction trends, seasonal patterns and the service attributes with greatest impact on overall rating.
+									Analysed review data across key service touchpoints (in-flight experience, check-in, baggage, cabin crew) to surface satisfaction trends, seasonal patterns and the attributes with the greatest impact on overall customer rating.
 								</li>
 								<li>
 									<strong>Interactive Power BI Dashboard</strong>
@@ -694,7 +648,6 @@
 								</li>
 							</ul>
 						</div>
-
 						<div class="ea-tools">
 							<span class="ea-tb">Power BI</span>
 							<span class="ea-tb">DAX</span>
@@ -705,10 +658,7 @@
 							<span class="ea-tb">Microsoft Excel</span>
 						</div>
 						<ul class="actions special">
-							<li>
-								<a href="https://drive.google.com/file/d/10BTBwSQoEPg2dIpFB_DdvK8jdYBmUISD/view?usp=drive_link"
-								   class="button" target="_blank" rel="noopener">View Case Study</a>
-							</li>
+							<li><a href="https://drive.google.com/file/d/10BTBwSQoEPg2dIpFB_DdvK8jdYBmUISD/view?usp=drive_link" class="button" target="_blank" rel="noopener">View Case Study</a></li>
 						</ul>
 					</article>
 
@@ -718,34 +668,31 @@
 							<span class="ea-eyebrow">Retail &mdash; Customer Behaviour &bull; Microsoft Excel &bull; Dashboard</span>
 							<h2><a href="#">E-Commerce Behaviour Analysis<br />ABC Retail</a></h2>
 						</header>
-						<a href="https://drive.google.com/file/d/1ahx2_1qc_NMo2cbpSGs7CiSh-OaEsIO8/view?usp=drive_link"
-						   class="image fit" target="_blank" rel="noopener">
+						<a href="https://drive.google.com/file/d/1ahx2_1qc_NMo2cbpSGs7CiSh-OaEsIO8/view?usp=drive_link" class="image fit" target="_blank" rel="noopener">
 							<img src="images/image 2.jpg" alt="ABC Retail Dashboard" />
 						</a>
-						<p>ABC Retail needed to understand how customers were navigating their online store. Using Microsoft Excel, I examined transactional data to uncover purchasing patterns, identify revenue leakage points and produce a decision-ready dashboard to guide their e-commerce strategy.</p>
-
+						<p>ABC Retail needed to understand how customers navigated their online store. Using Microsoft Excel, I examined transactional data to uncover purchasing patterns, identify revenue leakage points and produce a decision-ready dashboard to guide the e-commerce strategy.</p>
 						<div class="ea-del">
 							<span class="ea-del-label">4 Key Deliverables</span>
 							<ul>
 								<li>
 									<strong>Customer Segmentation Analysis</strong>
-									Segmented customers by purchase frequency, average order value and product preference — identifying high-value repeat buyers, at-risk churning customers and low-engagement segments to inform targeted retention and acquisition strategies.
+									Segmented customers by purchase frequency, average order value and product preference — identifying high-value repeat buyers, at-risk churning customers and low-engagement segments to inform targeted retention strategies.
 								</li>
 								<li>
 									<strong>Basket Abandonment &amp; Drop-Off Analysis</strong>
-									Mapped the online purchase funnel to identify stages where customers exited without completing transactions, quantifying revenue impact and pinpointing product categories most associated with abandonment behaviour.
+									Mapped the online purchase funnel to identify stages where customers exited without completing transactions, quantifying revenue impact and pinpointing the product categories most associated with abandonment behaviour.
 								</li>
 								<li>
 									<strong>Sales Performance &amp; Revenue Trend Report</strong>
-									Analysed transactional data across time periods, product lines and demographics to surface peak revenue windows, underperforming categories and cross-sell opportunities — with ranked revenue optimisation recommendations.
+									Analysed transactional data across time periods, product lines and demographics to surface peak revenue windows, underperforming categories and cross-sell opportunities with ranked optimisation recommendations.
 								</li>
 								<li>
 									<strong>Interactive Excel Dashboard</strong>
-									Built a dynamic, filter-driven Excel dashboard consolidating all key metrics — sales by category, customer frequency distribution, monthly revenue trends and conversion indicators — enabling non-technical stakeholders to explore data independently.
+									Built a dynamic, filter-driven Excel dashboard consolidating all key metrics — sales by category, customer frequency distribution, monthly revenue trends and conversion indicators — for non-technical stakeholder use.
 								</li>
 							</ul>
 						</div>
-
 						<div class="ea-tools">
 							<span class="ea-tb">Microsoft Excel</span>
 							<span class="ea-tb">Pivot Tables</span>
@@ -754,10 +701,7 @@
 							<span class="ea-tb">Revenue Analysis</span>
 						</div>
 						<ul class="actions special">
-							<li>
-								<a href="https://drive.google.com/file/d/1ahx2_1qc_NMo2cbpSGs7CiSh-OaEsIO8/view?usp=drive_link"
-								   class="button" target="_blank" rel="noopener">View Case Study</a>
-							</li>
+							<li><a href="https://drive.google.com/file/d/1ahx2_1qc_NMo2cbpSGs7CiSh-OaEsIO8/view?usp=drive_link" class="button" target="_blank" rel="noopener">View Case Study</a></li>
 						</ul>
 					</article>
 
@@ -767,34 +711,31 @@
 							<span class="ea-eyebrow">Retail &mdash; AI-Assisted Analytics &bull; Multi-Region &bull; Operations</span>
 							<h2><a href="#">Sales &amp; Shipping Performance<br />MiniMart</a></h2>
 						</header>
-						<a href="https://docs.google.com/presentation/d/17hYFk1qGSngOOcuW-t7YEx2wMuFA_L-k/edit?usp=drive_link&ouid=114538259253394785617&rtpof=true&sd=true"
-						   class="image fit" target="_blank" rel="noopener">
-							<img src="images/Image 13.png" alt="MiniMart Sales Dashboard" />
+						<a href="https://docs.google.com/presentation/d/17hYFk1qGSngOOcuW-t7YEx2wMuFA_L-k/edit?usp=drive_link" class="image fit" target="_blank" rel="noopener">
+							<img src="images/Image 13.png" alt="MiniMart Dashboard" />
 						</a>
-						<p>MiniMart, a mid-sized multi-region retailer, faced significant challenges in sales performance and shipping. I leveraged Julius AI and NotebookLM to examine datasets, identify critical operational gaps and deliver a structured leadership presentation of findings and improvement recommendations.</p>
-
+						<p>MiniMart, a mid-sized multi-region retailer, faced significant challenges in sales and shipping. I leveraged Julius AI and NotebookLM to examine datasets, identify operational gaps and deliver a structured leadership presentation of findings and improvement recommendations.</p>
 						<div class="ea-del">
 							<span class="ea-del-label">4 Key Deliverables</span>
 							<ul>
 								<li>
 									<strong>AI-Assisted Multi-Region Sales Analysis</strong>
-									Used Julius AI to interrogate sales datasets across all regions, identifying regional performance variances, top-performing product lines, seasonal demand patterns and the channels generating the highest and lowest returns.
+									Used Julius AI to interrogate sales datasets across all regions, identifying regional performance variances, top-performing product lines, seasonal demand patterns and the channels generating highest and lowest returns.
 								</li>
 								<li>
 									<strong>Shipping &amp; Logistics Bottleneck Report</strong>
-									Analysed fulfilment data to identify root causes of delivery delays and cost inefficiencies — mapping specific process breakpoints including dispatch lag, carrier performance issues and regional volume imbalances.
+									Analysed fulfilment data to identify root causes of delivery delays and cost inefficiencies — mapping specific breakpoints including dispatch lag, carrier performance and regional volume imbalances.
 								</li>
 								<li>
 									<strong>Insight Synthesis via NotebookLM</strong>
-									Leveraged NotebookLM to synthesise findings from multiple data sources into a coherent analytical narrative, enabling rapid cross-referencing of sales patterns, logistics data and operational context to surface the most actionable insights.
+									Leveraged NotebookLM to synthesise findings from multiple data sources into a coherent analytical narrative, enabling rapid cross-referencing of sales patterns, logistics data and operational context.
 								</li>
 								<li>
 									<strong>Prioritised Improvement Roadmap</strong>
-									Translated findings into a structured recommendations presentation, ranking improvement actions by ease of implementation and projected business impact — providing leadership with a clear, phased action plan to address operational gaps.
+									Translated findings into a structured recommendations presentation, ranking improvement actions by ease of implementation and projected business impact — providing leadership with a clear, phased action plan.
 								</li>
 							</ul>
 						</div>
-
 						<div class="ea-tools">
 							<span class="ea-tb">Julius AI</span>
 							<span class="ea-tb">NotebookLM</span>
@@ -804,10 +745,7 @@
 							<span class="ea-tb">Google Slides</span>
 						</div>
 						<ul class="actions special">
-							<li>
-								<a href="https://docs.google.com/presentation/d/17hYFk1qGSngOOcuW-t7YEx2wMuFA_L-k/edit?usp=drive_link&ouid=114538259253394785617&rtpof=true&sd=true"
-								   class="button" target="_blank" rel="noopener">View Case Study</a>
-							</li>
+							<li><a href="https://docs.google.com/presentation/d/17hYFk1qGSngOOcuW-t7YEx2wMuFA_L-k/edit?usp=drive_link" class="button" target="_blank" rel="noopener">View Case Study</a></li>
 						</ul>
 					</article>
 
@@ -817,12 +755,10 @@
 							<span class="ea-eyebrow">Electronics Retail &mdash; SQL &bull; Database Design &bull; Inventory Intelligence</span>
 							<h2><a href="#">Sales &amp; Inventory Intelligence<br />Tech Haven Electronics</a></h2>
 						</header>
-						<a href="https://drive.google.com/file/d/1s3ZMPtKP44GCr2IomBSU6I4Tq1okRgHy/view?usp=drive_link"
-						   class="image fit" target="_blank" rel="noopener">
-							<img src="images/Image 7.jpg" alt="Tech Haven SQL Analysis" />
+						<a href="https://drive.google.com/file/d/1s3ZMPtKP44GCr2IomBSU6I4Tq1okRgHy/view?usp=drive_link" class="image fit" target="_blank" rel="noopener">
+							<img src="images/Image 7.jpg" alt="Tech Haven SQL" />
 						</a>
-						<p>Tech Haven Electronics needed to unlock intelligence held within their transactional data. Working directly with a SQL file, I designed and populated a relational database, then built structured queries to surface customer purchasing intelligence, dormant inventory and product-level revenue performance.</p>
-
+						<p>Tech Haven Electronics needed to unlock intelligence held in their transactional data. I designed and populated a relational database, then built structured SQL queries to surface customer purchasing intelligence, dormant inventory and product-level revenue performance.</p>
 						<div class="ea-del">
 							<span class="ea-del-label">4 Key Deliverables</span>
 							<ul>
@@ -832,7 +768,7 @@
 								</li>
 								<li>
 									<strong>Customer Purchase History Query Set</strong>
-									Developed SQL queries joining customer, product and transaction tables to produce a complete per-customer sales history — enabling the business to identify VIP customers and personalise marketing outreach.
+									Developed SQL queries joining customer, product and transaction tables to produce a complete per-customer sales history — enabling identification of VIP customers and personalised marketing outreach.
 								</li>
 								<li>
 									<strong>Zero-Sales Product Identification Report</strong>
@@ -840,11 +776,10 @@
 								</li>
 								<li>
 									<strong>Product &amp; Revenue Performance Analysis</strong>
-									Built aggregation queries to report sales volume, total revenue and average selling price by product and category — delivering a ranked performance view highlighting top revenue drivers and pricing optimisation opportunities.
+									Built aggregation queries reporting sales volume, total revenue and average selling price by product and category — delivering a ranked performance view highlighting top revenue drivers and pricing opportunities.
 								</li>
 							</ul>
 						</div>
-
 						<div class="ea-tools">
 							<span class="ea-tb">SQL</span>
 							<span class="ea-tb">Database Design</span>
@@ -853,10 +788,7 @@
 							<span class="ea-tb">Inventory Analysis</span>
 						</div>
 						<ul class="actions special">
-							<li>
-								<a href="https://drive.google.com/file/d/1s3ZMPtKP44GCr2IomBSU6I4Tq1okRgHy/view?usp=drive_link"
-								   class="button" target="_blank" rel="noopener">View Case Study</a>
-							</li>
+							<li><a href="https://drive.google.com/file/d/1s3ZMPtKP44GCr2IomBSU6I4Tq1okRgHy/view?usp=drive_link" class="button" target="_blank" rel="noopener">View Case Study</a></li>
 						</ul>
 					</article>
 
@@ -866,12 +798,10 @@
 							<span class="ea-eyebrow">Process Mapping &mdash; AS-IS Documentation &bull; Lucidchart &bull; BPMN</span>
 							<h2><a href="#">Travel Expense Reimbursement<br />AS-IS Process Mapping</a></h2>
 						</header>
-						<a href="https://drive.google.com/file/d/19s4frrg5ytryMOLUrKW7JgOo7L-5IQHS/view?usp=sharing"
-						   class="image fit" target="_blank" rel="noopener">
+						<a href="https://drive.google.com/file/d/19s4frrg5ytryMOLUrKW7JgOo7L-5IQHS/view?usp=sharing" class="image fit" target="_blank" rel="noopener">
 							<img src="images/Image 12.jpg" alt="AS-IS Travel Expense Process Map" />
 						</a>
-						<p>This project documented the complete current-state (AS-IS) workflow for employee travel expense reimbursement. Using Lucidchart, I created a structured swimlane process map exposing friction in the approval chain — forming the analytical baseline for a future TO-BE process redesign.</p>
-
+						<p>This project documented the complete current-state (AS-IS) workflow for employee travel expense reimbursement. Using Lucidchart, I created a swimlane process map exposing friction in the approval chain — forming the baseline for a future TO-BE process redesign.</p>
 						<div class="ea-del">
 							<span class="ea-del-label">4 Key Deliverables</span>
 							<ul>
@@ -889,11 +819,10 @@
 								</li>
 								<li>
 									<strong>Baseline &amp; Scope Definition for TO-BE Redesign</strong>
-									Formalised the AS-IS documentation as the analytical baseline, defining in-scope boundaries, exclusions, the process owner and the specific pain points the TO-BE redesign must address — ensuring a shared, evidence-based starting point.
+									Formalised the AS-IS documentation as the analytical baseline, defining in-scope boundaries, exclusions, the process owner and the specific pain points the TO-BE redesign must address.
 								</li>
 							</ul>
 						</div>
-
 						<div class="ea-tools">
 							<span class="ea-tb">Lucidchart</span>
 							<span class="ea-tb">BPMN</span>
@@ -903,29 +832,24 @@
 							<span class="ea-tb">Pain Point Analysis</span>
 						</div>
 						<ul class="actions special">
-							<li>
-								<a href="https://drive.google.com/file/d/19s4frrg5ytryMOLUrKW7JgOo7L-5IQHS/view?usp=sharing"
-								   class="button" target="_blank" rel="noopener">View Case Study</a>
-							</li>
+							<li><a href="https://drive.google.com/file/d/19s4frrg5ytryMOLUrKW7JgOo7L-5IQHS/view?usp=sharing" class="button" target="_blank" rel="noopener">View Case Study</a></li>
 						</ul>
 					</article>
 
-				</section>
-				<!-- end .posts -->
+				</section><!-- end .posts -->
 
 
-				<!-- ════════════════════════════════════════════════════
+				<!-- ════════════════════════════════════════════════
 				     SKILLS & TOOLKIT
-				     ════════════════════════════════════════════════════ -->
+				     ════════════════════════════════════════════════ -->
 				<div class="ea-skills-wrap">
 					<span class="ea-eyebrow">Skills &amp; Toolkit</span>
 					<h2>What I Bring to the Table</h2>
 					<span class="ea-skills-sub">Structured BA methodology combined with modern data and testing tools — applied across real-world industry projects.</span>
-
 					<div class="ea-sk-grid">
 
 						<div class="ea-sk-card">
-							<span class="ea-sk-icon">🎯</span>
+							<span class="ea-sk-icon">&#127919;</span>
 							<span class="ea-sk-title">Business Analysis</span>
 							<ul class="ea-sk-list">
 								<li>Requirements Elicitation &amp; Workshops</li>
@@ -938,7 +862,7 @@
 						</div>
 
 						<div class="ea-sk-card">
-							<span class="ea-sk-icon">🔄</span>
+							<span class="ea-sk-icon">&#128260;</span>
 							<span class="ea-sk-title">Process Modelling</span>
 							<ul class="ea-sk-list">
 								<li>AS-IS / TO-BE Process Mapping</li>
@@ -951,7 +875,7 @@
 						</div>
 
 						<div class="ea-sk-card">
-							<span class="ea-sk-icon">📊</span>
+							<span class="ea-sk-icon">&#128202;</span>
 							<span class="ea-sk-title">Data &amp; Analytics</span>
 							<ul class="ea-sk-list">
 								<li>Power BI &amp; DAX</li>
@@ -964,7 +888,7 @@
 						</div>
 
 						<div class="ea-sk-card">
-							<span class="ea-sk-icon">🧪</span>
+							<span class="ea-sk-icon">&#129514;</span>
 							<span class="ea-sk-title">Software Testing</span>
 							<ul class="ea-sk-list">
 								<li>Functional &amp; Non-Functional Testing</li>
@@ -977,7 +901,7 @@
 						</div>
 
 						<div class="ea-sk-card">
-							<span class="ea-sk-icon">🛠️</span>
+							<span class="ea-sk-icon">&#128736;</span>
 							<span class="ea-sk-title">Agile &amp; Collaboration</span>
 							<ul class="ea-sk-list">
 								<li>Jira — Backlog &amp; Sprint Management</li>
@@ -990,7 +914,7 @@
 						</div>
 
 						<div class="ea-sk-card">
-							<span class="ea-sk-icon">💼</span>
+							<span class="ea-sk-icon">&#128188;</span>
 							<span class="ea-sk-title">Domain Experience</span>
 							<ul class="ea-sk-list">
 								<li>Technology &amp; FinTech</li>
@@ -1002,11 +926,49 @@
 							</ul>
 						</div>
 
+						<div class="ea-sk-card">
+							<span class="ea-sk-icon">&#129302;</span>
+							<span class="ea-sk-title">AI &amp; Workflow Automation</span>
+							<ul class="ea-sk-list">
+								<li>Julius AI &amp; NotebookLM</li>
+								<li>AI-Assisted Data Analysis</li>
+								<li>Prompt Engineering for BA Tasks</li>
+								<li>Automated Reporting Pipelines</li>
+								<li>Workflow Automation Design</li>
+								<li>AI Tool Evaluation &amp; Integration</li>
+							</ul>
+						</div>
+
+						<div class="ea-sk-card">
+							<span class="ea-sk-icon">&#128640;</span>
+							<span class="ea-sk-title">Project Implementation</span>
+							<ul class="ea-sk-list">
+								<li>End-to-End Project Delivery</li>
+								<li>Business Case Development</li>
+								<li>Change Management &amp; Adoption</li>
+								<li>Risk Register &amp; Issue Log</li>
+								<li>UAT Planning &amp; Sign-Off</li>
+								<li>Go-Live Support &amp; Hypercare</li>
+							</ul>
+						</div>
+
+						<div class="ea-sk-card">
+							<span class="ea-sk-icon">&#128269;</span>
+							<span class="ea-sk-title">Data Analysis</span>
+							<ul class="ea-sk-list">
+								<li>Descriptive &amp; Diagnostic Analytics</li>
+								<li>Customer &amp; Sales Data Analysis</li>
+								<li>KPI Definition &amp; Measurement</li>
+								<li>Data Cleaning &amp; Transformation</li>
+								<li>Trend Identification &amp; Forecasting</li>
+								<li>Insight-to-Action Reporting</li>
+							</ul>
+						</div>
+
 					</div>
 				</div>
 
-			</div>
-			<!-- end #main -->
+			</div><!-- end #main -->
 
 
 			<!-- ══ FOOTER ════════════════════════════════════════════ -->
@@ -1014,8 +976,7 @@
 				<section class="split contact">
 					<section class="alt">
 						<h3>Location</h3>
-						<p>Darlington, UK<br />
-						<em style="font-size:0.8rem;opacity:0.65;">Open to Remote &amp; Hybrid Roles Nationwide</em></p>
+						<p>Darlington, UK<br /><em style="font-size:0.8rem;opacity:0.7;">Open to Remote &amp; Hybrid Roles Nationwide</em></p>
 					</section>
 					<section>
 						<h3>Email</h3>
@@ -1024,26 +985,13 @@
 					<section>
 						<h3>Connect</h3>
 						<ul class="icons alt">
-							<li>
-								<a href="https://www.linkedin.com/in/emmanuel-adenuga/"
-								   class="icon brands alt fa-linkedin"
-								   target="_blank" rel="noopener">
-									<span class="label">LinkedIn</span>
-								</a>
-							</li>
-							<li>
-								<a href="https://github.com/eoaadenuga/"
-								   class="icon brands alt fa-github"
-								   target="_blank" rel="noopener">
-									<span class="label">GitHub</span>
-								</a>
-							</li>
+							<li><a href="https://www.linkedin.com/in/emmanuel-adenuga/" class="icon brands alt fa-linkedin" target="_blank" rel="noopener"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://github.com/eoaadenuga/" class="icon brands alt fa-github" target="_blank" rel="noopener"><span class="label">GitHub</span></a></li>
 						</ul>
 					</section>
 				</section>
 			</footer>
 
-			<!-- ══ COPYRIGHT ═════════════════════════════════════════ -->
 			<div id="copyright">
 				<ul>
 					<li>&copy; 2025 Emmanuel Adenuga</li>
@@ -1051,8 +999,7 @@
 				</ul>
 			</div>
 
-		</div>
-		<!-- end #wrapper -->
+		</div><!-- end #wrapper -->
 
 		<script src="assets/js/jquery.min.js"></script>
 		<script src="assets/js/jquery.scrollex.min.js"></script>
