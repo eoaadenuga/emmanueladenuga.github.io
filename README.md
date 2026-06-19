@@ -1,5 +1,5 @@
 <div align="center">
-## Business Analyst · Data Strategist · AI Workflow Automation · Test Professional
+### **Business Analyst · Data Strategist · AI Workflow Automation · Test Professional**
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/emmanuel-adenuga/)
 [![Portfolio](https://img.shields.io/badge/Portfolio-View%20Live-f0a500?style=for-the-badge&logo=github&logoColor=white)](https://eoaadenuga.github.io/emmanueladenuga.github.io/)
