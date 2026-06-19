@@ -155,7 +155,7 @@ A selection of case studies demonstrating end-to-end business analysis, data ana
 
 **Tools:** `Julius AI` `NotebookLM` `Multi-Region Analysis` `Logistics Analysis` `Data Storytelling` `Google Slides`
 
-🔗 [View Case Study](https://docs.google.com/presentation/d/17hYFk1qGSngOOcuW-t7YEx2wMuFA_L-k/edit?usp=drive_link)
+🔗 [View Project](https://docs.google.com/presentation/d/17hYFk1qGSngOOcuW-t7YEx2wMuFA_L-k/edit?usp=drive_link)
 
 ---
 
@@ -241,6 +241,6 @@ If you are seeking a **results-driven Business Analyst, AI Workflow Automation S
 
 ---
 
-*© 2025 Emmanuel Adenuga · Business Analyst & Test Professional · Darlington, UK*
+*© 2026 Emmanuel Adenuga · Business Analyst, AI Workflow Automation Specialist & Test Professional · Darlington, UK*
 
 </div>
