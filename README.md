@@ -84,7 +84,7 @@ A selection of case studies demonstrating end-to-end business analysis, data ana
 
 **Tools:** `Jira` `Confluence` `SWOT Analysis` `RACI Matrix` `Use Case Diagrams` `Business Case Writing` `Requirements Elicitation`
 
-🔗 [View Case Study](https://docs.google.com/presentation/d/1juuA6rW3yZ35jmI7QR97RT-dPHlLO51x/htmlpresent)
+🔗 [View Project](https://docs.google.com/presentation/d/1juuA6rW3yZ35jmI7QR97RT-dPHlLO51x/htmlpresent)
 
 ---
 
@@ -102,7 +102,7 @@ A selection of case studies demonstrating end-to-end business analysis, data ana
 
 **Tools:** `Root Cause Analysis` `Stakeholder Mapping` `Gap Analysis` `Dashboard Reporting` `KPI Framework Design`
 
-🔗 [View Case Study](https://drive.google.com/file/d/1GaHglbZCQ8CWkybN6NNxP4NVtr9UbKVN/view?usp=drive_link)
+🔗 [View Project](https://drive.google.com/file/d/1GaHglbZCQ8CWkybN6NNxP4NVtr9UbKVN/view?usp=drive_link)
 
 ---
 
@@ -120,7 +120,7 @@ A selection of case studies demonstrating end-to-end business analysis, data ana
 
 **Tools:** `Power BI` `DAX` `SDLC` `BRD` `Customer Analytics` `Data Visualisation` `Microsoft Excel`
 
-🔗 [View Case Study](https://drive.google.com/file/d/10BTBwSQoEPg2dIpFB_DdvK8jdYBmUISD/view?usp=drive_link)
+🔗 [View Project](https://drive.google.com/file/d/10BTBwSQoEPg2dIpFB_DdvK8jdYBmUISD/view?usp=drive_link)
 
 ---
 
@@ -138,15 +138,14 @@ A selection of case studies demonstrating end-to-end business analysis, data ana
 
 **Tools:** `Microsoft Excel` `Pivot Tables` `Customer Segmentation` `Funnel Analysis` `Revenue Analysis`
 
-🔗 [View Case Study](https://drive.google.com/file/d/1ahx2_1qc_NMo2cbpSGs7CiSh-OaEsIO8/view?usp=drive_link)
+🔗 [View Project](https://drive.google.com/file/d/1ahx2_1qc_NMo2cbpSGs7CiSh-OaEsIO8/view?usp=drive_link)
 
 ---
 
 ### 🏪 Sales & Shipping Performance Analysis — MiniMart
 **Sector:** Retail &nbsp;|&nbsp; **Focus:** AI-Assisted Analytics · Multi-Region Operations
 
-> MiniMart is a mid-sized multi-region retailer, faced significant challenges in sales performance and shipping. I leveraged Julius AI and NotebookLM to examine the dataset and deliver a structured improvement roadmap to leadership data analysis mapping dispatch lag, carrier performance issues and regional volume imbalances contributing to delivery delays and cost overruns 
-
+> MiniMart is a mid-sized multi-region retailer, faced significant challenges in sales performance and shipping. I leveraged Julius AI and NotebookLM to examine the dataset, identify operational gaps and deliver a structured leadership presentation of findings and improvement recommendations.
 | Deliverable | Detail |
 |---|---|
 | **AI-Assisted Multi-Region Sales Analysis** | Julius AI interrogation of regional sales datasets — identifying performance variances, top-performing product lines and seasonal demand patterns |
@@ -174,7 +173,7 @@ A selection of case studies demonstrating end-to-end business analysis, data ana
 
 **Tools:** `SQL` `Database Design` `Relational Modelling` `Query Development` `Inventory Analysis`
 
-🔗 [View Case Study](https://drive.google.com/file/d/1s3ZMPtKP44GCr2IomBSU6I4Tq1okRgHy/view?usp=drive_link)
+🔗 [View Project](https://drive.google.com/file/d/1s3ZMPtKP44GCr2IomBSU6I4Tq1okRgHy/view?usp=drive_link)
 
 ---
 
@@ -192,7 +191,7 @@ A selection of case studies demonstrating end-to-end business analysis, data ana
 
 **Tools:** `Lucidchart` `BPMN` `Swimlane Diagrams` `Process Documentation` `AS-IS Analysis` `Pain Point Analysis`
 
-🔗 [View Case Study](https://drive.google.com/file/d/19s4frrg5ytryMOLUrKW7JgOo7L-5IQHS/view?usp=sharing)
+🔗 [View Project](https://drive.google.com/file/d/19s4frrg5ytryMOLUrKW7JgOo7L-5IQHS/view?usp=sharing)
 
 ---
 
@@ -222,7 +221,7 @@ A selection of case studies demonstrating end-to-end business analysis, data ana
 
 ## 🤝 Let's Connect
 
-If you are seeking a **results-driven Business Analyst, Data Analyst or Testing professional** with a proven track record of driving quality, efficiency and stakeholder satisfaction — I'd be happy to connect.
+If you are seeking a **results-driven Business Analyst, AI Workflow Automation Specialist, Data Analyst or Testing professional** with a proven track record of driving quality, efficiency and stakeholder satisfaction — I'd be happy to connect.
 
 <div align="center">
 
