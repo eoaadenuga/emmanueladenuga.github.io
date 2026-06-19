@@ -1,5 +1,5 @@
 <div align="center">
-### Business Analyst · Data Strategist · AI Workflow Automation · Test Professional
+## Business Analyst · Data Strategist · AI Workflow Automation · Test Professional
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/emmanuel-adenuga/)
 [![Portfolio](https://img.shields.io/badge/Portfolio-View%20Live-f0a500?style=for-the-badge&logo=github&logoColor=white)](https://eoaadenuga.github.io/emmanueladenuga.github.io/)
@@ -12,7 +12,7 @@
 
 ## 👋 About Me
 
-I'm a **certified Business Analyst and Test Professional** based in **Darlington, UK**, with **9+ years of experience** delivering high-quality business solutions and robust software testing across **Technology, FinTech, Academic, Media and Telecom** sectors.
+I'm a **certified Business Analyst and AI Workflow Automation Specialist** based in **Darlington, UK**, with **over a decade of experience** delivering high-quality business solutions and robust software testing across **Technology, FinTech, Academic, Media and Telecom** sectors.
 
 My career has been built on bridging the gap between business needs and technical solutions — ensuring requirements are clearly defined, solutions are fit-for-purpose and systems are thoroughly validated before release. I combine structured business analysis methodology with modern data tools and AI-assisted workflows to deliver projects that create measurable, lasting business value.
 
