@@ -1,6 +1,4 @@
 <div align="center">
-
-# Emmanuel Adenuga
 ### Business Analyst · Data Strategist · AI Workflow Automation · Test Professional
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/emmanuel-adenuga/)
@@ -146,7 +144,7 @@ A selection of case studies demonstrating end-to-end business analysis, data ana
 ### 🏪 Sales & Shipping Performance Analysis — MiniMart
 **Sector:** Retail &nbsp;|&nbsp; **Focus:** AI-Assisted Analytics · Multi-Region Operations
 
-> MiniMart, a mid-sized multi-region retailer, faced significant challenges in sales performance and shipping. I leveraged Julius AI and NotebookLM to examine datasets and deliver a structured improvement roadmap to leadership.
+> MiniMart is a mid-sized multi-region retailer, faced significant challenges in sales performance and shipping. I leveraged Julius AI and NotebookLM to examine the dataset and deliver a structured improvement roadmap to leadership data analysis mapping dispatch lag, carrier performance issues and regional volume imbalances contributing to delivery delays and cost overruns 
 
 | Deliverable | Detail |
 |---|---|
