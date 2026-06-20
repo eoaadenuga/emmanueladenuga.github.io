@@ -106,47 +106,6 @@
     .ea-ach-text { font-size: 0.79rem !important; color: #3d3d3d !important; line-height: 1.55 !important; }
     .ea-ach-text strong { color: #1a1a2e !important; font-weight: 700 !important; }
 
-    /* ── EXPERIENCE TIMELINE ────────────────────────────────── */
-    .ea-exp-list { display: flex !important; flex-direction: column !important; gap: 1.1rem !important; }
-    .ea-exp-card {
-      background: #fff !important; border: 1px solid #dee2e6 !important;
-      border-radius: 8px !important; padding: 1.3rem 1.5rem !important;
-      border-left: 4px solid #b57000 !important;
-    }
-    .ea-exp-header { margin-bottom: 0.7rem !important; }
-    .ea-exp-title {
-      font-size: 0.95rem !important; font-weight: 700 !important;
-      color: #1a1a2e !important; display: block !important; margin-bottom: 0.2rem !important;
-    }
-    .ea-exp-company {
-      font-size: 0.8rem !important; font-weight: 600 !important;
-      color: #b57000 !important; display: block !important; margin-bottom: 0.15rem !important;
-    }
-    .ea-exp-meta {
-      font-size: 0.75rem !important; color: #777 !important;
-      display: block !important; margin-bottom: 0.6rem !important;
-    }
-    .ea-exp-project {
-      font-size: 0.78rem !important; font-weight: 600 !important;
-      color: #444 !important; font-style: italic !important;
-      margin-bottom: 0.6rem !important; display: block !important;
-    }
-    .ea-exp-ul {
-      list-style: none !important; margin: 0 !important; padding: 0 !important;
-    }
-    .ea-exp-ul li {
-      font-size: 0.8rem !important; color: #3d3d3d !important;
-      line-height: 1.6 !important; padding: 0.22rem 0 0.22rem 1.3rem !important;
-      position: relative !important; margin: 0 !important;
-      border-bottom: 1px solid #f0f0f0 !important;
-    }
-    .ea-exp-ul li:last-child { border-bottom: none !important; }
-    .ea-exp-ul li::before {
-      content: '▸' !important; color: #b57000 !important;
-      font-size: 0.7rem !important; position: absolute !important;
-      left: 0 !important; top: 0.3rem !important;
-    }
-    .ea-exp-ul li strong { color: #1a1a2e !important; font-weight: 700 !important; }
 
     /* ── SECTORS ────────────────────────────────────────────── */
     .ea-sectors {
@@ -196,36 +155,6 @@
       line-height: 1.55 !important; display: block !important;
     }
 
-    /* ── CERTIFICATIONS ─────────────────────────────────────── */
-    .ea-cert-grid {
-      display: grid !important; grid-template-columns: repeat(2, 1fr) !important; gap: 0.7rem !important;
-    }
-    .ea-cert-item {
-      background: #fff !important; border: 1px solid #dee2e6 !important;
-      border-radius: 6px !important; padding: 0.7rem 0.9rem !important;
-      display: flex !important; gap: 0.6rem !important; align-items: flex-start !important;
-    }
-    .ea-cert-icon { font-size: 1rem !important; flex-shrink: 0 !important; }
-    .ea-cert-name {
-      font-size: 0.77rem !important; font-weight: 700 !important;
-      color: #1a1a2e !important; display: block !important; margin-bottom: 0.15rem !important;
-    }
-    .ea-cert-issuer { font-size: 0.7rem !important; color: #777 !important; display: block !important; }
-
-    /* ── EDUCATION ──────────────────────────────────────────── */
-    .ea-edu-grid {
-      display: grid !important; grid-template-columns: repeat(2, 1fr) !important; gap: 1rem !important;
-    }
-    .ea-edu-card {
-      background: #fff !important; border: 1px solid #dee2e6 !important;
-      border-top: 3px solid #b57000 !important; border-radius: 6px !important;
-      padding: 1rem 1.1rem !important;
-    }
-    .ea-edu-degree {
-      font-size: 0.85rem !important; font-weight: 700 !important;
-      color: #1a1a2e !important; display: block !important; margin-bottom: 0.3rem !important;
-    }
-    .ea-edu-school { font-size: 0.78rem !important; color: #b57000 !important; font-weight: 600 !important; display: block !important; }
 
     /* ── DELIVERABLES ───────────────────────────────────────── */
     .ea-del {
@@ -321,8 +250,6 @@
       .ea-comp-grid { grid-template-columns: repeat(2,1fr) !important; }
       .ea-sk-grid   { grid-template-columns: repeat(2,1fr) !important; }
       .ea-ach-grid  { grid-template-columns: 1fr !important; }
-      .ea-cert-grid { grid-template-columns: 1fr !important; }
-      .ea-edu-grid  { grid-template-columns: 1fr !important; }
     }
     @media screen and (max-width: 736px) {
       .ea-panel { padding: 1.3rem !important; }
@@ -517,167 +444,6 @@
             </div>
           </div>
 
-          <!-- Work Experience -->
-          <div class="ea-panel">
-            <span class="ea-eyebrow">Work Experience</span>
-            <div class="ea-exp-list">
-
-              <div class="ea-exp-card">
-                <div class="ea-exp-header">
-                  <span class="ea-exp-title">Senior IT Consultant — AI Automation &amp; Mobile Apps Implementation</span>
-                  <span class="ea-exp-company">Infosys &middot; Full-time</span>
-                  <span class="ea-exp-meta">May 2026 &ndash; Present &middot; London, On-site</span>
-                </div>
-                <ul class="ea-exp-ul">
-                  <li>Delivering AI workflow automation and mobile application implementation at enterprise scale using n8n and AI agents</li>
-                  <li>Designing intelligent systems to optimise business operations and digital delivery pipelines</li>
-                </ul>
-              </div>
-
-              <div class="ea-exp-card">
-                <div class="ea-exp-header">
-                  <span class="ea-exp-title">IT Consultant &amp; Technology Lead</span>
-                  <span class="ea-exp-company">Infosys (via OneAPPS Consulting) &middot; Contract</span>
-                  <span class="ea-exp-meta">Oct 2024 &ndash; Apr 2026 &middot; 1 yr 7 mos &middot; London</span>
-                  <span class="ea-exp-project">Project: Optimisation of Technology Device Lab Processes &amp; Operational Efficiency</span>
-                </div>
-                <ul class="ea-exp-ul">
-                  <li>Gathered and analysed requirements from Engineering Manager, developers, testers and product teams to configure Google Pixel devices, ensuring <strong>100% readiness</strong> for testing and development cycles</li>
-                  <li>Created structured documentation (device guides, troubleshooting steps, inventory procedures), reducing recurring queries and downtime by <strong>35%</strong></li>
-                  <li>Streamlined asset management through systematic inventory tracking and audits, reducing lost/untracked devices by <strong>40%</strong></li>
-                  <li>Implemented process improvements that shortened device turnaround time for testing by <strong>25%</strong></li>
-                  <li>Administered Linux servers and managed user accounts, ensuring secure and uninterrupted stakeholder access</li>
-                  <li>Analysed device performance data and usage trends, improving resource utilisation rates by <strong>15%</strong></li>
-                </ul>
-              </div>
-
-              <div class="ea-exp-card">
-                <div class="ea-exp-header">
-                  <span class="ea-exp-title">Independent Contractor &amp; Freelance Business Analyst</span>
-                  <span class="ea-exp-company">Toucan Technology</span>
-                  <span class="ea-exp-meta">Aug 2024 &ndash; Oct 2024 &middot; 3 mos</span>
-                  <span class="ea-exp-project">Project: Hospital Operations Improvement — Digital Transformation</span>
-                </div>
-                <ul class="ea-exp-ul">
-                  <li>Conducted stakeholder interviews; produced Stakeholder Matrix and RACI Chart — increased stakeholder satisfaction by <strong>35%</strong> by capturing 25+ requirements in a detailed BRD</li>
-                  <li>Achieved a <strong>25% reduction in operational inefficiencies</strong> by designing and validating new processes and supporting implementation of a central case management platform</li>
-                  <li>Accelerated system adoption by <strong>50%</strong> through a structured change management plan including training and resistance management</li>
-                  <li>Executed end-to-end regression testing including checkout and payment workflows; logged and triaged defects with development teams</li>
-                </ul>
-              </div>
-
-              <div class="ea-exp-card">
-                <div class="ea-exp-header">
-                  <span class="ea-exp-title">Business Analyst</span>
-                  <span class="ea-exp-company">University of East Anglia &middot; Contract</span>
-                  <span class="ea-exp-meta">Oct 2023 &ndash; Jul 2024 &middot; 10 mos</span>
-                  <span class="ea-exp-project">Project: Procurement &amp; Implementation of a Web-Based Digital Rewards Platform</span>
-                </div>
-                <ul class="ea-exp-ul">
-                  <li>Developed detailed business cases with cost-benefit analyses that secured executive project approval</li>
-                  <li>Conducted AS-IS and TO-BE process mapping, reducing reward processing times by <strong>10%</strong></li>
-                  <li>Used Power BI to analyse staff engagement and performance trends for senior leadership</li>
-                  <li>Decomposed requirements into user stories and acceptance criteria, improving sprint efficiency by <strong>20%</strong></li>
-                  <li>Managed the tender process ensuring <strong>95% accuracy</strong> in vendor selection and contract compliance</li>
-                  <li>Delivered UAT achieving a <strong>98% acceptance rate</strong>; designed training for 30+ staff, improving adoption by <strong>40%</strong></li>
-                </ul>
-              </div>
-
-              <div class="ea-exp-card">
-                <div class="ea-exp-header">
-                  <span class="ea-exp-title">Independent Contractor &amp; Freelance Test Analyst</span>
-                  <span class="ea-exp-company">Testlio</span>
-                  <span class="ea-exp-meta">Jun 2023 &ndash; Sep 2023 &middot; 4 mos</span>
-                  <span class="ea-exp-project">Project: Implementation of an Online Buy Now Pay Later Platform</span>
-                </div>
-                <ul class="ea-exp-ul">
-                  <li>Led design and development of a BNPL platform offering diverse finance options for seamless online shopping</li>
-                  <li>Built Power BI reporting system to track customer purchasing trends and drive business decisions</li>
-                  <li>Automated key workflows using Power Automate, reducing manual efforts by <strong>30%</strong></li>
-                  <li>Translated business requirements into technical specifications including user stories and acceptance criteria</li>
-                </ul>
-              </div>
-
-              <div class="ea-exp-card">
-                <div class="ea-exp-header">
-                  <span class="ea-exp-title">Tester &amp; QA Release Lead</span>
-                  <span class="ea-exp-company">Sky &middot; Contract</span>
-                  <span class="ea-exp-meta">Feb 2020 &ndash; Jun 2023 &middot; 3 yrs 5 mos &middot; London</span>
-                  <span class="ea-exp-project">Project: Implementation of NOW Application on Apple TV &amp; Roku Devices</span>
-                </div>
-                <ul class="ea-exp-ul">
-                  <li>Gathered and analysed requirements for NOW streaming applications on AppleTV and Roku, improving workflow speed by <strong>15%</strong></li>
-                  <li>Developed Power BI dashboards to analyse streaming trends and customer usage patterns</li>
-                  <li>Executed Functional, Exploratory, Regression and Sanity testing, resolving pre-certification issues</li>
-                  <li>Enhanced the streaming experience for over <strong>750,000 NOW customers</strong> across Europe</li>
-                  <li>Represented the team in release train review and go/no-go meetings</li>
-                </ul>
-              </div>
-
-              <div class="ea-exp-card">
-                <div class="ea-exp-header">
-                  <span class="ea-exp-title">Business Analyst &amp; Test Lead</span>
-                  <span class="ea-exp-company">Applause (uTest) &middot; Freelance</span>
-                  <span class="ea-exp-meta">May 2019 &ndash; Jan 2020 &middot; 9 mos</span>
-                  <span class="ea-exp-project">Project: Food Ordering Application on Android and iOS</span>
-                </div>
-                <ul class="ea-exp-ul">
-                  <li>Gathered requirements and conducted end-to-end testing of purchase flows and payment processes</li>
-                  <li>Used Confluence and Jira for documentation and defect tracking; delivered the project ahead of deadline</li>
-                </ul>
-              </div>
-
-              <div class="ea-exp-card">
-                <div class="ea-exp-header">
-                  <span class="ea-exp-title">Business Analyst &amp; QA</span>
-                  <span class="ea-exp-company">ELANT Technology Ltd</span>
-                  <span class="ea-exp-meta">Sep 2015 &ndash; Apr 2019 &middot; 3 yrs 8 mos</span>
-                  <span class="ea-exp-project">Project: Web Portal Revamp for a Financial Institution</span>
-                </div>
-                <ul class="ea-exp-ul">
-                  <li>Delivered business analysis and QA on a major web portal revamp project for a financial services client</li>
-                  <li>Applied Agile and Waterfall methodologies across full project lifecycle delivery</li>
-                </ul>
-              </div>
-
-            </div>
-          </div>
-
-          <!-- Education -->
-          <div class="ea-panel">
-            <span class="ea-eyebrow">Education</span>
-            <div class="ea-edu-grid">
-              <div class="ea-edu-card">
-                <span class="ea-edu-degree">Bachelor of Engineering — Electrical &amp; Electronics Engineering</span>
-                <span class="ea-edu-school">University of Sunderland</span>
-              </div>
-              <div class="ea-edu-card">
-                <span class="ea-edu-degree">Master of Business Administration (MBA)</span>
-                <span class="ea-edu-school">Lagos State University</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Certifications -->
-          <div class="ea-panel">
-            <span class="ea-eyebrow">Licences &amp; Certifications</span>
-            <div class="ea-cert-grid">
-              <div class="ea-cert-item"><span class="ea-cert-icon">&#127942;</span><div><span class="ea-cert-name">BCS / ISEB Foundation Certificate in Business Analysis</span><span class="ea-cert-issuer">BCS — The Chartered Institute for IT &middot; 2015</span></div></div>
-              <div class="ea-cert-item"><span class="ea-cert-icon">&#127942;</span><div><span class="ea-cert-name">Scrum Fundamentals Certified (SFC)</span><span class="ea-cert-issuer">SCRUMStudy &middot; 2023</span></div></div>
-              <div class="ea-cert-item"><span class="ea-cert-icon">&#127942;</span><div><span class="ea-cert-name">Automation Business Analysis Fundamentals Diploma</span><span class="ea-cert-issuer">UiPath &middot; 2023</span></div></div>
-              <div class="ea-cert-item"><span class="ea-cert-icon">&#127942;</span><div><span class="ea-cert-name">IBM Introduction to Business Analysis</span><span class="ea-cert-issuer">Coursera / IBM &middot; 2025</span></div></div>
-              <div class="ea-cert-item"><span class="ea-cert-icon">&#127942;</span><div><span class="ea-cert-name">Microsoft Business Analysis Fundamentals</span><span class="ea-cert-issuer">Coursera / Microsoft &middot; 2025</span></div></div>
-              <div class="ea-cert-item"><span class="ea-cert-icon">&#127942;</span><div><span class="ea-cert-name">Business Analysis &amp; Process Management</span><span class="ea-cert-issuer">Coursera Project Network &middot; 2025</span></div></div>
-              <div class="ea-cert-item"><span class="ea-cert-icon">&#127942;</span><div><span class="ea-cert-name">Project Management Foundations: Requirements</span><span class="ea-cert-issuer">LinkedIn Learning &middot; 2025</span></div></div>
-              <div class="ea-cert-item"><span class="ea-cert-icon">&#127942;</span><div><span class="ea-cert-name">Leveraging AI for Governance, Risk &amp; Compliance</span><span class="ea-cert-issuer">LinkedIn Learning &middot; 2025</span></div></div>
-              <div class="ea-cert-item"><span class="ea-cert-icon">&#127942;</span><div><span class="ea-cert-name">What Is Business Analysis?</span><span class="ea-cert-issuer">LinkedIn Learning &middot; 2025</span></div></div>
-              <div class="ea-cert-item"><span class="ea-cert-icon">&#127942;</span><div><span class="ea-cert-name">ChatGPT for SQL Beginners</span><span class="ea-cert-issuer">365 Data Science &middot; 2025</span></div></div>
-              <div class="ea-cert-item"><span class="ea-cert-icon">&#127942;</span><div><span class="ea-cert-name">Introduction to AI</span><span class="ea-cert-issuer">365 Data Science &middot; 2026</span></div></div>
-              <div class="ea-cert-item"><span class="ea-cert-icon">&#127942;</span><div><span class="ea-cert-name">Intro to AI Agents and Agentic AI</span><span class="ea-cert-issuer">365 Data Science &middot; 2026</span></div></div>
-              <div class="ea-cert-item"><span class="ea-cert-icon">&#127942;</span><div><span class="ea-cert-name">Introduction to Testing AI-Powered Systems</span><span class="ea-cert-issuer">Testlio &middot; 2026</span></div></div>
-              <div class="ea-cert-item"><span class="ea-cert-icon">&#127942;</span><div><span class="ea-cert-name">Forage Academy — Data Labeling Job Simulation</span><span class="ea-cert-issuer">Forage &middot; 2026</span></div></div>
-            </div>
-          </div>
 
           <!-- Disclaimer -->
           <div class="ea-disc">
@@ -688,39 +454,67 @@
 
 
         <!-- ════════════════════════════════════════════════════
-             PROJECT 1 — UNILEVER (FEATURED)
+             FEATURED PROJECT — AI DATA ANALYST AGENT
         ════════════════════════════════════════════════════ -->
         <article class="post featured">
           <header class="major">
-            <span class="ea-eyebrow">Featured Project &mdash; FMCG &bull; Process Improvement &bull; Requirements Analysis</span>
-            <h2><a href="#">Online Canteen Ordering System<br />Unilever PLC</a></h2>
-            <p>Unilever's 1,500-employee UK office was losing an estimated <strong>35 minutes per employee per lunch break</strong> to canteen queues. I conducted a full BA engagement covering business case, stakeholder mapping, functional specifications and a RACI-governed project plan to design a digital ordering solution.</p>
+            <span class="ea-eyebrow">Featured Project &mdash; AI &amp; Workflow Automation &bull; n8n &bull; Conversational Analytics</span>
+            <h2><a href="#">AI Data Analyst Agent<br />Workflow Automation</a></h2>
+            <p>This workflow automates data analysis and reporting through an intelligent AI agent built in n8n. When a user sends a chat message, the system triggers an AI Data Analyst Agent that leverages a large language model, conversational memory, Google Sheets data access and Gmail integration to analyse data, answer questions, generate insights and communicate results automatically.</p>
           </header>
-          <a href="https://docs.google.com/presentation/d/1juuA6rW3yZ35jmI7QR97RT-dPHlLO51x/htmlpresent" class="image main" target="_blank" rel="noopener">
-            <img src="images/image1.jpg" alt="Unilever Online Canteen Ordering System" />
+          <a href="https://docs.google.com/presentation/d/1UN1CHdEXf2DG1EN5onqxRAs6l8lSRja_/edit?usp=sharing&ouid=105386340028746220579&rtpof=true&sd=true" class="image main" target="_blank" rel="noopener">
+            <img src="images/AI Workflow.png" alt="AI Workflow Automation Agent" />
           </a>
           <div class="ea-del">
             <span class="ea-del-label">4 Key Deliverables</span>
             <ul>
-              <li><strong>Business Case with ROI Projection</strong>£200k total investment with cost-benefit analysis across Years 0–6, Year 5 break-even identified and 45% food waste reduction projected as primary non-financial benefit.</li>
-              <li><strong>Stakeholder Analysis &amp; RACI Matrix</strong>12-stakeholder engagement register with Power/Interest quadrant mapping, paired with a 9-activity RACI matrix governing all project phases.</li>
-              <li><strong>Functional Requirements &amp; Use Case Diagram</strong>Front-end features for Employee and Canteen Staff user groups plus backend requirements: GDPR compliance, RBAC, inventory management and integration APIs.</li>
-              <li><strong>Options Analysis &amp; Risk Register</strong>Three-option evaluation (Do Nothing / Expand Canteen / Digital System), digital solution recommended, 9 risks documented with likelihood ratings and mitigations.</li>
+              <li><strong>Conversational Analytics Interface</strong>Built a chat-driven entry point allowing users to ask questions in plain English without requiring SQL or spreadsheet expertise.</li>
+              <li><strong>Context-Aware AI Agent</strong>Implemented conversational memory within the n8n workflow, enabling intelligent follow-up discussions and multi-turn analysis sessions.</li>
+              <li><strong>Real-Time Data Integration</strong>Connected the agent directly to Google Sheets for live retrieval of current business data without manual export or refresh steps.</li>
+              <li><strong>Automated Insight Delivery</strong>Configured Gmail integration so generated insights and reports are delivered automatically to stakeholders without manual intervention.</li>
             </ul>
           </div>
           <div class="ea-tools">
-            <span class="ea-tb">Jira</span><span class="ea-tb">Confluence</span><span class="ea-tb">SWOT Analysis</span>
-            <span class="ea-tb">RACI Matrix</span><span class="ea-tb">Use Case Diagrams</span>
-            <span class="ea-tb">Business Case</span><span class="ea-tb">Requirements Elicitation</span>
+            <span class="ea-tb">n8n</span><span class="ea-tb">AI Agents</span><span class="ea-tb">Google Sheets</span>
+            <span class="ea-tb">Gmail Integration</span><span class="ea-tb">Workflow Automation</span><span class="ea-tb">Conversational Analytics</span>
           </div>
           <ul class="actions special">
-            <li><a href="https://docs.google.com/presentation/d/1juuA6rW3yZ35jmI7QR97RT-dPHlLO51x/htmlpresent" class="button large" target="_blank" rel="noopener">View Full Case Study</a></li>
+            <li><a href="https://docs.google.com/presentation/d/1UN1CHdEXf2DG1EN5onqxRAs6l8lSRja_/edit?usp=sharing&ouid=105386340028746220579&rtpof=true&sd=true" class="button large" target="_blank" rel="noopener">View Full Case Study</a></li>
           </ul>
         </article>
 
 
         <!-- ── PROJECT GRID ──────────────────────────────── -->
         <section class="posts">
+
+          <!-- PROJECT — UNILEVER -->
+          <article>
+            <header>
+              <span class="ea-eyebrow">FMCG &mdash; Process Improvement &bull; Requirements Analysis</span>
+              <h2><a href="#">Online Canteen Ordering System<br />Unilever PLC</a></h2>
+            </header>
+            <a href="https://docs.google.com/presentation/d/1juuA6rW3yZ35jmI7QR97RT-dPHlLO51x/htmlpresent" class="image fit" target="_blank" rel="noopener">
+              <img src="images/image1.jpg" alt="Unilever Online Canteen Ordering System" />
+            </a>
+            <p>Unilever's 1,500-employee UK office was losing an estimated <strong>35 minutes per employee per lunch break</strong> to canteen queues. I conducted a full BA engagement covering business case, stakeholder mapping, functional specifications and a RACI-governed project plan to design a digital ordering solution.</p>
+            <div class="ea-del">
+              <span class="ea-del-label">4 Key Deliverables</span>
+              <ul>
+                <li><strong>Business Case with ROI Projection</strong>£200k total investment with cost-benefit analysis across Years 0–6, Year 5 break-even identified and 45% food waste reduction projected as primary non-financial benefit.</li>
+                <li><strong>Stakeholder Analysis &amp; RACI Matrix</strong>12-stakeholder engagement register with Power/Interest quadrant mapping, paired with a 9-activity RACI matrix governing all project phases.</li>
+                <li><strong>Functional Requirements &amp; Use Case Diagram</strong>Front-end features for Employee and Canteen Staff user groups plus backend requirements: GDPR compliance, RBAC, inventory management and integration APIs.</li>
+                <li><strong>Options Analysis &amp; Risk Register</strong>Three-option evaluation (Do Nothing / Expand Canteen / Digital System), digital solution recommended, 9 risks documented with likelihood ratings and mitigations.</li>
+              </ul>
+            </div>
+            <div class="ea-tools">
+              <span class="ea-tb">Jira</span><span class="ea-tb">Confluence</span><span class="ea-tb">SWOT Analysis</span>
+              <span class="ea-tb">RACI Matrix</span><span class="ea-tb">Use Case Diagrams</span>
+              <span class="ea-tb">Business Case</span><span class="ea-tb">Requirements Elicitation</span>
+            </div>
+            <ul class="actions special">
+              <li><a href="https://docs.google.com/presentation/d/1juuA6rW3yZ35jmI7QR97RT-dPHlLO51x/htmlpresent" class="button" target="_blank" rel="noopener">View Case Study</a></li>
+            </ul>
+          </article>
 
           <!-- PROJECT 2 — BARNET HOSPITAL -->
           <article>
@@ -778,33 +572,6 @@
             </ul>
           </article>
 
-          <!-- PROJECT 3B — AI WORKFLOW AUTOMATION AGENT -->
-          <article>
-            <header>
-              <span class="ea-eyebrow">AI &amp; Workflow Automation &bull; n8n &bull; Conversational Analytics</span>
-              <h2><a href="#">AI Data Analyst Agent<br />Workflow Automation</a></h2>
-            </header>
-            <a href="https://docs.google.com/presentation/d/1UN1CHdEXf2DG1EN5onqxRAs6l8lSRja_/edit?usp=sharing&ouid=105386340028746220579&rtpof=true&sd=true" class="image fit" target="_blank" rel="noopener">
-              <img src="images/AI Workflow.png" alt="AI Workflow Automation Agent" />
-            </a>
-            <p>This workflow automates data analysis and reporting through an intelligent AI agent built in n8n. When a user sends a chat message, the system triggers an AI Data Analyst Agent that leverages a large language model, conversational memory, Google Sheets data access and Gmail integration to analyse data, answer questions, generate insights and communicate results automatically.</p>
-            <div class="ea-del">
-              <span class="ea-del-label">4 Key Deliverables</span>
-              <ul>
-                <li><strong>Conversational Analytics Interface</strong>Built a chat-driven entry point allowing users to ask questions in plain English without requiring SQL or spreadsheet expertise.</li>
-                <li><strong>Context-Aware AI Agent</strong>Implemented conversational memory within the n8n workflow, enabling intelligent follow-up discussions and multi-turn analysis sessions.</li>
-                <li><strong>Real-Time Data Integration</strong>Connected the agent directly to Google Sheets for live retrieval of current business data without manual export or refresh steps.</li>
-                <li><strong>Automated Insight Delivery</strong>Configured Gmail integration so generated insights and reports are delivered automatically to stakeholders without manual intervention.</li>
-              </ul>
-            </div>
-            <div class="ea-tools">
-              <span class="ea-tb">n8n</span><span class="ea-tb">AI Agents</span><span class="ea-tb">Google Sheets</span>
-              <span class="ea-tb">Gmail Integration</span><span class="ea-tb">Workflow Automation</span><span class="ea-tb">Conversational Analytics</span>
-            </div>
-            <ul class="actions special">
-              <li><a href="https://docs.google.com/presentation/d/1UN1CHdEXf2DG1EN5onqxRAs6l8lSRja_/edit?usp=sharing&ouid=105386340028746220579&rtpof=true&sd=true" class="button" target="_blank" rel="noopener">View Case Study</a></li>
-            </ul>
-          </article>
 
           <!-- PROJECT 4 — ABC RETAIL -->
           <article>
@@ -869,7 +636,7 @@
               <h2><a href="#">Sales &amp; Inventory Intelligence<br />Tech Haven Electronics</a></h2>
             </header>
             <a href="https://drive.google.com/file/d/1s3ZMPtKP44GCr2IomBSU6I4Tq1okRgHy/view?usp=drive_link" class="image fit" target="_blank" rel="noopener">
-              <img src="images/image 7.jpg" alt="Tech Haven SQL" />
+              <img src="images/Image 7.jpg" alt="Tech Haven SQL" />
             </a>
             <p>Tech Haven Electronics needed to unlock the intelligence in their transactional data. I designed a relational database and built structured SQL queries to surface customer purchasing patterns, dormant inventory and product-level revenue performance.</p>
             <div class="ea-del">
