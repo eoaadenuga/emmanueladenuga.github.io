@@ -1,4 +1,3 @@
-[README (5).md](https://github.com/user-attachments/files/31623143/README.5.md)
 
 # Emmanuel Adenuga — AI Automation Business Analyst Portfolio
 
