@@ -3,7 +3,7 @@
 
 A single-page portfolio built on the [Massively](https://html5up.net/massively) template by HTML5 UP, showcasing AI automation, business analysis and data analysis project work across healthcare, finance, retail, aviation and enterprise sectors.
 
-**🔗 Live site:** [eoaadenuga.github.io](https://eoaadenuga.github.io) <!-- update if your Pages URL differs -->
+**🔗 Live site:** [emmanueladenuga.github.io](https://emmanueladenuga.github.io) <!
 
 ---
 
