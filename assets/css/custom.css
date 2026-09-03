@@ -1,0 +1,151 @@
+/*
+ * Emmanuel Adenuga — Massively Portfolio Redesign
+ * Custom overrides only. Keep assets/css/main.css untouched.
+ */
+
+#intro {
+  background:
+    linear-gradient(rgba(18, 26, 31, .88), rgba(18, 26, 31, .96)),
+    radial-gradient(circle at 50% 20%, rgba(255,255,255,.08), transparent 45%);
+  min-height: 62vh;
+  padding: 8rem 2rem 5rem;
+}
+
+#intro h1 {
+  font-size: clamp(2.4rem, 5vw, 5.25rem);
+  line-height: 1.02;
+  letter-spacing: .08em;
+  text-shadow: 0 3px 20px rgba(0,0,0,.35);
+}
+
+#intro p {
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.05rem;
+}
+
+#nav .links li a {
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.ea-eyebrow {
+  display: inline-block;
+  margin-bottom: 1rem;
+  font-size: .72rem;
+  font-weight: 800;
+  letter-spacing: .13em;
+  text-transform: uppercase;
+  opacity: .72;
+}
+
+.project-card h2 {
+  letter-spacing: .08em;
+}
+
+.project-card p {
+  line-height: 1.75;
+}
+
+.project-card .image img {
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.featured-project .image.main img {
+  max-height: 620px;
+  object-fit: contain;
+  background: #f3f3f3;
+}
+
+.ea-tags {
+  display: flex !important;
+  flex-wrap: wrap;
+  gap: .45rem;
+  margin: 1rem 0 1.5rem !important;
+  padding: 0 !important;
+  list-style: none !important;
+}
+
+.ea-tags li {
+  border: 1px solid rgba(0,0,0,.16);
+  padding: .35rem .65rem;
+  font-size: .68rem;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+#main > section.ea-section {
+  padding: 5rem 7%;
+}
+
+.ea-section .major {
+  margin-bottom: 2.5rem;
+}
+
+.ea-highlight-grid,
+.ea-skill-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1px;
+  background: rgba(0,0,0,.12);
+  margin-top: 2.5rem;
+}
+
+.ea-highlight-grid > div,
+.ea-skill-grid > div {
+  background: #fff;
+  padding: 1.7rem;
+}
+
+.ea-highlight-grid strong,
+.ea-skill-grid h3 {
+  display: block;
+  margin-bottom: .45rem;
+  letter-spacing: .08em;
+}
+
+.ea-highlight-grid span {
+  font-size: .85rem;
+  opacity: .72;
+}
+
+.ea-skill-grid p {
+  margin-bottom: 0;
+}
+
+.contact-section {
+  text-align: center;
+}
+
+.contact-section p {
+  max-width: 780px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 736px) {
+  #intro {
+    min-height: 58vh;
+    padding: 6rem 1.25rem 4rem;
+  }
+
+  #intro h1 {
+    font-size: 2.25rem;
+  }
+
+  #main > section.ea-section {
+    padding: 3.5rem 1.5rem;
+  }
+
+  .ea-highlight-grid,
+  .ea-skill-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-card h2 {
+    font-size: 1.35rem;
+  }
+}
